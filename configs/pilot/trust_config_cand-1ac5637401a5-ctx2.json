@@ -1,0 +1,41 @@
+{
+ "approval_ref": null,
+ "behavior": {
+  "epsilon": "1/1000000",
+  "lambda": "1/10"
+ },
+ "config_id": "cand-1ac5637401a5-ctx2",
+ "config_status": "SYNTHETIC_TEST_UNAPPROVED",
+ "context_criteria": [
+  {
+   "id": "operating_time",
+   "weight": "9/10"
+  },
+  {
+   "id": "topic_profile",
+   "weight": "1/10"
+  }
+ ],
+ "counterfactual_experiment_id": null,
+ "max_evidence_age_ns": {
+  "behavior": 5000000000,
+  "context": 5000000000,
+  "identity": 40000000000
+ },
+ "missing_evidence_policy": {
+  "behavior": "REFUSE",
+  "context": "REFUSE",
+  "identity": "REFUSE"
+ },
+ "schema": "azta.gate5f.trust_config",
+ "schema_version": 1,
+ "thresholds": {
+  "tau_Q": "70",
+  "tau_R": "75"
+ },
+ "trust_weights": {
+  "alpha": "1/5",
+  "beta": "1/2",
+  "gamma": "3/10"
+ }
+}

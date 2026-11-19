@@ -1,0 +1,38 @@
+{
+ "candidates_sha256": "35f61fc26b44559c48804df3606b9d66098dbbb6b04699ea8445fc65eccff089",
+ "decision": "configs/core_final/selection_v1.json",
+ "devices": {
+  "device01": {
+   "arm": "B-FREQ+IM",
+   "feature_contract": "FC-6.1N",
+   "legacy_profile": "S",
+   "monitor_profile": null,
+   "stream_state": "ACTIVE"
+  },
+  "device02": {
+   "arm": "B-FREQ+IM",
+   "feature_contract": "FC-6.1N",
+   "legacy_profile": "V",
+   "monitor_profile": null,
+   "stream_state": "ACTIVE"
+  },
+  "device05": {
+   "arm": "EA-C-PER+IM",
+   "feature_contract": "FC-6.2R",
+   "legacy_profile": null,
+   "monitor_profile": "MP05",
+   "stream_state": "ACTIVE"
+  }
+ },
+ "feature_contract": "PER_DEVICE",
+ "note": "candidate of the final integration version; not an approval and not a registry",
+ "rc1": {
+  "adopted_by_rule": true,
+  "integrated_here": false,
+  "version": "RC-1"
+ },
+ "rollback": "do not pass this record: the accepted Campaign 2 evaluator is then used unchanged",
+ "schema": "azta.gate6c.family_assignment",
+ "status": "CANDIDATE_UNAPPROVED",
+ "version": "AE_PRIMARY_V1"
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "azta.observation.device_registry",
+  "schema_version": 1,
+  "registry_version": 2,
+  "scope": "Gate 5D.3: ten-device registry; telemetry delivered to the dedicated azta-observer principal only; operations traffic is out of scope; FUNCTIONAL use only until separately approved for scientific collection",
+  "devices": [
+    {
+      "device": "device01",
+      "username": "azta-device-01",
+      "client_id": "azta-device-01",
+      "telemetry_topic": "azta/devices/device01/telemetry",
+      "publish_role": "azta-device01-telemetry-publish"
+    },
+    {
+      "device": "device02",
+      "username": "azta-device-02",
+      "client_id": "azta-device-02",
+      "telemetry_topic": "azta/devices/device02/telemetry",
+      "publish_role": "azta-device02-telemetry-publish"
+    },
+    {
+      "device": "device03",
+      "username": "azta-device-03",
+      "client_id": "azta-device-03",
+      "telemetry_topic": "azta/devices/device03/telemetry",
+      "publish_role": "azta-device03-telemetry-publish"
+    },
+    {
+      "device": "device04",
+      "username": "azta-device-04",
+      "client_id": "azta-device-04",
+      "telemetry_topic": "azta/devices/device04/telemetry",
+      "publish_role": "azta-device04-telemetry-publish"
+    },
+    {
+      "device": "device05",
+      "username": "azta-device-05",
+      "client_id": "azta-device-05",
+      "telemetry_topic": "azta/devices/device05/telemetry",
+      "publish_role": "azta-device05-telemetry-publish"
+    },
+    {
+      "device": "device06",
+      "username": "azta-device-06",
+      "client_id": "azta-device-06",
+      "telemetry_topic": "azta/devices/device06/telemetry",
+      "publish_role": "azta-device06-telemetry-publish"
+    },
+    {
+      "device": "device07",
+      "username": "azta-device-07",
+      "client_id": "azta-device-07",
+      "telemetry_topic": "azta/devices/device07/telemetry",
+      "publish_role": "azta-device07-telemetry-publish"
+    },
+    {
+      "device": "device08",
+      "username": "azta-device-08",
+      "client_id": "azta-device-08",
+      "telemetry_topic": "azta/devices/device08/telemetry",
+      "publish_role": "azta-device08-telemetry-publish"
+    },
+    {
+      "device": "device09",
+      "username": "azta-device-09",
+      "client_id": "azta-device-09",
+      "telemetry_topic": "azta/devices/device09/telemetry",
+      "publish_role": "azta-device09-telemetry-publish"
+    },
+    {
+      "device": "device10",
+      "username": "azta-device-10",
+      "client_id": "azta-device-10",
+      "telemetry_topic": "azta/devices/device10/telemetry",
+      "publish_role": "azta-device10-telemetry-publish"
+    }
+  ]
+}

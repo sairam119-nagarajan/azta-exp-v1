@@ -1,0 +1,186 @@
+{
+ "cal5_record_sha256": "418aad40c8b324e7550df067304995a5d876512154f8220c33b80b842257661c",
+ "changes": {
+  "device05": {
+   "after": {
+    "calibration_id": "stb-cal5-01",
+    "fragile": true,
+    "largest_window_share": 0.6568265639207226,
+    "mu_L": 0.015212905705387882,
+    "n_B": 3600,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.07150383098680918
+   },
+   "arm": "EA-C-PER+IM",
+   "before": {
+    "fragile": false,
+    "largest_window_share": 0.3335599948991599,
+    "mu_L": 0.013455862126464962,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.030099192892418025
+   },
+   "classification": "FRAGILE",
+   "record": "candidates"
+  },
+  "device06": {
+   "after": {
+    "calibration_id": "stb-cal5-01",
+    "mu_L": 0.03787895546045077,
+    "n_B": 1800,
+    "sigma_L": 0.15825025686343883
+   },
+   "before": {
+    "calibration_id": "core-cal2-01",
+    "mu_L": 0.04343379211229748,
+    "n_B": 300,
+    "sigma_L": 0.29492305924317086
+   },
+   "classification": "STABLE",
+   "profile": "MP06",
+   "record": "monitor_profiles"
+  },
+  "device07": {
+   "after": {
+    "calibration_id": "stb-cal5-01",
+    "mu_L": 0.0001668778703364607,
+    "n_B": 1800,
+    "sigma_L": 0.005455687779203617
+   },
+   "before": {
+    "calibration_id": "core-cal2-01",
+    "mu_L": 8.945682230196875e-05,
+    "n_B": 300,
+    "sigma_L": 0.0014192554160388211
+   },
+   "classification": "FRAGILE",
+   "profile": "MP07",
+   "record": "monitor_profiles"
+  },
+  "device08": {
+   "after": {
+    "calibration_id": "stb-cal5-01",
+    "mu_L": 0.16961513046540566,
+    "n_B": 400,
+    "sigma_L": 1.5779180582541672
+   },
+   "before": {
+    "calibration_id": "core-cal2-01",
+    "mu_L": 0.034295719531174745,
+    "n_B": 66,
+    "sigma_L": 0.20047954977200275
+   },
+   "classification": "FRAGILE",
+   "profile": "MP08",
+   "record": "monitor_profiles"
+  },
+  "device09": {
+   "after": {
+    "calibration_id": "stb-cal5-01",
+    "mu_L": 0.08366968497163098,
+    "n_B": 200,
+    "sigma_L": 0.08356792339676586
+   },
+   "before": {
+    "calibration_id": "core-cal2-01",
+    "mu_L": 0.06927481552935438,
+    "n_B": 33,
+    "sigma_L": 0.06228731178520199
+   },
+   "classification": "STABLE",
+   "profile": "MP09",
+   "record": "monitor_profiles"
+  }
+ },
+ "dry_run": false,
+ "files": {
+  "candidates": {
+   "path": "configs/exp_v1/candidates_exp_v1.json",
+   "sha256": "6ccca30e96365383e5d7498687654749670aeded34f3c3b694d640a1f5495100"
+  },
+  "family_assignment": {
+   "path": "configs/exp_v1/family_assignment_exp_v1.json",
+   "sha256": "bafe4c1acd501e7359ef59049a6262c3f6c85c360d4a7240ca8dbf65bcbc3e4b"
+  },
+  "monitors": {
+   "path": "configs/exp_v1/monitor_profiles_exp_v1.json",
+   "sha256": "3a76cb696e160ae41cd240bc3b7ce5e2cde80259e55c6969316f302061f63e26"
+  },
+  "registry": {
+   "path": "configs/exp_v1/registry_ae_primary_exp_v1.json",
+   "sha256": "9d37ffbe322c32eb67caee19f6139b7b73d948797f55e5ddefc0a03d0dae5220"
+  },
+  "route": {
+   "path": "configs/exp_v1/route_ae_primary_exp_v1.json",
+   "sha256": "1a5236dd3493a0a540add5ba3faf498fd70b2f0ad4c50d210ea102393f997844"
+  }
+ },
+ "registry_changes": {
+  "MP05": {
+   "after": "MP-1-device05-a2b4ed3f9223",
+   "before": "MP-1-device05-78e8219ea93f"
+  },
+  "MP06": {
+   "after": "MP-1-device06-1eb4afd7f48d",
+   "before": "MP-1-device06-22a20167a349"
+  },
+  "MP07": {
+   "after": "MP-1-device07-b9f4dbd0ee2b",
+   "before": "MP-1-device07-d8313ed8c0c8"
+  },
+  "MP08": {
+   "after": "MP-1-device08-0049b0fe06cb",
+   "before": "MP-1-device08-3ff87ef4d637"
+  },
+  "MP09": {
+   "after": "MP-1-device09-903d538391cd",
+   "before": "MP-1-device09-e7d10f566d18"
+  }
+ },
+ "release": "AZTA-EXP-v1",
+ "resolution_mismatch": [],
+ "resolved_by_the_loader": {
+  "device01": {
+   "mu_L": 0.04652820624560804,
+   "sigma_L": 0.05948526849327626
+  },
+  "device02": {
+   "mu_L": 0.26790739533738006,
+   "sigma_L": 0.27419461920228716
+  },
+  "device03": {
+   "mu_L": 0.008546597044138435,
+   "sigma_L": 0.023389839937864285
+  },
+  "device04": {
+   "mu_L": 0.312593361622997,
+   "sigma_L": 0.3470053000060768
+  },
+  "device05": {
+   "mu_L": 0.015212905705387882,
+   "sigma_L": 0.07150383098680918
+  },
+  "device06": {
+   "mu_L": 0.03787895546045077,
+   "sigma_L": 0.15825025686343883
+  },
+  "device07": {
+   "mu_L": 0.0001668778703364607,
+   "sigma_L": 0.005455687779203617
+  },
+  "device08": {
+   "mu_L": 0.16961513046540566,
+   "sigma_L": 1.5779180582541672
+  },
+  "device09": {
+   "mu_L": 0.08366968497163098,
+   "sigma_L": 0.08356792339676586
+  },
+  "device10": {
+   "mu_L": 0.0027633251132729605,
+   "sigma_L": 0.010089439285798042
+  }
+ },
+ "route_sha256": "1a5236dd3493a0a540add5ba3faf498fd70b2f0ad4c50d210ea102393f997844",
+ "schema": "azta.stabilization.exp_v1_build"
+}

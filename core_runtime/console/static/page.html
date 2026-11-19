@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AZTA Operator Console</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<header>
+  <h1>AZTA operator console</h1>
+  <span class="label">DEVELOPMENT_ONLY</span>
+  <span id="freshness" class="badge bad">not connected</span>
+  <span id="mode" class="badge"></span>
+  <span id="approval" class="badge"></span>
+  <span id="stopped" class="badge bad" hidden>NEW ACTIONS STOPPED</span>
+  <button id="logout" hidden>Log out</button>
+</header>
+
+<section id="login-panel">
+  <h2>Sign in</h2>
+  <form id="login"><label>Password <input id="password" type="password" autocomplete="current-password" required></label> <button>Sign in</button></form>
+  <p id="login-error" class="error" role="alert"></p>
+</section>
+
+<main id="app" hidden>
+  <p id="problems" class="error" role="alert"></p>
+  <section id="guide-panel" hidden>
+    <h2>What to do now</h2>
+    <p class="hint">Instructions from the session's scenario driver, newest last. Nothing here acts for you.</p>
+    <pre id="guide" role="status"></pre>
+  </section>
+  <section>
+    <h2>Fleet</h2>
+    <p class="hint">A recommendation is what the PDP proposes. The broker column is the last read-back from the broker, and it is the only thing that shows an action took effect.</p>
+    <div class="scroll"><table id="fleet"><thead><tr>
+      <th>Device</th><th>Authority</th><th>AE status</th><th>Loss</th><th>A_AE</th><th>S_B</th><th>S_ID</th><th>S_C</th><th>T</th><th>Recommendation</th><th>N</th><th>Broker (verified)</th><th>Evidence age</th><th>Model</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Review queue</h2>
+    <p class="hint">Each approval covers this one decision. It expires, and it fails if the device's policy changed after it opened.</p>
+    <div id="reviews"></div>
+  </section>
+
+  <section id="detail" hidden>
+    <h2>Device <span id="detail-name"></span></h2>
+    <div class="grid">
+      <div>
+        <h3>Decisions</h3>
+        <div class="scroll short"><table id="history"><thead><tr><th>Window</th><th>Source</th><th>AE status</th><th>Loss</th><th>A_AE</th><th>T</th><th>Recommendation</th><th>Timing (advisory)</th></tr></thead><tbody></tbody></table></div>
+      </div>
+      <div>
+        <h3>Policy timeline</h3>
+        <div class="scroll short"><table id="timeline"><thead><tr><th>Time (Asia/Dubai)</th><th>Event</th><th>Action</th><th>Status</th></tr></thead><tbody></tbody></table></div>
+      </div>
+    </div>
+    <h3>Manual RESTORE</h3>
+    <p id="noop-note" class="hint"></p>
+    <form id="restore"><label>Type the device name to confirm <input id="restore-confirm" autocomplete="off" required></label> <button>Restore to full access</button></form>
+    <p id="restore-result" role="status"></p>
+  </section>
+
+  <section>
+    <h2>Actions</h2>
+    <button id="stop">Stop new actions</button> <button id="resume">Resume</button>
+    <p class="hint">Stopping does not restore anyone. Restore each device explicitly.</p>
+    <p id="actions-result" role="status"></p>
+  </section>
+
+  <section>
+    <h2>Simulator</h2>
+    <p id="sim-state" class="hint"></p>
+    <form id="sim"><label>Device <select id="sim-device"></select></label> <label>Scenario <select id="sim-anomaly"></select></label> <button id="sim-start">Start</button> <button id="sim-stop" type="button">Stop</button></form>
+    <p id="sim-result" role="status"></p>
+  </section>
+
+  <section>
+    <h2>Session metrics</h2>
+    <p class="hint">Recorded engineering observations of this session. Not an accuracy figure and not a final paper value.</p>
+    <pre id="metrics"></pre>
+    <button id="metrics-refresh">Refresh</button> <a id="metrics-export" download="azta-session-metrics.json">Export JSON</a>
+  </section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

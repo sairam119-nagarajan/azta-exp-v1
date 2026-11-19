@@ -1,0 +1,211 @@
+{
+ "freeze_manifest": "configs/exp_v1/AZTA-EXP-v1_freeze_manifest.json",
+ "addendum_manifest": "configs/formal/AZTA-EXP-v1_formal_addendum_manifest.json",
+ "manifests": {
+  "configs/exp_v1/AZTA-EXP-v1_freeze_manifest.json": {
+   "original_sha256": "221884e06340cc1a610791ea179c7b522ce8b6633a8442b58d123f115d3b5516",
+   "published_sha256": "49cbf6dc8a328a06e2d7e04207fc376cf80bc9cce1f416784c7bd2358295ae1e",
+   "reason": "the supervisor's personal name replaced by 'the supervisor'; no other byte changed"
+  },
+  "configs/formal/AZTA-EXP-v1_formal_addendum_manifest.json": {
+   "original_sha256": "8fd20030c202d36f9a6f2f8389f4ae0286ab23737450837b9a90a7fd6013ceb7",
+   "published_sha256": "8fd20030c202d36f9a6f2f8389f4ae0286ab23737450837b9a90a7fd6013ceb7",
+   "reason": null
+  }
+ },
+ "files": {
+  "configs/core_final/approvals/FUNCTIONAL_NO_MUTATION-1/session_approval_core-s01.json": {
+   "action": "WITHHELD",
+   "original_sha256": "bd15b7e5b58c0efa90b992728d67a24e28458edec8bdfdfc8a7278f1247788c5",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/core_final/approvals/FUNCTIONAL_NO_MUTATION-2/session_approval_core-s02.json": {
+   "action": "WITHHELD",
+   "original_sha256": "eca7bdd203e1c8ee6e3f4b4c393b118af69d8db95de29e07ba439c75417ac4e4",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/core_final/approvals/PILOT_ENFORCEMENT-1/owner_answer.json": {
+   "action": "WITHHELD",
+   "original_sha256": "5e70502aa54dc518ce58af8125d24d4c353db1c28631d28c0a73f8dc7f6dd005",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/core_final/approvals/PILOT_ENFORCEMENT-1/registry_approved.json": {
+   "action": "REDACTED",
+   "original_sha256": "079e73b20d8c8c3c82c66a279d5439b84f8f8d02d88ce1967aae80c878719c39",
+   "published_sha256": "dbea680872c3a8eefd6cc090da1a6420fd180cb67e1b472d8c328bdec482f7a5",
+   "reason": "development-tool name in author fields generalized to 'implementation agent'; no other byte changed"
+  },
+  "configs/core_final/approvals/PILOT_ENFORCEMENT-1/session_approval_core-p01.json": {
+   "action": "WITHHELD",
+   "original_sha256": "c858cbbc56fe8f19976a1a223781a89c1dfe487a268b6365ab0b2255cee8ee96",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/core_final/approvals/PILOT_ENFORCEMENT-2/owner_answer.json": {
+   "action": "WITHHELD",
+   "original_sha256": "a7a406b7beca610e1c760aec13093701443d47caa00b50df5e5c8ed62ce5cd24",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/core_final/approvals/PILOT_ENFORCEMENT-2/registry_approved.json": {
+   "action": "REDACTED",
+   "original_sha256": "34e832939c252bf541aab6ccd7b2702d59f257a1aa74e01396d04a1bc342fcc6",
+   "published_sha256": "f83b1b0419fd51a5ba6d4cd5a894f25f73717aa5acb2ef72bc3fc53a90b97b78",
+   "reason": "development-tool name in author fields generalized to 'implementation agent'; no other byte changed"
+  },
+  "configs/core_final/approvals/PILOT_ENFORCEMENT-2/session_approval_core-p03.json": {
+   "action": "WITHHELD",
+   "original_sha256": "110526e02832554ab495996de78bedc4bfd4dc4640a531a5a17c99a0dfb95227",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/core_final/approvals/RC1_READONLY-1/session_approval_core-r01.json": {
+   "action": "WITHHELD",
+   "original_sha256": "a02da3f8698e406cfd97ff097519ea522b27f8ed99767c7acb73ac79bfc4c454",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/core_final/approvals/RC1_READONLY-1/session_approval_core-r02.json": {
+   "action": "WITHHELD",
+   "original_sha256": "c7ae0b854b8e6c61df8406c3483c02b24acec437ff0f90143167110414b235ab",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/core_final/registry_ae_primary_v1.json": {
+   "action": "REDACTED",
+   "original_sha256": "af010805d878a14e62410cf3b5a65705b30458fb37b6f5a3db22f6f4e5c5e54e",
+   "published_sha256": "af4841836cc0fdd0ff3a7ff4b02e11999d538668fe2f3ab5e44cff0c0a1f0a80",
+   "reason": "development-tool name in author fields generalized to 'implementation agent'; no other byte changed"
+  },
+  "configs/exp_v1/registry_ae_primary_exp_v1.json": {
+   "action": "REDACTED",
+   "original_sha256": "9d37ffbe322c32eb67caee19f6139b7b73d948797f55e5ddefc0a03d0dae5220",
+   "published_sha256": "e41d5852a0b0a092ba1e1658c71a33651c9b49d8e6654864a70137a704d46721",
+   "reason": "development-tool name in author fields generalized to 'implementation agent'; no other byte changed"
+  },
+  "configs/exp_v1/trust_parameters_decision_exp_v1.json": {
+   "action": "WITHHELD",
+   "original_sha256": "b419837621834ce418414c20831de6ee50e18e7f8e52660ce9d32b8d853dfbde",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_1/owner_answer.json": {
+   "action": "WITHHELD",
+   "original_sha256": "78f9f9f618b58b19ce9ac8f03e6137fd22b6aa75c52f115fa9cce88b90cc0d83",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_1/registry_approved.json": {
+   "action": "REDACTED",
+   "original_sha256": "48a6a1bac0c521bbc3095f4d418ac4384d786df1a65de62ebb2c669d7b0e27c4",
+   "published_sha256": "9603c3c2d3f51f184a29283b22aa0c1332775ccdf928d63d089005129e9dd261",
+   "reason": "development-tool name in author fields generalized to 'implementation agent'; no other byte changed"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_1/session_approval_stb-l01.json": {
+   "action": "WITHHELD",
+   "original_sha256": "8459a2c3c9b9bcac1df49325ab403f781e7ecdeec664dd9468ce0ac80848e963",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_2/owner_answer.json": {
+   "action": "WITHHELD",
+   "original_sha256": "35374f127d867852c0df367a4018b6153921110080cfcadffd142af229e5af69",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_2/registry_approved.json": {
+   "action": "REDACTED",
+   "original_sha256": "0764a8c2f08b8317592e75671912dba823c8761905d6c404365ff0d9d2df6551",
+   "published_sha256": "96d227bae6b8c836dfa085af59437735b168c6a4318a3c7f5696a5840116a4fe",
+   "reason": "development-tool name in author fields generalized to 'implementation agent'; no other byte changed"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_2/session_approval_stb-l02.json": {
+   "action": "WITHHELD",
+   "original_sha256": "af2eaa7977b162bbbecb99eb79c07e5b69029a3e8f8ba75a7918ea37d8f20594",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_3/owner_answer.json": {
+   "action": "WITHHELD",
+   "original_sha256": "1af9df9e687602fa0f12ea0408c12723f0b81e96bfbbcd7976bdf3a3cc4f41bb",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_3/registry_approved.json": {
+   "action": "REDACTED",
+   "original_sha256": "81a82bce7097fe6d0e64272aae27d5596eb3c274ad93d792bc62e0c39aaf64b4",
+   "published_sha256": "e8bfd2f6726978c070fb890a948a05fccc478010501d0cbdde546deedfc48d89",
+   "reason": "development-tool name in author fields generalized to 'implementation agent'; no other byte changed"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_3/session_approval_stb-l03.json": {
+   "action": "WITHHELD",
+   "original_sha256": "fc37139d3ed463443aa5bb8b4d1103ca6dc4ebb81400325be8938e91913ecb1f",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_4/owner_answer.json": {
+   "action": "WITHHELD",
+   "original_sha256": "82889bf750cee88f12fd0891b3507e4bdf85e419ae4c2cad71b29bb04dee2438",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_4/registry_approved.json": {
+   "action": "REDACTED",
+   "original_sha256": "d8975623348cf02d94e906327b545dc6718525d1b3290b7ec45ed0374a7694b7",
+   "published_sha256": "36c64c54a966e96851552788ffd97f804255a600a549fcde222be6cfb471e324",
+   "reason": "development-tool name in author fields generalized to 'implementation agent'; no other byte changed"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_4/session_approval_stb-l04.json": {
+   "action": "WITHHELD",
+   "original_sha256": "23bd81e81947d0b5658e4f4d417050cff5acc4ab8818e04788343537e8b9533e",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_5/owner_answer.json": {
+   "action": "WITHHELD",
+   "original_sha256": "af058071dd595b4f0af2007484960711ec4e5f580d97e288cc67594352d07239",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_5/registry_approved.json": {
+   "action": "REDACTED",
+   "original_sha256": "0ee205ced0b2e6760e7e39e1b891d807756c665946c5dd0eafd6a70587b0de3a",
+   "published_sha256": "423a16afc8a64a7d751ed3c8bee0b73058d222f682b2247fb01fe3cebdfcf469",
+   "reason": "development-tool name in author fields generalized to 'implementation agent'; no other byte changed"
+  },
+  "configs/stabilization/approvals/STABILIZATION_LIVE_5/session_approval_stb-l05.json": {
+   "action": "WITHHELD",
+   "original_sha256": "37334b5276b5c8b5b2c5bffa420b2a3157a465237f83503d356fa9c30a7e262a",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_SHADOW_1/owner_answer.json": {
+   "action": "WITHHELD",
+   "original_sha256": "98c21dc56db887a6ed375ed9d6a15e18c6a09084e96482d66bfa683b24f8d0b4",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_SHADOW_1/session_approval_stb-s01.json": {
+   "action": "WITHHELD",
+   "original_sha256": "734255dbf063a05efc2e2ae32d617ba82e90162964c03047229f059d7541d563",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_SHADOW_2/owner_answer.json": {
+   "action": "WITHHELD",
+   "original_sha256": "4f7c5612355ccc67a02f051222f90ca1e6686949d509945cd3710466d2855d7e",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "configs/stabilization/approvals/STABILIZATION_SHADOW_2/session_approval_stb-s02.json": {
+   "action": "WITHHELD",
+   "original_sha256": "9509d42e546af8a11f6d88dd81218cb557b548d7f70542290df7543661c68139",
+   "reason": "verbatim approval or decision correspondence (personal wording and names); retained privately"
+  },
+  "docs/final/AZTA_FORMAL_EXPERIMENT_PROTOCOL.md": {
+   "action": "REDACTED",
+   "original_sha256": "677681368fa7766aa16ffa6629d2b81b1f78e778e221c117e3031c0e09c30619",
+   "published_sha256": "7192af762eb7e35b3f44aa5046a7d46f6ff64789bf8acab5db5869d6149aa8f3",
+   "reason": "the supervisor's personal name replaced by 'the supervisor'; no other byte changed"
+  },
+  "docs/final/AZTA_FORMAL_PROTOCOL_ADDENDUM_1.md": {
+   "action": "REDACTED",
+   "original_sha256": "6a925f70ebdc2236aaae9a2e8955c0a7fb215611ed6a69efd3b9f6b2d73672f1",
+   "published_sha256": "51ba88a319dcb1a352a7ae10d46f3ffcc5b50ce706cb9795dfd3766ecf7f1870",
+   "reason": "the supervisor's personal name replaced by 'the supervisor'; no other byte changed"
+  },
+  "docs/final/AZTA_FORMAL_PROTOCOL_ADDENDUM_2.md": {
+   "action": "REDACTED",
+   "original_sha256": "2654415446dc7bc228027c1016c57fa061682fef56536c1d141942b290be5e75",
+   "published_sha256": "2066c5d2917d9c84e378e8023334c31aed3e5d60afc900ec8f99cbae6f51caac",
+   "reason": "the supervisor's personal name replaced by 'the supervisor'; no other byte changed"
+  },
+  "docs/stabilization/STB_LIVE_SESSION_PROTOCOL.md": {
+   "action": "REDACTED",
+   "original_sha256": "021068900bf47e114e8f9897ec5365ad7b74fdecafac78074ea7c1a8b0a11ce9",
+   "published_sha256": "79e2c7552405748e12eaf99bbc7973910666f10b80cde2a20335b2c764359d2a",
+   "reason": "the supervisor's personal name replaced by 'the supervisor'; no other byte changed"
+  }
+ }
+}

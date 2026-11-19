@@ -1,0 +1,13 @@
+# Credentials and broker state are never committed.
+pep/mosquitto/secrets/
+results/engineering/secrets/
+.env
+*.pem
+*.key
+
+# Local runtime output
+results/raw/
+results/live/
+__pycache__/
+*.pyc
+.venv/

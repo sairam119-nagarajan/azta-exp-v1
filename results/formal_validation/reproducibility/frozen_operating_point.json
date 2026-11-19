@@ -1,0 +1,136 @@
+{
+ "release": "AZTA-EXP-v1",
+ "status": "FROZEN on 10 November 2026, before the formal runs; unchanged afterwards",
+ "trust_fusion": {
+  "alpha": 0.2,
+  "beta": 0.5,
+  "gamma": 0.3,
+  "equation": "T = alpha*S_ID + beta*S_B + gamma*S_C; T = 0 when S_ID = 0"
+ },
+ "behaviour": {
+  "lambda": 0.1,
+  "epsilon": 1e-06,
+  "equations": "A = max(0, (L - mu_L) / (sigma_L + epsilon)), sigma_L = sample SD; S_B = 100*exp(-lambda*A)"
+ },
+ "context": {
+  "criteria": {
+   "operating_time": 0.9,
+   "topic_profile": 0.1
+  },
+  "equation": "S_C = 100 * sum_j(omega_j * c_j)"
+ },
+ "thresholds": {
+  "tau_Q": 65.0,
+  "tau_R": 75.0,
+  "mapping": "T < tau_Q: QUARANTINE; tau_Q <= T < tau_R: RESTRICT; T >= tau_R: FULL_ACCESS"
+ },
+ "confirmation": {
+  "N": 2,
+  "rule": "a state-change request is sent only after N consecutive windows propose the same state; de-escalation by score is denied (RESTORE is an explicit operator action)"
+ },
+ "evidence_freshness_s": {
+  "behavior": 5.0,
+  "context": 5.0,
+  "identity": 40.0
+ },
+ "missing_evidence": "no proposal; current permissions kept (never treated as healthy)",
+ "recovery_rule": {
+  "name": "POST_RESTORE_ONE_WINDOW_V1",
+  "rule": "after a verified operator RESTORE the device's first score-ready AE window is recorded and held (no request, confirmation run reset); identity and context-only decisions are not suppressed"
+ },
+ "liveness_rule": "RESTRICT recommendation when silent longer than 3 x AE window + 10 s with complete observer coverage, after a delivery in the current policy generation; intervals explained by a verified client reconnection and observer outages never count; no trust score; always operator review",
+ "automatic_enforcement": "device02 only, for autoencoder-caused RESTRICT/QUARANTINE; every other cause and device goes to operator review",
+ "feature_order": [
+  "delivered_count",
+  "payload_bytes_mean",
+  "payload_bytes_sd",
+  "interarrival_mean_ms",
+  "interarrival_sd_ms",
+  "last_delivery_age_ms"
+ ],
+ "devices": {
+  "device01": {
+   "ae_window_s": 10,
+   "liveness_silence_bound_s": 40,
+   "model_arm": "B-FREQ+IM",
+   "profile": "FAM-B-FREQ+IM-device01",
+   "shared_networks": true
+  },
+  "device02": {
+   "ae_window_s": 10,
+   "liveness_silence_bound_s": 40,
+   "model_arm": "B-FREQ+IM",
+   "profile": "FAM-B-FREQ+IM-device02",
+   "shared_networks": true
+  },
+  "device03": {
+   "ae_window_s": 10,
+   "liveness_silence_bound_s": 40,
+   "model_arm": "FX",
+   "profile": "FX",
+   "shared_networks": false
+  },
+  "device04": {
+   "ae_window_s": 10,
+   "liveness_silence_bound_s": 40,
+   "model_arm": "SU",
+   "profile": "SU",
+   "shared_networks": false
+  },
+  "device05": {
+   "ae_window_s": 10,
+   "liveness_silence_bound_s": 40,
+   "model_arm": "EA-C-PER+IM",
+   "profile": "MP05",
+   "shared_networks": true
+  },
+  "device06": {
+   "ae_window_s": 20,
+   "liveness_silence_bound_s": 70,
+   "model_arm": "P06RA-W20:E3",
+   "profile": "MP06",
+   "shared_networks": false
+  },
+  "device07": {
+   "ae_window_s": 20,
+   "liveness_silence_bound_s": 70,
+   "model_arm": "P07RA-W20:E3",
+   "profile": "MP07",
+   "shared_networks": false
+  },
+  "device08": {
+   "ae_window_s": 90,
+   "liveness_silence_bound_s": 280,
+   "model_arm": "P08-W90:E3",
+   "profile": "MP08",
+   "shared_networks": false
+  },
+  "device09": {
+   "ae_window_s": 180,
+   "liveness_silence_bound_s": 550,
+   "model_arm": "P09-W180:E3",
+   "profile": "MP09",
+   "shared_networks": false
+  },
+  "device10": {
+   "ae_window_s": 10,
+   "liveness_silence_bound_s": 40,
+   "model_arm": "SW",
+   "profile": "SW",
+   "shared_networks": false
+  }
+ },
+ "models": "see models_by_device.csv (model, calibration mu_L and sample sigma_L per device) and frozen_model_files_sha256.csv",
+ "source_records_sha256": {
+  "AZTA-EXP-v1_freeze_manifest.json": "221884e06340cc1a610791ea179c7b522ce8b6633a8442b58d123f115d3b5516",
+  "candidates_exp_v1.json": "6ccca30e96365383e5d7498687654749670aeded34f3c3b694d640a1f5495100",
+  "exp_v1_build.json": "1341676f5923ef659f446219fcf9fcfb88650ffd3f7d4f288ea631b2bfdbce03",
+  "family_assignment_exp_v1.json": "bafe4c1acd501e7359ef59049a6262c3f6c85c360d4a7240ca8dbf65bcbc3e4b",
+  "monitor_profiles_exp_v1.json": "3a76cb696e160ae41cd240bc3b7ce5e2cde80259e55c6969316f302061f63e26",
+  "registry_ae_primary_exp_v1.json": "9d37ffbe322c32eb67caee19f6139b7b73d948797f55e5ddefc0a03d0dae5220",
+  "route_ae_primary_exp_v1.json": "1a5236dd3493a0a540add5ba3faf498fd70b2f0ad4c50d210ea102393f997844",
+  "trust_config_exp_v1.json": "a803665c5bb1fed5a28bf4073e2770d1b26d81db4ed8fc4fdc51bd80dd58df29",
+  "trust_parameters_decision_exp_v1.json": "b419837621834ce418414c20831de6ee50e18e7f8e52660ce9d32b8d853dfbde"
+ },
+ "note": "The original configuration records are retained privately; their SHA-256 digests are listed above."
+}

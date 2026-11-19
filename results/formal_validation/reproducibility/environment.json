@@ -1,0 +1,81 @@
+{
+ "host": {
+  "cpu": "Intel(R) Core(TM) Ultra 9 285H",
+  "cores": 16,
+  "logical": 16,
+  "ram_bytes": 33820106752,
+  "os": "Microsoft Windows 11 Home",
+  "os_version": "10.0.26200",
+  "os_build": "26200",
+  "arch": "64-bit",
+  "docker_client": "29.8.1",
+  "python_platform": "Windows-11-10.0.26200-SP0"
+ },
+ "frozen_environment": {
+  "docker_images": {
+   "azta-journal-runtime:gate3": "sha256:02fdaf88ea83fd61383c12c7333160fb54afcf8845816740ae37c3dab4fec21c",
+   "eclipse-mosquitto:2.1.2-alpine": "sha256:38c0da4f2ef84284d47b3b3eeea1cb3bdeabe81ee10caf0cd5c5ff61ee3ea408"
+  },
+  "pip_freeze": [
+   "filelock==4.2.2",
+   "fsspec==2026.9.0",
+   "Jinja2==3.1.6",
+   "MarkupSafe==3.0.4",
+   "mpmath==1.3.0",
+   "networkx==3.7",
+   "numpy==2.1.3",
+   "paho-mqtt==2.1.0",
+   "setuptools==84.0.0",
+   "sympy==1.13.1",
+   "torch==2.5.1+cpu",
+   "typing_extensions==4.16.0"
+  ],
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10"
+ },
+ "freeze": {
+  "manifest_sha256": "221884e06340cc1a610791ea179c7b522ce8b6633a8442b58d123f115d3b5516",
+  "source_commit": "42d739b1ed3acae2dbcdac3a0d55b3a8d0120c5b",
+  "created_utc": "2026-11-10T21:34:49Z",
+  "release": "AZTA-EXP-v1",
+  "status": "FROZEN"
+ },
+ "trust": {
+  "config_sha256": "4b5248501efe407cbebb717358644985c228b78427335a499154aeeeb04dbe4f",
+  "reference": {
+   "alpha": 0.2,
+   "beta": 0.5,
+   "gamma": 0.3,
+   "lam": 0.1,
+   "tau_q": 65.0,
+   "tau_r": 75.0,
+   "n": 2,
+   "epsilon": 1e-06,
+   "config_id": "azta-exp-v1-tq65"
+  }
+ },
+ "confirmation_rule": {
+  "deescalate_after": 2,
+  "deescalation": "deny",
+  "escalate_after": 2
+ },
+ "recovery_rule": {
+  "name": "POST_RESTORE_ONE_WINDOW_V1",
+  "rule": "after a verified operator RESTORE the device's first score-ready AE window is recorded and held (no request, confirmation run reset); identity and context-only decisions are not suppressed"
+ },
+ "liveness_policy": {
+  "rule": "RESTRICT recommendation when silent longer than 3 x AE window + 10 s with complete observer coverage, after a delivery in the current policy generation; intervals explained by a verified client reconnection and observer outages never count; no trust score; always operator review"
+ },
+ "contract": "AE_PRIMARY_AUTHORITY_V1",
+ "feature_order": [
+  "delivered_count",
+  "payload_bytes_mean",
+  "payload_bytes_sd",
+  "interarrival_mean_ms",
+  "interarrival_sd_ms",
+  "last_delivery_age_ms"
+ ],
+ "formal_protocol_manifest_sha256": "8fd20030c202d36f9a6f2f8389f4ae0286ab23737450837b9a90a7fd6013ceb7",
+ "route_sha256": "1a5236dd3493a0a540add5ba3faf498fd70b2f0ad4c50d210ea102393f997844",
+ "registry_sha256": "9d37ffbe322c32eb67caee19f6139b7b73d948797f55e5ddefc0a03d0dae5220"
+}

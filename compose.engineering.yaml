@@ -1,0 +1,410 @@
+# AZTA ISOLATED ENGINEERING ENVIRONMENT (Master Implementation 2). Project `azta-eng`: its own broker container, network, data volume and credentials.
+# It shares NOTHING mutable with the preserved research broker `azta-journal`: different project name, different volume (`azta-eng_mosquitto_data`),
+# different network, and engineering-only credentials generated into results/engineering/secrets (Git-ignored, never the research secrets in pep/mosquitto/secrets).
+# The broker CONFIGURATION files (mosquitto.conf, start.sh) are the research ones, mounted read-only; nothing is published on a host port; no image is built or pulled
+# (the digest-pinned Mosquitto image and the accepted runtime image already exist). Always use with -p azta-eng and ENG_RUN_DIR set (the per-run evidence directory,
+# which must exist: Docker would otherwise create it root-owned). Only the services of the chosen profile are started, always with --no-deps.
+#   operator   provisioning, read-only binding audit, A3 tools, probes: operator-only test controllers (they hold the credentials they act as); never a PDP/device
+#   enforce    the PEP container: the ONLY service holding the administrative credential besides the operator tools
+#   devices    one publisher per simulated device with ONLY its own credential
+#   observer   the receive-only observer with ONLY its own credential
+name: azta-eng
+x-eng-common: &eng-common
+  image: azta-journal-runtime:gate3
+  read_only: true
+  environment:
+    PYTHONDONTWRITEBYTECODE: "1"
+    MQTT_HOST: broker
+services:
+  broker:
+    image: eclipse-mosquitto:2.1.2-alpine@sha256:38c0da4f2ef84284d47b3b3eeea1cb3bdeabe81ee10caf0cd5c5ff61ee3ea408
+    restart: "no"
+    entrypoint: [/bin/sh, /mosquitto/config/start.sh]
+    labels:
+      com.azta.engineering: isolated-engineering-broker
+    volumes:
+      - ./pep/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./pep/mosquitto/start.sh:/mosquitto/config/start.sh:ro
+      - mosquitto_data:/mosquitto/data
+    secrets:
+      - dynsec_admin_password
+
+  eng-provision:
+    <<: *eng-common
+    profiles: [operator]
+    entrypoint: [python, -B, -m, engineering.provision]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./pdp:/app/pdp:ro
+      - ./receivers:/app/receivers:ro
+      - ./configs:/app/configs:ro
+      - ./enforcement:/app/enforcement:ro
+      - ./engineering:/app/engineering:ro
+      - ./results/engineering/secrets:/credentials:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}:/results
+    secrets: [dynsec_admin_password]
+
+  binding-audit:
+    <<: *eng-common
+    profiles: [operator]
+    entrypoint: [python, -B, -m, experiments.binding_audit]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./pdp:/app/pdp:ro
+      - ./receivers:/app/receivers:ro
+      - ./configs:/app/configs:ro
+      - ./pep/mosquitto/mosquitto.conf:/app/broker-config/mosquitto.conf:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}:/results
+    secrets: [dynsec_admin_password]
+
+  a3-policy:
+    <<: *eng-common
+    profiles: [operator]
+    entrypoint: [python, -B, -m, experiments.a3_policy]
+    command: [inspect]
+    volumes:
+      - ./experiments:/app/experiments:ro
+      - ./pdp:/app/pdp:ro
+      - ./receivers:/app/receivers:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}:/results
+    secrets: [dynsec_admin_password]
+
+  a3-regression:
+    <<: *eng-common
+    profiles: [operator]
+    entrypoint: [python, -B, -m, experiments.foundation_regression]
+    volumes:
+      - ./experiments:/app/experiments:ro
+      - ./pdp:/app/pdp:ro
+      - ./receivers:/app/receivers:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}:/results
+    secrets: [dynsec_admin_password, device_password, device02_password, pdp_password, receiver_password]
+
+  eng-probe:
+    <<: *eng-common
+    profiles: [operator]
+    entrypoint: [python, -B, -m, engineering.probe]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./configs:/app/configs:ro
+      - ./enforcement:/app/enforcement:ro
+      - ./engineering:/app/engineering:ro
+      - ./results/engineering/secrets:/credentials:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}:/results
+
+  eng-pep:
+    <<: *eng-common
+    profiles: [enforce]
+    entrypoint: [python, -B, -m, enforcement]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./configs:/app/configs:ro
+      - ./enforcement:/app/enforcement:ro
+      - ./engineering:/app/engineering:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}:/results
+    secrets:
+      - source: dynsec_admin_password
+        target: azta-pep-admin-credential
+
+  eng-observer:
+    <<: *eng-common
+    profiles: [observer]
+    entrypoint: [python, -B, -m, observation.observer, --observer-identity, azta-observer, --credential-file, /run/secrets/azta-observer-password]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./pdp:/app/pdp:ro
+      - ./receivers:/app/receivers:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}:/results
+    secrets:
+      - source: eng_observer_password
+        target: azta-observer-password
+
+  # Workload-v2 publisher for the two accepted devices (Path A: genuine S/V telemetry for the real frozen models). Device credentials only.
+  v2-workload:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, experiments.collection_runner_v2]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./preprocessing:/app/preprocessing:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}:/results
+    secrets: [device_password, device02_password]
+
+  # DEVELOPMENT_ONLY perturbed workload (calibration-readiness development): the same publisher-only runner with a declared perturbation segment. Device credentials only; the engineering
+  # package is mounted read-only. Used solely through `engineering.live_path_a --dev-perturbation` on this isolated project.
+  dev-workload:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, engineering.dev_workload]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./preprocessing:/app/preprocessing:ro
+      - ./engineering:/app/engineering:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}:/results
+    secrets: [device_password, device02_password]
+
+  # Gate 6B DEVELOPMENT_ONLY interactive FLEET workload: every device of the run on its own committed traffic law, runtime START/STOP of synthetic anomalies. Holds ONLY the credentials of
+  # the supported devices (01 to 06 and 10); no administrative or observer credential. Code is mounted read-only; no image is built.
+  fleet-workload:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, engineering.fleet_workload]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./preprocessing:/app/preprocessing:ro
+      - ./engineering:/app/engineering:ro
+      - ./fleet:/app/fleet:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}:/results
+    secrets:
+      - device_password
+      - device02_password
+      - {source: eng_device03_password, target: azta-device-03-password}
+      - {source: eng_device04_password, target: azta-device-04-password}
+      - {source: eng_device05_password, target: azta-device-05-password}
+      - {source: eng_device06_password, target: azta-device-06-password}
+      - {source: eng_device07_password, target: azta-device-07-password}
+      - {source: eng_device08_password, target: azta-device-08-password}
+      - {source: eng_device09_password, target: azta-device-09-password}
+      - {source: eng_device10_password, target: azta-device-10-password}
+
+  eng-publisher-device01:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, experiments.gate5d3_runner, --device, device01, --credential-file, /run/secrets/azta-device-01-password]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/observation:/results/observation:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_workload:/results/gate5d3_workload
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_fixtures:/results/gate5d3_fixtures:ro
+    secrets:
+      - source: eng_device01_password
+        target: azta-device-01-password
+
+  eng-publisher-device02:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, experiments.gate5d3_runner, --device, device02, --credential-file, /run/secrets/azta-device-02-password]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/observation:/results/observation:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_workload:/results/gate5d3_workload
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_fixtures:/results/gate5d3_fixtures:ro
+    secrets:
+      - source: eng_device02_password
+        target: azta-device-02-password
+
+  eng-publisher-device03:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, experiments.gate5d3_runner, --device, device03, --credential-file, /run/secrets/azta-device-03-password]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/observation:/results/observation:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_workload:/results/gate5d3_workload
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_fixtures:/results/gate5d3_fixtures:ro
+    secrets:
+      - source: eng_device03_password
+        target: azta-device-03-password
+
+  eng-publisher-device04:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, experiments.gate5d3_runner, --device, device04, --credential-file, /run/secrets/azta-device-04-password]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/observation:/results/observation:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_workload:/results/gate5d3_workload
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_fixtures:/results/gate5d3_fixtures:ro
+    secrets:
+      - source: eng_device04_password
+        target: azta-device-04-password
+
+  eng-publisher-device05:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, experiments.gate5d3_runner, --device, device05, --credential-file, /run/secrets/azta-device-05-password]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/observation:/results/observation:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_workload:/results/gate5d3_workload
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_fixtures:/results/gate5d3_fixtures:ro
+    secrets:
+      - source: eng_device05_password
+        target: azta-device-05-password
+
+  eng-publisher-device06:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, experiments.gate5d3_runner, --device, device06, --credential-file, /run/secrets/azta-device-06-password]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/observation:/results/observation:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_workload:/results/gate5d3_workload
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_fixtures:/results/gate5d3_fixtures:ro
+    secrets:
+      - source: eng_device06_password
+        target: azta-device-06-password
+
+  eng-publisher-device07:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, experiments.gate5d3_runner, --device, device07, --credential-file, /run/secrets/azta-device-07-password]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/observation:/results/observation:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_workload:/results/gate5d3_workload
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_fixtures:/results/gate5d3_fixtures:ro
+    secrets:
+      - source: eng_device07_password
+        target: azta-device-07-password
+
+  eng-publisher-device08:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, experiments.gate5d3_runner, --device, device08, --credential-file, /run/secrets/azta-device-08-password]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/observation:/results/observation:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_workload:/results/gate5d3_workload
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_fixtures:/results/gate5d3_fixtures:ro
+    secrets:
+      - source: eng_device08_password
+        target: azta-device-08-password
+
+  eng-publisher-device09:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, experiments.gate5d3_runner, --device, device09, --credential-file, /run/secrets/azta-device-09-password]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/observation:/results/observation:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_workload:/results/gate5d3_workload
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_fixtures:/results/gate5d3_fixtures:ro
+    secrets:
+      - source: eng_device09_password
+        target: azta-device-09-password
+
+  eng-publisher-device10:
+    <<: *eng-common
+    profiles: [devices]
+    entrypoint: [python, -B, -m, experiments.gate5d3_runner, --device, device10, --credential-file, /run/secrets/azta-device-10-password]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/observation:/results/observation:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_workload:/results/gate5d3_workload
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/gate5d3_fixtures:/results/gate5d3_fixtures:ro
+    secrets:
+      - source: eng_device10_password
+        target: azta-device-10-password
+
+  # Ten-device observer (registry v2) for the connectivity phase: the dedicated receive-only principal, registry v2 fixed in the entrypoint.
+  eng-observer-v2:
+    <<: *eng-common
+    profiles: [observer]
+    entrypoint: [python, -B, -m, observation.observer, --observer-identity, azta-observer, --credential-file, /run/secrets/azta-observer-password,
+                 --registry, /app/configs/observation/device_registry_v2.json]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}/observation:/results/observation
+    secrets:
+      - source: eng_observer_password
+        target: azta-observer-password
+
+  # Path A (genuine telemetry for the real frozen models): the workload-v2 tooling's receive-only observer, the legacy two-device azta-pdp principal (registry v1), bound to a
+  # FUNCTIONAL_TEST run. Never concurrent with another azta-pdp session (bound client ID); the PDP service itself is not started here.
+  eng-v2-observer:
+    <<: *eng-common
+    profiles: [observer]
+    entrypoint: [python, -B, -m, experiments.collection_observer_v2]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./pdp:/app/pdp:ro
+      - ./receivers:/app/receivers:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}:/results
+    secrets: [pdp_password]
+
+  # Offline reconciliation of a functional run: no network, no secret; only the run directory is writable.
+  eng-v2-tools:
+    <<: *eng-common
+    profiles: [operator]
+    network_mode: none
+    entrypoint: [python, -B, -m]
+    volumes:
+      - ./observation:/app/observation:ro
+      - ./experiments:/app/experiments:ro
+      - ./preprocessing:/app/preprocessing:ro
+      - ./trust:/app/trust:ro
+      - ./configs:/app/configs:ro
+      - ${ENG_RUN_DIR:?set ENG_RUN_DIR}:/results
+
+secrets:
+  dynsec_admin_password:
+    file: ./results/engineering/secrets/admin-password
+  device_password:
+    file: ./results/engineering/secrets/azta-device-01-password
+  device02_password:
+    file: ./results/engineering/secrets/azta-device-02-password
+  pdp_password:
+    file: ./results/engineering/secrets/azta-pdp-password
+  receiver_password:
+    file: ./results/engineering/secrets/azta-operations-receiver-password
+  eng_observer_password:
+    file: ./results/engineering/secrets/azta-observer-password
+  eng_device01_password:
+    file: ./results/engineering/secrets/azta-device-01-password
+  eng_device02_password:
+    file: ./results/engineering/secrets/azta-device-02-password
+  eng_device03_password:
+    file: ./results/engineering/secrets/azta-device-03-password
+  eng_device04_password:
+    file: ./results/engineering/secrets/azta-device-04-password
+  eng_device05_password:
+    file: ./results/engineering/secrets/azta-device-05-password
+  eng_device06_password:
+    file: ./results/engineering/secrets/azta-device-06-password
+  eng_device07_password:
+    file: ./results/engineering/secrets/azta-device-07-password
+  eng_device08_password:
+    file: ./results/engineering/secrets/azta-device-08-password
+  eng_device09_password:
+    file: ./results/engineering/secrets/azta-device-09-password
+  eng_device10_password:
+    file: ./results/engineering/secrets/azta-device-10-password
+
+volumes:
+  mosquitto_data:

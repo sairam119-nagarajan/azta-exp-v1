@@ -1,0 +1,205 @@
+{
+ "lineage": {
+  "core_deploy": "core-deploy-01",
+  "models_run": {
+   "FX": "fleet-1000",
+   "PE3": "fleet-500",
+   "SU": "fleet-1000",
+   "SW": "fleet-1000"
+  },
+  "partition_assignment_sha256": "4cc93bd70979ccc2ad8ca8e7a7e8d73d42f624f4ced56dab82221aec70714f07",
+  "profiles_spec_sha256": "ee1187935be181ef11dcd03848a109af61c1a97c170b52f3dca8cae92bea9e0e"
+ },
+ "note": "PROVISIONAL engineering candidates. Training windows: TRAIN runs; early stopping and k selection: VAL runs; constants: CAL runs; DEVEVAL and TEST runs not used.",
+ "pins": {
+  "observation_config_sha256": "e54e6ccdf1c381cab347e52f36cd543904267e4d42dae27edd9d6fa73cc45b8d",
+  "registry_sha256": "c08d8ccf8909c1252c6c09a74addedd9103a03a32693f636e846dc2f41ee8f5a",
+  "schema_fingerprint": "2dede5d8bd97c8ee1ffe0fda5afd78b020f455aad9208f6b4a75bdbca028767c"
+ },
+ "profiles": {
+  "FX": {
+   "calibration": {
+    "calibration_id": "fleet-cal-prov-01",
+    "mu_L": 0.008546597044138435,
+    "n_B": 236,
+    "runs": [
+     "g5d3a-fx-g6b08",
+     "g5d3a-fx-g6b12",
+     "g5d3a-fx-g6b15",
+     "g5d3a-fx-g6b19"
+    ],
+    "sd_convention": "sample (denominator n-1)",
+    "sigma_L": 0.023389839937864285,
+    "window_roles": "CAL runs of the committed assignment",
+    "workload_versions": [
+     "gate6b-fleet-workload-1",
+     "gate5d3-workload-1"
+    ]
+   },
+   "diagnostics": {
+    "independent_loss_max_relative_difference": 1.6028786909648879e-13,
+    "largest_window": {
+     "index": 21,
+     "loss": 0.22659023990314195,
+     "run": "g5d3a-fx-g6b12",
+     "share_of_squared_deviation": 0.36979794754899115
+    },
+    "loss_max": 0.22659023990314195,
+    "loss_median": 0.0005642251368276553,
+    "loss_min": 2.2093566754009698e-06,
+    "per_run_mean": {
+     "g5d3a-fx-g6b08": 0.009267901601315362,
+     "g5d3a-fx-g6b12": 0.009475195111485594,
+     "g5d3a-fx-g6b15": 0.007762071453206253,
+     "g5d3a-fx-g6b19": 0.007681220010546533
+    },
+    "sigma_without_largest_window": 0.018584473684334205
+   },
+   "model": {
+    "bundle_sha256": "9fb5d869620a47f7f550ea453b980d5515b1275b385d81bf545930f8f0c5bcde",
+    "directory": "results/engineering/gate6b/models/fleet-1000/FX/fits/A-FX-k3-seed0",
+    "fit_id": "A-FX-k3-seed0",
+    "weights_sha256": "c994ec32213f642c98867dde878f3c4414d21f521b9037715584a083d92b7de9"
+   }
+  },
+  "PE3": {
+   "calibration": {
+    "calibration_id": "fleet-cal-prov-01",
+    "mu_L": 0.09155960309018175,
+    "n_B": 236,
+    "runs": [
+     "g5d3a-fx-g6b08",
+     "g5d3a-fx-g6b12",
+     "g5d3a-fx-g6b15",
+     "g5d3a-fx-g6b19"
+    ],
+    "sd_convention": "sample (denominator n-1)",
+    "sigma_L": 0.09392418603284006,
+    "window_roles": "CAL runs of the committed assignment",
+    "workload_versions": [
+     "gate6b-fleet-workload-1",
+     "gate5d3-workload-1"
+    ]
+   },
+   "diagnostics": {
+    "independent_loss_max_relative_difference": 1.4474196320358713e-15,
+    "largest_window": {
+     "index": 10,
+     "loss": 0.7955807143824499,
+     "run": "g5d3a-fx-g6b08",
+     "share_of_squared_deviation": 0.2390829591102985
+    },
+    "loss_max": 0.7955807143824499,
+    "loss_median": 0.04937217048770641,
+    "loss_min": 0.014050434510546004,
+    "per_run_mean": {
+     "g5d3a-fx-g6b08": 0.12779596763768167,
+     "g5d3a-fx-g6b12": 0.10071269354578356,
+     "g5d3a-fx-g6b15": 0.07783891043427434,
+     "g5d3a-fx-g6b19": 0.05989084074298748
+    },
+    "sigma_without_largest_window": 0.08205056377675274
+   },
+   "model": {
+    "bundle_sha256": "15cde3963c626be18f44276ad4ea10df0da455f3464996b469894ed64139d691",
+    "directory": "results/engineering/gate6b/models/fleet-500/PE3/fits/A-PE3-k3-seed0",
+    "fit_id": "A-PE3-k3-seed0",
+    "weights_sha256": "2abdd370dd43ce69f71375a3476e6bd4482eaed99850548eaf97fe520ee3dffd"
+   }
+  },
+  "SU": {
+   "calibration": {
+    "calibration_id": "fleet-cal-prov-01",
+    "mu_L": 0.312593361622997,
+    "n_B": 236,
+    "runs": [
+     "g5d3a-fx-g6b08",
+     "g5d3a-fx-g6b12",
+     "g5d3a-fx-g6b15",
+     "g5d3a-fx-g6b19"
+    ],
+    "sd_convention": "sample (denominator n-1)",
+    "sigma_L": 0.3470053000060768,
+    "window_roles": "CAL runs of the committed assignment",
+    "workload_versions": [
+     "gate6b-fleet-workload-1",
+     "gate5d3-workload-1"
+    ]
+   },
+   "diagnostics": {
+    "independent_loss_max_relative_difference": 5.145814296501132e-15,
+    "largest_window": {
+     "index": 22,
+     "loss": 3.058247568216263,
+     "run": "g5d3a-fx-g6b08",
+     "share_of_squared_deviation": 0.2664106624146636
+    },
+    "loss_max": 3.058247568216263,
+    "loss_median": 0.2161666877330788,
+    "loss_min": 0.0025283512618541936,
+    "per_run_mean": {
+     "g5d3a-fx-g6b08": 0.3401364672238046,
+     "g5d3a-fx-g6b12": 0.24527503651432234,
+     "g5d3a-fx-g6b15": 0.2985698620026299,
+     "g5d3a-fx-g6b19": 0.36639208075123103
+    },
+    "sigma_without_largest_window": 0.29761360784931395
+   },
+   "model": {
+    "bundle_sha256": "dd3068e6c3b55988b2286b6fc25000be29e7fb6d694a83afb8615afb3c4a9bf9",
+    "directory": "results/engineering/gate6b/models/fleet-1000/SU/fits/A-SU-k3-seed0",
+    "fit_id": "A-SU-k3-seed0",
+    "weights_sha256": "ef59e3c13c8be35ab12bb0a343d35f7a2519c8d413dd3a415bcff70cacdee0dd"
+   }
+  },
+  "SW": {
+   "calibration": {
+    "calibration_id": "fleet-cal-prov-01",
+    "mu_L": 0.0027633251132729605,
+    "n_B": 236,
+    "runs": [
+     "g5d3a-fx-g6b08",
+     "g5d3a-fx-g6b12",
+     "g5d3a-fx-g6b15",
+     "g5d3a-fx-g6b19"
+    ],
+    "sd_convention": "sample (denominator n-1)",
+    "sigma_L": 0.010089439285798042,
+    "window_roles": "CAL runs of the committed assignment",
+    "workload_versions": [
+     "gate6b-fleet-workload-1",
+     "gate5d3-workload-1"
+    ]
+   },
+   "diagnostics": {
+    "independent_loss_max_relative_difference": 5.207538856271216e-14,
+    "largest_window": {
+     "index": 47,
+     "loss": 0.07817506834226458,
+     "run": "g5d3a-fx-g6b08",
+     "share_of_squared_deviation": 0.23772564556353062
+    },
+    "loss_max": 0.07817506834226458,
+    "loss_median": 0.0007276685339873117,
+    "loss_min": 3.8256488274553556e-05,
+    "per_run_mean": {
+     "g5d3a-fx-g6b08": 0.006910642971334142,
+     "g5d3a-fx-g6b12": 0.0013309062239310668,
+     "g5d3a-fx-g6b15": 0.0013661385927844058,
+     "g5d3a-fx-g6b19": 0.001445612665042227
+    },
+    "sigma_without_largest_window": 0.008821863326159909
+   },
+   "model": {
+    "bundle_sha256": "faa7b4405a1cbe464f60daa5a51f368eb7f81fc629ed1702e5e656deb7b37dfa",
+    "directory": "results/engineering/gate6b/models/fleet-1000/SW/fits/A-SW-k3-seed0",
+    "fit_id": "A-SW-k3-seed0",
+    "weights_sha256": "43c80c826a3fa0caabd07a6cf8fba2f776a1f5f57d285ee6312648751698e4f4"
+   }
+  }
+ },
+ "record_id": "core-deploy-01-fleet",
+ "schema": "azta.gate6b.fleet_models",
+ "schema_version": 1,
+ "status": "PROVISIONAL_UNAPPROVED"
+}

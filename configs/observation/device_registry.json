@@ -1,0 +1,22 @@
+{
+  "schema": "azta.observation.device_registry",
+  "schema_version": 1,
+  "registry_version": 1,
+  "scope": "Gate 5B: telemetry delivered to the azta-pdp observer only; operations traffic is out of scope",
+  "devices": [
+    {
+      "device": "device01",
+      "username": "azta-device-01",
+      "client_id": "azta-device-01",
+      "telemetry_topic": "azta/devices/device01/telemetry",
+      "publish_role": "azta-device01-telemetry-publish"
+    },
+    {
+      "device": "device02",
+      "username": "azta-device-02",
+      "client_id": "azta-device-02",
+      "telemetry_topic": "azta/devices/device02/telemetry",
+      "publish_role": "azta-device02-telemetry-publish"
+    }
+  ]
+}

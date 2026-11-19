@@ -1,0 +1,7 @@
+# AZTA PILOT overlay for compose.engineering.yaml. Use ONLY with the dedicated project name `azta-pilot` (AZTA_ENG_PROJECT=azta-pilot AZTA_ENG_COMPOSE_OVERLAY=compose.pilot.yaml):
+# its own broker container, network and data volume (`azta-pilot_mosquitto_data`), engineering-only credentials, no host port. The only difference from the engineering broker is the
+# broker configuration file (debug-level logging of denied operations). The research project and its volume are never referenced.
+services:
+  broker:
+    volumes:
+      - ./configs/pilot/mosquitto.pilot.conf:/mosquitto/config/mosquitto.conf:ro

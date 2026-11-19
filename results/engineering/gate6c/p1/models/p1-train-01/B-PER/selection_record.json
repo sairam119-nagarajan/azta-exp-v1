@@ -1,0 +1,37 @@
+{
+ "candidates": {
+  "k2": {
+   "eligible": true,
+   "metric": 0.08894486074375131,
+   "seed_best_val_losses": {
+    "A-B-PER-k2-seed0": 0.09520191959413635,
+    "A-B-PER-k2-seed1": 0.07170126987491038,
+    "A-B-PER-k2-seed2": 0.09993139276220722
+   },
+   "statuses": {
+    "A-B-PER-k2-seed0": "COMPLETED",
+    "A-B-PER-k2-seed1": "COMPLETED",
+    "A-B-PER-k2-seed2": "COMPLETED"
+   }
+  },
+  "k3": {
+   "eligible": true,
+   "metric": 0.03580664494522448,
+   "seed_best_val_losses": {
+    "A-B-PER-k3-seed0": 0.04436476516412461,
+    "A-B-PER-k3-seed1": 0.03944345385708097,
+    "A-B-PER-k3-seed2": 0.023611715814467853
+   },
+   "statuses": {
+    "A-B-PER-k3-seed0": "COMPLETED",
+    "A-B-PER-k3-seed1": "COMPLETED",
+    "A-B-PER-k3-seed2": "COMPLETED"
+   }
+  }
+ },
+ "outcome": "SELECTED",
+ "primary_fit_id": "A-B-PER-k3-seed0",
+ "rule": "mean over the three seeds of best-epoch own-profile B_val mean per-window loss; lowest wins; exact tie goes to k=2; primary artifact is seed0 of the selected k",
+ "selected_k": 3,
+ "tie": false
+}

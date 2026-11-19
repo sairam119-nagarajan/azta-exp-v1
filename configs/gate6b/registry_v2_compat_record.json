@@ -1,0 +1,106 @@
+{
+ "empirical": {
+  "cal_v2_sha256": "b4ea601c8bf7692b6f0092e2589886d3f14007135b74ecc4332abf0fdfa0de65",
+  "devices": {
+   "device01": {
+    "A_quantiles": {
+     "p100": 96.93333206530407,
+     "p50": 0.0,
+     "p90": 0.3714739292435292,
+     "p95": 2.5266149824052384,
+     "p99": 8.573918428264903
+    },
+    "cal_v2_mu_L": 0.0013442909189339866,
+    "cal_v2_sigma_L": 0.004802478857933845,
+    "profile": "S",
+    "runs": [
+     "g5d3a-fx-g6b01",
+     "g5d3a-fx-g6b02",
+     "g5d3a-fx-g6b05",
+     "g5d3a-fx-g6b07",
+     "g5d3a-fx-g6b10",
+     "g5d3a-fx-g6b13",
+     "g5d3a-fx-g6b16",
+     "g5d3a-fx-g6b18"
+    ],
+    "share_A_ge_3": 0.0423728813559322,
+    "share_not_full_access": 0.012711864406779662,
+    "windows": 472
+   },
+   "device02": {
+    "A_quantiles": {
+     "p100": 2.8683718892936865,
+     "p50": 0.0,
+     "p90": 0.49236595279992396,
+     "p95": 0.9183528732884977,
+     "p99": 1.9362297836339775
+    },
+    "cal_v2_mu_L": 0.3306299373211892,
+    "cal_v2_sigma_L": 0.7860526417732987,
+    "profile": "V",
+    "runs": [
+     "g5d3a-fx-g6b01",
+     "g5d3a-fx-g6b02",
+     "g5d3a-fx-g6b05",
+     "g5d3a-fx-g6b07",
+     "g5d3a-fx-g6b10",
+     "g5d3a-fx-g6b13",
+     "g5d3a-fx-g6b16",
+     "g5d3a-fx-g6b18"
+    ],
+    "share_A_ge_3": 0.0,
+    "share_not_full_access": 0.0,
+    "windows": 472
+   }
+  },
+  "roles": [
+   "TRAIN"
+  ],
+  "schema": "azta.gate6b.sv_empirical_check",
+  "trust_config": "cand-1ac5637401a5-ctx2"
+ },
+ "facts": {
+  "observer_version": "gate5b-1",
+  "registries_differ": true,
+  "same_schema_fingerprint": true,
+  "same_subscription_qos": 1,
+  "same_window_duration_ns": 10000000000,
+  "shared_device_rows_equal": true,
+  "v1_config_recomputes_to_frozen_pin": true,
+  "v1_registry_matches_frozen_pin": true,
+  "v2_config_recomputes_to_ten_device_pin": true
+ },
+ "facts_hold": true,
+ "observer_source_sha256": {
+  "observation/schema.py": "1455329cd68176ec74d90d7d288f98a650119b9f8a6afdf21e15a84b84a48806",
+  "observation/windowing.py": "5edac0d9c7c050f82116b00ee21cdf008a21be337494c1eacf86a4db484a6a9a"
+ },
+ "schema": "azta.gate6b.registry_v2_compat_record",
+ "schema_version": 1,
+ "scope": "Lets the frozen S and V models (and the unchanged CAL_V2 constants) score windows of device01 and device02 observed under the ten-device registry v2, for the engineering pilot only. Structural facts only unless `empirical` is present; not a scientific approval.",
+ "shared_device_rows": {
+  "device01": {
+   "client_id": "azta-device-01",
+   "publish_role": "azta-device01-telemetry-publish",
+   "telemetry_topic": "azta/devices/device01/telemetry",
+   "username": "azta-device-01"
+  },
+  "device02": {
+   "client_id": "azta-device-02",
+   "publish_role": "azta-device02-telemetry-publish",
+   "telemetry_topic": "azta/devices/device02/telemetry",
+   "username": "azta-device-02"
+  }
+ },
+ "status": "PROVISIONAL_UNAPPROVED",
+ "v1_pins": {
+  "observation_config_sha256": "ca2bebaa171c039b98f96a877de83ab8a7c916dbeb7d22901d031eaa73d0aa27",
+  "registry_sha256": "bd3d9308adc0f43bb87a6a51bbad82bf7de4d241fc1ac65371baf25e9e1e0157",
+  "schema_fingerprint": "2dede5d8bd97c8ee1ffe0fda5afd78b020f455aad9208f6b4a75bdbca028767c"
+ },
+ "v2_pins": {
+  "observation_config_sha256": "e54e6ccdf1c381cab347e52f36cd543904267e4d42dae27edd9d6fa73cc45b8d",
+  "registry_sha256": "c08d8ccf8909c1252c6c09a74addedd9103a03a32693f636e846dc2f41ee8f5a",
+  "schema_fingerprint": "2dede5d8bd97c8ee1ffe0fda5afd78b020f455aad9208f6b4a75bdbca028767c"
+ }
+}

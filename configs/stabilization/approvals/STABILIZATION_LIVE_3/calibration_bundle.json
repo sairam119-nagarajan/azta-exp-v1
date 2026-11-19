@@ -1,0 +1,62 @@
+{
+ "acceptance_ref": "OWNER-ANSWER-20261109-STABILIZATION_LIVE_3",
+ "acceptance_scope": "PILOT_ONLY:stb-l03",
+ "calibration_id": "core-final-pilot-stb-l03",
+ "models": {
+  "FAM-B-FREQ+IM-device01": {
+   "model_id": "B-FREQ+IM:E3:device01",
+   "weights_sha256": "cda57896611d0cb6de93c6814cbc0cadb2ecc59d363d24fd6b0aac34750bec63"
+  },
+  "FAM-B-FREQ+IM-device02": {
+   "model_id": "B-FREQ+IM:E3:device02",
+   "weights_sha256": "cda57896611d0cb6de93c6814cbc0cadb2ecc59d363d24fd6b0aac34750bec63"
+  },
+  "FX": {
+   "model_id": "A-FX-k3-seed0",
+   "weights_sha256": "c994ec32213f642c98867dde878f3c4414d21f521b9037715584a083d92b7de9"
+  },
+  "MP05": {
+   "model_id": "MP-1-device05-a2b4ed3f9223",
+   "weights_sha256": "a2b4ed3f92239857b09f030be6cce62a649362e5f6550dba6c8fc21a7cc0c78e"
+  },
+  "MP06": {
+   "model_id": "MP-1-device06-1eb4afd7f48d",
+   "weights_sha256": "1eb4afd7f48d853a914525b14508e7c5e5e8a1f8f570e43a2057036c3427699a"
+  },
+  "MP07": {
+   "model_id": "MP-1-device07-b9f4dbd0ee2b",
+   "weights_sha256": "b9f4dbd0ee2b19be6d67519768922b9b3101b0b49d1f05e995865b207592602f"
+  },
+  "MP08": {
+   "model_id": "MP-1-device08-0049b0fe06cb",
+   "weights_sha256": "0049b0fe06cb34b6c1da6cce78b2736e3b17bac5b2a8fd4ed9ed87460fec61c0"
+  },
+  "MP09": {
+   "model_id": "MP-1-device09-903d538391cd",
+   "weights_sha256": "903d538391cd8d29345efcc8af6e9ba6c44b9c035ff06b4c2ca6f07dd6c6a76c"
+  },
+  "PE3": {
+   "model_id": "A-PE3-k3-seed0",
+   "weights_sha256": "2abdd370dd43ce69f71375a3476e6bd4482eaed99850548eaf97fe520ee3dffd"
+  },
+  "S": {
+   "model_id": "A-S-k3-seed0",
+   "weights_sha256": "1ff19602dcb2c5ff1c93b8e5ec054df44207fa20fed4ec2be84684b4f1dd534a"
+  },
+  "SU": {
+   "model_id": "A-SU-k3-seed0",
+   "weights_sha256": "ef59e3c13c8be35ab12bb0a343d35f7a2519c8d413dd3a415bcff70cacdee0dd"
+  },
+  "SW": {
+   "model_id": "A-SW-k3-seed0",
+   "weights_sha256": "43c80c826a3fa0caabd07a6cf8fba2f776a1f5f57d285ee6312648751698e4f4"
+  },
+  "V": {
+   "model_id": "A-V-k3-seed0",
+   "weights_sha256": "d5b0cfedc1144b48e1594ac39e3f8abbc965d89360a6d12019769900f4714aaa"
+  }
+ },
+ "note": "one identifier over the unchanged constituent calibrations (fragile ones stay fragile); it carries no constants and accepts nothing beyond this pilot",
+ "schema": "azta.core.calibration_bundle",
+ "status": "CONTROLLER_ACCEPTED"
+}

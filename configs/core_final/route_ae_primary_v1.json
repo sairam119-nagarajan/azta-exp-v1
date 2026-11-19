@@ -1,0 +1,115 @@
+{
+ "contract": "AE_PRIMARY_AUTHORITY_V1",
+ "devices": {
+  "device01": {
+   "arm": "B-FREQ+IM",
+   "kind": "PLAIN_FAMILY",
+   "liveness_silence_bound_s": 40,
+   "profile": "FAM-B-FREQ+IM-device01",
+   "shared_networks": true,
+   "width_s": 10
+  },
+  "device02": {
+   "arm": "B-FREQ+IM",
+   "kind": "PLAIN_FAMILY",
+   "liveness_silence_bound_s": 40,
+   "profile": "FAM-B-FREQ+IM-device02",
+   "shared_networks": true,
+   "width_s": 10
+  },
+  "device03": {
+   "arm": "FX",
+   "kind": "PLAIN_LEGACY",
+   "liveness_silence_bound_s": 40,
+   "profile": "FX",
+   "shared_networks": false,
+   "width_s": 10
+  },
+  "device04": {
+   "arm": "SU",
+   "kind": "PLAIN_LEGACY",
+   "liveness_silence_bound_s": 40,
+   "profile": "SU",
+   "shared_networks": false,
+   "width_s": 10
+  },
+  "device05": {
+   "arm": "EA-C-PER+IM",
+   "kind": "MONITOR_FAMILY",
+   "liveness_silence_bound_s": 40,
+   "profile": "MP05",
+   "shared_networks": true,
+   "width_s": 10
+  },
+  "device06": {
+   "arm": "P06RA-W20:E3",
+   "kind": "MONITOR_INCUMBENT",
+   "liveness_silence_bound_s": 70,
+   "profile": "MP06",
+   "shared_networks": false,
+   "width_s": 20
+  },
+  "device07": {
+   "arm": "P07RA-W20:E3",
+   "kind": "MONITOR_INCUMBENT",
+   "liveness_silence_bound_s": 70,
+   "profile": "MP07",
+   "shared_networks": false,
+   "width_s": 20
+  },
+  "device08": {
+   "arm": "P08-W90:E3",
+   "kind": "MONITOR_INCUMBENT",
+   "liveness_silence_bound_s": 280,
+   "profile": "MP08",
+   "shared_networks": false,
+   "width_s": 90
+  },
+  "device09": {
+   "arm": "P09-W180:E3",
+   "kind": "MONITOR_INCUMBENT",
+   "liveness_silence_bound_s": 550,
+   "profile": "MP09",
+   "shared_networks": false,
+   "width_s": 180
+  },
+  "device10": {
+   "arm": "SW",
+   "kind": "PLAIN_LEGACY",
+   "liveness_silence_bound_s": 40,
+   "profile": "SW",
+   "shared_networks": false,
+   "width_s": 10
+  }
+ },
+ "inputs": {
+  "cal_v2": {
+   "path": "configs/dshadow/g5f-cal-v2-01-accepted-1.json",
+   "sha256": "b4ea601c8bf7692b6f0092e2589886d3f14007135b74ecc4332abf0fdfa0de65"
+  },
+  "candidates": {
+   "path": "configs/gate6c/p2_candidates_cal4.json",
+   "sha256": "35f61fc26b44559c48804df3606b9d66098dbbb6b04699ea8445fc65eccff089"
+  },
+  "compat": {
+   "path": "configs/gate6b/registry_v2_compat_record.json",
+   "sha256": "2c4953f9bd898df3c8db9a33bd9047fd76cd5857410af3e26362825a0f7d376c"
+  },
+  "family_assignment": {
+   "path": "configs/core_final/family_assignment_v1.json",
+   "sha256": "39f7829eb89a4e423122cb0b5791d704c9be8299588cfeac3cf39886f6b7dfa9"
+  },
+  "fleet_models": {
+   "path": "configs/gate6c/core_fleet_models_provisional.json",
+   "sha256": "b1e9f4b6bd67293f29c0a69b6150918b2092339abe611ef8f783ad8c33b9c152"
+  },
+  "monitors": {
+   "path": "configs/gate6c/core_monitor_profiles_provisional.json",
+   "sha256": "ee3a0cc496dd7a70cee61c7108733f527051ae08925959235485d268348b49c7"
+  }
+ },
+ "protocol": "docs/final/CORE_COMPLETION_PROTOCOL.md",
+ "rollback": "Campaign 2: configs/gate6c/core_monitor_profiles_provisional.json with configs/gate6c/core_registry_candidate.json",
+ "schema": "azta.core.route",
+ "status": "CANDIDATE_UNAPPROVED"
+}

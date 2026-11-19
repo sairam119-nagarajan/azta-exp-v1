@@ -1,0 +1,57 @@
+{
+ "baseline_for_comparison": "gate5e-v1",
+ "calibration_id": "g5f-cal-v2-01-accepted-1",
+ "freeze_commit": "053c248a37db5371abb4cbe82ed91e27abb895e8",
+ "manifest_schema_version": 2,
+ "manifest_sha256": "7c4a44543723d78da2a6496aa9fa081b96f7e459469735466c8a1305b9944143",
+ "models": {
+  "S": {
+   "bundle_sha256": "2e2b29a734400581879a2103ff365105c64646cb528ef790002aae7c8514ab69",
+   "fit_id": "A-S-k3-seed0",
+   "weights_sha256": "1ff19602dcb2c5ff1c93b8e5ec054df44207fa20fed4ec2be84684b4f1dd534a"
+  },
+  "V": {
+   "bundle_sha256": "163d20da485a1027e0188a527aaf94503e67503e99f8c26a9ab9153de0f630a9",
+   "fit_id": "A-V-k3-seed0",
+   "weights_sha256": "d5b0cfedc1144b48e1594ac39e3f8abbc965d89360a6d12019769900f4714aaa"
+  }
+ },
+ "partition": "CAL_V2",
+ "pins": {
+  "observation_config_sha256": "ca2bebaa171c039b98f96a877de83ab8a7c916dbeb7d22901d031eaa73d0aa27",
+  "registry_sha256": "bd3d9308adc0f43bb87a6a51bbad82bf7de4d241fc1ac65371baf25e9e1e0157",
+  "schema_fingerprint": "2dede5d8bd97c8ee1ffe0fda5afd78b020f455aad9208f6b4a75bdbca028767c"
+ },
+ "plan_sha256": "4906cb9f60e6fa76131c259b76ec6100075389254d7170feed1289088e1e7a09",
+ "runs": [
+  "g5f-r08",
+  "g5f-r13",
+  "g5f-r17",
+  "g5f-r31",
+  "g5f-r36",
+  "g5f-r44",
+  "g5f-r50",
+  "g5f-s06"
+ ],
+ "schema": "azta.gate5f3.calibration_record",
+ "schema_version": 1,
+ "sd_convention": "sample (denominator n-1)",
+ "statistics": {
+  "S": {
+   "mu_L": 0.0013442909189339866,
+   "n_B": 480,
+   "sigma_L": 0.004802478857933845,
+   "status": "OK"
+  },
+  "V": {
+   "mu_L": 0.3306299373211892,
+   "n_B": 480,
+   "sigma_L": 0.7860526417732987,
+   "status": "OK"
+  }
+ },
+ "status": "CONTROLLER_ACCEPTED",
+ "workload_versions": [
+  "gate5c-workload-2-candidate"
+ ]
+}

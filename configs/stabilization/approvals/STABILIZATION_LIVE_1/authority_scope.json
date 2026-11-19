@@ -1,0 +1,36 @@
+{
+ "approver_ref": "OWNER-ANSWER-20261108-STABILIZATION_LIVE_1",
+ "approver_role": "OWNER",
+ "artifacts": {
+  "authority_map_sha256": "2dfa0f4b24e0a4383e2a45560f499aa8ce5d967b69913ce60c1faabd2acb26b8",
+  "config_sha256": "1fb7faa9fe5d91cff0d27453a9a716b2eed18e1a6871c1e6b011f4c2177fe34e",
+  "registry_sha256": "48a6a1bac0c521bbc3095f4d418ac4384d786df1a65de62ebb2c669d7b0e27c4",
+  "route_sha256": "1a5236dd3493a0a540add5ba3faf498fd70b2f0ad4c50d210ea102393f997844"
+ },
+ "devices": {
+  "device01": {
+   "actions": [
+    "RESTRICT",
+    "QUARANTINE",
+    "RESTORE"
+   ],
+   "automatic": false
+  },
+  "device02": {
+   "actions": [
+    "RESTRICT",
+    "QUARANTINE",
+    "RESTORE"
+   ],
+   "automatic": true
+  }
+ },
+ "environment": "PILOT_ISOLATED",
+ "expires_utc_ns": 1794187451315029300,
+ "issued_utc_ns": 1794173050315029300,
+ "mode": "active-authorized",
+ "schema": "azta.enforcement.authority_scope",
+ "schema_version": 1,
+ "scope_id": "scope-stb-l01",
+ "session_run_id": "stb-l01"
+}

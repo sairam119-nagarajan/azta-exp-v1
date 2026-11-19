@@ -1,0 +1,57 @@
+{
+ "approver_ref": "OWNER-ANSWER-20261106-PILOT-ENFORCEMENT-2",
+ "approver_role": "OWNER",
+ "artifacts": {
+  "authority_map_sha256": "2dfa0f4b24e0a4383e2a45560f499aa8ce5d967b69913ce60c1faabd2acb26b8",
+  "config_sha256": "1fb7faa9fe5d91cff0d27453a9a716b2eed18e1a6871c1e6b011f4c2177fe34e",
+  "registry_sha256": "34e832939c252bf541aab6ccd7b2702d59f257a1aa74e01396d04a1bc342fcc6",
+  "route_sha256": "b8c9f26349620e3318cdbe4e713d760293f9b47bf27d2b56b7445c3ae63b291f"
+ },
+ "devices": {
+  "device01": {
+   "actions": [
+    "RESTRICT",
+    "QUARANTINE",
+    "RESTORE"
+   ],
+   "automatic": false
+  },
+  "device02": {
+   "actions": [
+    "RESTRICT",
+    "QUARANTINE",
+    "RESTORE"
+   ],
+   "automatic": true
+  },
+  "device03": {
+   "actions": [
+    "QUARANTINE",
+    "RESTORE"
+   ],
+   "automatic": false
+  },
+  "device05": {
+   "actions": [
+    "QUARANTINE",
+    "RESTORE"
+   ],
+   "automatic": false
+  },
+  "device08": {
+   "actions": [
+    "QUARANTINE",
+    "RESTORE"
+   ],
+   "automatic": false
+  }
+ },
+ "environment": "PILOT_ISOLATED",
+ "expires_utc_ns": 1793928646844382000,
+ "issued_utc_ns": 1793914245844382000,
+ "mode": "active-authorized",
+ "schema": "azta.enforcement.authority_scope",
+ "schema_version": 1,
+ "scope_id": "scope-core-p03",
+ "session_run_id": "core-p03"
+}

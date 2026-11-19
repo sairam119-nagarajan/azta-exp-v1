@@ -1,0 +1,37 @@
+{
+ "candidates": {
+  "k2": {
+   "eligible": true,
+   "metric": 0.02359966154032352,
+   "seed_best_val_losses": {
+    "A-B-PER-MASK-k2-seed0": 0.017564501524791176,
+    "A-B-PER-MASK-k2-seed1": 0.02661311379956817,
+    "A-B-PER-MASK-k2-seed2": 0.026621369296611207
+   },
+   "statuses": {
+    "A-B-PER-MASK-k2-seed0": "COMPLETED",
+    "A-B-PER-MASK-k2-seed1": "COMPLETED",
+    "A-B-PER-MASK-k2-seed2": "COMPLETED"
+   }
+  },
+  "k3": {
+   "eligible": true,
+   "metric": 0.010346419379357074,
+   "seed_best_val_losses": {
+    "A-B-PER-MASK-k3-seed0": 0.013761458938238085,
+    "A-B-PER-MASK-k3-seed1": 0.010688074936098737,
+    "A-B-PER-MASK-k3-seed2": 0.006589724263734403
+   },
+   "statuses": {
+    "A-B-PER-MASK-k3-seed0": "COMPLETED",
+    "A-B-PER-MASK-k3-seed1": "COMPLETED",
+    "A-B-PER-MASK-k3-seed2": "COMPLETED"
+   }
+  }
+ },
+ "outcome": "SELECTED",
+ "primary_fit_id": "A-B-PER-MASK-k3-seed0",
+ "rule": "mean over the three seeds of best-epoch own-profile B_val mean per-window loss; lowest wins; exact tie goes to k=2; primary artifact is seed0 of the selected k",
+ "selected_k": 3,
+ "tie": false
+}

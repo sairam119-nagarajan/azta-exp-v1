@@ -1,0 +1,54 @@
+services:
+  broker:
+    image: eclipse-mosquitto:2.1.2-alpine@sha256:38c0da4f2ef84284d47b3b3eeea1cb3bdeabe81ee10caf0cd5c5ff61ee3ea408
+    restart: unless-stopped
+    entrypoint: [/bin/sh, /mosquitto/config/start.sh]
+    volumes:
+      - ./pep/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./pep/mosquitto/start.sh:/mosquitto/config/start.sh:ro
+      - mosquitto_data:/mosquitto/data
+    secrets:
+      - dynsec_admin_password
+
+  pdp:
+    build: .
+    image: azta-journal-runtime:gate3
+    command: [python, -m, pdp.subscriber]
+    environment:
+      MQTT_HOST: broker
+      MQTT_PASSWORD_FILE: /run/secrets/pdp_password
+    secrets:
+      - pdp_password
+    depends_on:
+      broker:
+        condition: service_started
+    healthcheck:
+      test: [CMD-SHELL, test -f /tmp/azta-pdp-ready]
+      interval: 1s
+      timeout: 2s
+      retries: 35
+
+  device:
+    image: azta-journal-runtime:gate3
+    command: [python, -m, devices.publisher]
+    environment:
+      MQTT_HOST: broker
+      MQTT_PASSWORD_FILE: /run/secrets/device_password
+    secrets:
+      - device_password
+    depends_on:
+      broker:
+        condition: service_started
+      pdp:
+        condition: service_healthy
+
+secrets:
+  device_password:
+    file: ./pep/mosquitto/secrets/azta-device-01-password
+  pdp_password:
+    file: ./pep/mosquitto/secrets/azta-pdp-password
+  dynsec_admin_password:
+    file: ./pep/mosquitto/secrets/admin-password
+
+volumes:
+  mosquitto_data:

@@ -1,0 +1,37 @@
+{
+ "candidates": {
+  "k2": {
+   "eligible": true,
+   "metric": 0.23868114498610493,
+   "seed_best_val_losses": {
+    "A-IND-B-device02-k2-seed0": 0.30815652071368055,
+    "A-IND-B-device02-k2-seed1": 0.1585960598551245,
+    "A-IND-B-device02-k2-seed2": 0.24929085438950968
+   },
+   "statuses": {
+    "A-IND-B-device02-k2-seed0": "COMPLETED",
+    "A-IND-B-device02-k2-seed1": "COMPLETED",
+    "A-IND-B-device02-k2-seed2": "COMPLETED"
+   }
+  },
+  "k3": {
+   "eligible": true,
+   "metric": 0.0821561048614419,
+   "seed_best_val_losses": {
+    "A-IND-B-device02-k3-seed0": 0.0857823132398058,
+    "A-IND-B-device02-k3-seed1": 0.08240042044132005,
+    "A-IND-B-device02-k3-seed2": 0.07828558090319984
+   },
+   "statuses": {
+    "A-IND-B-device02-k3-seed0": "COMPLETED",
+    "A-IND-B-device02-k3-seed1": "COMPLETED",
+    "A-IND-B-device02-k3-seed2": "COMPLETED"
+   }
+  }
+ },
+ "outcome": "SELECTED",
+ "primary_fit_id": "A-IND-B-device02-k3-seed0",
+ "rule": "mean over the three seeds of best-epoch own-profile B_val mean per-window loss; lowest wins; exact tie goes to k=2; primary artifact is seed0 of the selected k",
+ "selected_k": 3,
+ "tie": false
+}

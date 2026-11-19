@@ -1,0 +1,108 @@
+{
+ "contract": "AE_PRIMARY_AUTHORITY_V1",
+ "devices": {
+  "device01": {
+   "forced_review": false,
+   "mode": "HUMAN_REVIEW_REQUIRED",
+   "restrict_is_permission_noop": false,
+   "screen_failed": [
+    "r3_synthetic"
+   ]
+  },
+  "device02": {
+   "forced_review": false,
+   "mode": "AUTO_ELIGIBLE",
+   "restrict_is_permission_noop": false,
+   "screen_failed": []
+  },
+  "device03": {
+   "forced_review": true,
+   "mode": "HUMAN_REVIEW_REQUIRED",
+   "restrict_is_permission_noop": true,
+   "screen_failed": [
+    "r1_calibration",
+    "r2_dev4_realistic_zero",
+    "r3_synthetic",
+    "r4_no_false_before_onset",
+    "r5_pooled"
+   ]
+  },
+  "device04": {
+   "forced_review": false,
+   "mode": "HUMAN_REVIEW_REQUIRED",
+   "restrict_is_permission_noop": true,
+   "screen_failed": [
+    "r1_calibration",
+    "r3_synthetic"
+   ]
+  },
+  "device05": {
+   "forced_review": true,
+   "mode": "HUMAN_REVIEW_REQUIRED",
+   "restrict_is_permission_noop": true,
+   "screen_failed": [
+    "r3_synthetic",
+    "r5_pooled"
+   ]
+  },
+  "device06": {
+   "forced_review": true,
+   "mode": "HUMAN_REVIEW_REQUIRED",
+   "restrict_is_permission_noop": true,
+   "screen_failed": [
+    "r1_calibration",
+    "r4_no_false_before_onset"
+   ]
+  },
+  "device07": {
+   "forced_review": true,
+   "mode": "HUMAN_REVIEW_REQUIRED",
+   "restrict_is_permission_noop": true,
+   "screen_failed": [
+    "r1_calibration",
+    "r3_synthetic",
+    "r4_no_false_before_onset"
+   ]
+  },
+  "device08": {
+   "forced_review": true,
+   "mode": "HUMAN_REVIEW_REQUIRED",
+   "restrict_is_permission_noop": true,
+   "screen_failed": [
+    "r1_calibration",
+    "r3_synthetic",
+    "r5_pooled",
+    "r6_median_delay"
+   ]
+  },
+  "device09": {
+   "forced_review": false,
+   "mode": "HUMAN_REVIEW_REQUIRED",
+   "restrict_is_permission_noop": true,
+   "screen_failed": [
+    "r1_calibration",
+    "r5_pooled",
+    "r6_median_delay"
+   ]
+  },
+  "device10": {
+   "forced_review": false,
+   "mode": "HUMAN_REVIEW_REQUIRED",
+   "restrict_is_permission_noop": true,
+   "screen_failed": [
+    "r1_calibration"
+   ]
+  }
+ },
+ "note": "AUTO_ELIGIBLE is qualification only: an automatic action also needs an unexpired written scope. Nothing here authorizes anything.",
+ "protocol": "docs/final/CORE_COMPLETION_PROTOCOL.md",
+ "schema": "azta.core.authority_map",
+ "selection_sha256": "2c66e20fc0c94cac0c5585e081c92763f6d39deb94e0e0b050fe09f42366439b",
+ "status": "CANDIDATE_UNAPPROVED",
+ "supplementary": {
+  "action": "RESTRICT",
+  "mode": "HUMAN_REVIEW_REQUIRED",
+  "note": "non-journal liveness extension; never automatic"
+ },
+ "version": "authority-map-v1"
+}

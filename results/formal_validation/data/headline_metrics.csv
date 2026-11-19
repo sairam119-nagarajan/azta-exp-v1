@@ -1,0 +1,14 @@
+metric,value,numerator,denominator,population
+1 Trust-state agreement (overall),0.9882,15995,16186,shadow runs
+1 Trust-state agreement (behavioural windows),0.988723,15870,16051,shadow runs
+2 FPR (decision level),0.0075703,105,13870,shadow runs
+3 FNR (decision level),0.0358377,83,2316,shadow runs
+2-3 Precision (decision level),0.95509,,,shadow runs
+2-3 Recall (decision level),0.964162,,,shadow runs
+2-3 F1 (decision level),0.959605,,,shadow runs
+2-3 Episodes detected (decision level),0.875556,197,225,shadow runs
+"4 Time-to-Contain median (s, cross-clock)",17.4741,25,25,active device02 runs
+4 Time-to-Contain p95 (s),19.8508,,,active device02 runs
+5 PDP decision latency median (ms),670.259,,22346,all VALID runs
+5 PDP decision latency p95 (ms),850.581,,22346,all VALID runs
+6 Enforcement success (broker read-back),1,70,70,active device02 runs

@@ -1,0 +1,172 @@
+{
+ "arm": "IND-C-device10",
+ "cap": 1000,
+ "contract": "FC-6.2R",
+ "fits": {
+  "A-IND-C-device10-k2-seed0": {
+   "best_epoch": 232,
+   "best_val_loss": 0.00026704624641915695,
+   "epochs_run": 252,
+   "failure": null,
+   "k": 2,
+   "parameters": 152,
+   "per_device_val": {
+    "device10": {
+     "mean": 0.00026704624641915695,
+     "n": 600,
+     "sd_sample": 0.0004242040820612469
+    }
+   },
+   "seed_index": 0,
+   "status": "COMPLETED",
+   "stop_reason": "early_stopping",
+   "weights_sha256": "2a94b370c4ed45ff9a16e6ab97d182167a7f2c7f96841f2a8c343d1e8adf3d75"
+  },
+  "A-IND-C-device10-k2-seed1": {
+   "best_epoch": 71,
+   "best_val_loss": 0.0009926156560731672,
+   "epochs_run": 91,
+   "failure": null,
+   "k": 2,
+   "parameters": 152,
+   "per_device_val": {
+    "device10": {
+     "mean": 0.0009926156560731674,
+     "n": 600,
+     "sd_sample": 0.0013519069773607409
+    }
+   },
+   "seed_index": 1,
+   "status": "COMPLETED",
+   "stop_reason": "early_stopping",
+   "weights_sha256": "f757671ff6e3508f798658d697b45202c3479733e00ff47929ce095759ce92ad"
+  },
+  "A-IND-C-device10-k2-seed2": {
+   "best_epoch": 413,
+   "best_val_loss": 0.0003184624391409313,
+   "epochs_run": 433,
+   "failure": null,
+   "k": 2,
+   "parameters": 152,
+   "per_device_val": {
+    "device10": {
+     "mean": 0.0003184624391409313,
+     "n": 600,
+     "sd_sample": 0.0004885903429016199
+    }
+   },
+   "seed_index": 2,
+   "status": "COMPLETED",
+   "stop_reason": "early_stopping",
+   "weights_sha256": "302db100e613137c04c880482293c5dbe81c41d21d00e78536d35b76f9d2e621"
+  },
+  "A-IND-C-device10-k3-seed0": {
+   "best_epoch": 190,
+   "best_val_loss": 0.0001728962849005422,
+   "epochs_run": 210,
+   "failure": null,
+   "k": 3,
+   "parameters": 169,
+   "per_device_val": {
+    "device10": {
+     "mean": 0.0001728962849005422,
+     "n": 600,
+     "sd_sample": 0.0003337302274073419
+    }
+   },
+   "seed_index": 0,
+   "status": "COMPLETED",
+   "stop_reason": "early_stopping",
+   "weights_sha256": "16ec345f67fc043c660c53e6a581e163f0551e45da75d8bfbda4d6d6f7de66fd"
+  },
+  "A-IND-C-device10-k3-seed1": {
+   "best_epoch": 252,
+   "best_val_loss": 9.140093858684923e-05,
+   "epochs_run": 272,
+   "failure": null,
+   "k": 3,
+   "parameters": 169,
+   "per_device_val": {
+    "device10": {
+     "mean": 9.140093858684923e-05,
+     "n": 600,
+     "sd_sample": 0.0001663595375837108
+    }
+   },
+   "seed_index": 1,
+   "status": "COMPLETED",
+   "stop_reason": "early_stopping",
+   "weights_sha256": "3e0a3d6d790ec84d4b6fd138e622cc3b7c1bbe9fdafcdbbfce66156b55edf83b"
+  },
+  "A-IND-C-device10-k3-seed2": {
+   "best_epoch": 137,
+   "best_val_loss": 0.0001343613519394109,
+   "epochs_run": 157,
+   "failure": null,
+   "k": 3,
+   "parameters": 169,
+   "per_device_val": {
+    "device10": {
+     "mean": 0.0001343613519394109,
+     "n": 600,
+     "sd_sample": 0.000215346249064526
+    }
+   },
+   "seed_index": 2,
+   "status": "COMPLETED",
+   "stop_reason": "early_stopping",
+   "weights_sha256": "c2a8f9ad43574b281b0d1a67f15da5710e58fe96b76517a3a61749b0e533888f"
+  }
+ },
+ "masked_features": [],
+ "members": [
+  "device10"
+ ],
+ "n_train": {
+  "device10": 1800
+ },
+ "n_val": {
+  "device10": 600
+ },
+ "normalizer_digests": {
+  "device10": "bcf4f97709c6b469b5c7dc477df79e51010639b0d487ff9d04cb6bcccfc650e4"
+ },
+ "selection": {
+  "candidates": {
+   "k2": {
+    "eligible": true,
+    "metric": 0.0005260414472110852,
+    "seed_best_val_losses": {
+     "A-IND-C-device10-k2-seed0": 0.00026704624641915695,
+     "A-IND-C-device10-k2-seed1": 0.0009926156560731672,
+     "A-IND-C-device10-k2-seed2": 0.0003184624391409313
+    },
+    "statuses": {
+     "A-IND-C-device10-k2-seed0": "COMPLETED",
+     "A-IND-C-device10-k2-seed1": "COMPLETED",
+     "A-IND-C-device10-k2-seed2": "COMPLETED"
+    }
+   },
+   "k3": {
+    "eligible": true,
+    "metric": 0.0001328861918089341,
+    "seed_best_val_losses": {
+     "A-IND-C-device10-k3-seed0": 0.0001728962849005422,
+     "A-IND-C-device10-k3-seed1": 9.140093858684923e-05,
+     "A-IND-C-device10-k3-seed2": 0.0001343613519394109
+    },
+    "statuses": {
+     "A-IND-C-device10-k3-seed0": "COMPLETED",
+     "A-IND-C-device10-k3-seed1": "COMPLETED",
+     "A-IND-C-device10-k3-seed2": "COMPLETED"
+    }
+   }
+  },
+  "outcome": "SELECTED",
+  "primary_fit_id": "A-IND-C-device10-k3-seed0",
+  "rule": "mean over the three seeds of best-epoch own-profile B_val mean per-window loss; lowest wins; exact tie goes to k=2; primary artifact is seed0 of the selected k",
+  "selected_k": 3,
+  "tie": false
+ },
+ "wall_seconds": 20.191692400025204
+}

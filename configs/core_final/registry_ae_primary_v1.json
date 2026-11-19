@@ -1,0 +1,201 @@
+{
+ "change_log": [
+  {
+   "approval_ref": null,
+   "author_role": "implementation agent (Gate 6C)",
+   "registry_version": 1,
+   "summary": "Gate 6C hybrid fleet registry candidate: devices routed to their TM-1 timing profile where named, all other routes as in the Gate 6B candidate."
+  },
+  {
+   "approval_ref": null,
+   "author_role": "implementation agent (Gate 6C pre-live campaign)",
+   "registry_version": 2,
+   "summary": "Devices 05 to 09 routed to their pre-live MONITOR PROFILES (timing + block + drift + autoencoder streams under HBE-2); ENGINEERING_FUNCTIONAL_UNAPPROVED."
+  },
+  {
+   "approval_ref": null,
+   "author_role": "implementation agent (Gate 6C core campaign)",
+   "registry_version": 3,
+   "summary": "Devices 05 to 09 routed to the CORE-P1 monitor profiles; adopted replacements: []; ENGINEERING_FUNCTIONAL_UNAPPROVED."
+  },
+  {
+   "approval_ref": null,
+   "author_role": "implementation agent (core completion)",
+   "registry_version": 4,
+   "summary": "AE_PRIMARY_AUTHORITY_V1: every device routed to its primary autoencoder route; 01 and 02 to B-FREQ+IM, 05-09 to monitor profiles in which only the AE stream counts; ENGINEERING_FUNCTIONAL_UNAPPROVED."
+  }
+ ],
+ "devices": [
+  {
+   "blockers": [],
+   "device": "device01",
+   "frozen_model_law_equivalent": "FAM-B-FREQ+IM-device01",
+   "law_class": "steady|gap=1s|jitter=0.1|fixed128B",
+   "route": {
+    "approval_ref": "ENGINEERING_FUNCTIONAL_UNAPPROVED",
+    "profile": "FAM-B-FREQ+IM-device01",
+    "status": "APPROVED"
+   },
+   "scorability": "SCORABLE"
+  },
+  {
+   "blockers": [],
+   "device": "device02",
+   "frozen_model_law_equivalent": "FAM-B-FREQ+IM-device02",
+   "law_class": "steady|gap=0.2s|jitter=0.1|uniform128-256B",
+   "route": {
+    "approval_ref": "ENGINEERING_FUNCTIONAL_UNAPPROVED",
+    "profile": "FAM-B-FREQ+IM-device02",
+    "status": "APPROVED"
+   },
+   "scorability": "SCORABLE"
+  },
+  {
+   "blockers": [],
+   "device": "device03",
+   "frozen_model_law_equivalent": "FX",
+   "law_class": "steady|gap=0.2s|jitter=0.1|fixed128B",
+   "route": {
+    "approval_ref": "ENGINEERING_FUNCTIONAL_UNAPPROVED",
+    "profile": "FX",
+    "status": "APPROVED"
+   },
+   "scorability": "SCORABLE"
+  },
+  {
+   "blockers": [],
+   "device": "device04",
+   "frozen_model_law_equivalent": "SU",
+   "law_class": "steady|gap=1s|jitter=0.1|uniform128-256B",
+   "route": {
+    "approval_ref": "ENGINEERING_FUNCTIONAL_UNAPPROVED",
+    "profile": "SU",
+    "status": "APPROVED"
+   },
+   "scorability": "SCORABLE"
+  },
+  {
+   "blockers": [],
+   "device": "device05",
+   "frozen_model_law_equivalent": "MP05",
+   "law_class": "periodic|period=3s|fixed128B",
+   "route": {
+    "approval_ref": "ENGINEERING_FUNCTIONAL_UNAPPROVED",
+    "profile": "MP05",
+    "status": "APPROVED"
+   },
+   "scorability": "SCORABLE"
+  },
+  {
+   "blockers": [],
+   "device": "device06",
+   "frozen_model_law_equivalent": "MP06",
+   "law_class": "periodic|period=4s|uniform128-256B",
+   "route": {
+    "approval_ref": "ENGINEERING_FUNCTIONAL_UNAPPROVED",
+    "profile": "MP06",
+    "status": "APPROVED"
+   },
+   "scorability": "SCORABLE"
+  },
+  {
+   "blockers": [],
+   "device": "device07",
+   "frozen_model_law_equivalent": "MP07",
+   "law_class": "periodic|period=5s|fixed128B",
+   "route": {
+    "approval_ref": "ENGINEERING_FUNCTIONAL_UNAPPROVED",
+    "profile": "MP07",
+    "status": "APPROVED"
+   },
+   "scorability": "SCORABLE"
+  },
+  {
+   "blockers": [],
+   "device": "device08",
+   "frozen_model_law_equivalent": "MP08",
+   "law_class": "periodic|period=30s|fixed128B",
+   "route": {
+    "approval_ref": "ENGINEERING_FUNCTIONAL_UNAPPROVED",
+    "profile": "MP08",
+    "status": "APPROVED"
+   },
+   "scorability": "SCORABLE"
+  },
+  {
+   "blockers": [],
+   "device": "device09",
+   "frozen_model_law_equivalent": "MP09",
+   "law_class": "event_gap|20-60s|fixed128B",
+   "route": {
+    "approval_ref": "ENGINEERING_FUNCTIONAL_UNAPPROVED",
+    "profile": "MP09",
+    "status": "APPROVED"
+   },
+   "scorability": "SCORABLE"
+  },
+  {
+   "blockers": [],
+   "device": "device10",
+   "frozen_model_law_equivalent": "SW",
+   "law_class": "switching|slow=1s|fast=0.2s|block=60s|fixed128B",
+   "route": {
+    "approval_ref": "ENGINEERING_FUNCTIONAL_UNAPPROVED",
+    "profile": "SW",
+    "status": "APPROVED"
+   },
+   "scorability": "SCORABLE"
+  }
+ ],
+ "models": {
+  "FAM-B-FREQ+IM-device01": {
+   "model_id": "B-FREQ+IM:E3:device01",
+   "weights_sha256": "cda57896611d0cb6de93c6814cbc0cadb2ecc59d363d24fd6b0aac34750bec63"
+  },
+  "FAM-B-FREQ+IM-device02": {
+   "model_id": "B-FREQ+IM:E3:device02",
+   "weights_sha256": "cda57896611d0cb6de93c6814cbc0cadb2ecc59d363d24fd6b0aac34750bec63"
+  },
+  "FX": {
+   "model_id": "A-FX-k3-seed0",
+   "weights_sha256": "c994ec32213f642c98867dde878f3c4414d21f521b9037715584a083d92b7de9"
+  },
+  "MP05": {
+   "model_id": "MP-1-device05-78e8219ea93f",
+   "weights_sha256": "78e8219ea93f7e75bc3aa7012c0bdfd1a112d6ea8397e0cf937f5c85d4abfc2c"
+  },
+  "MP06": {
+   "model_id": "MP-1-device06-22a20167a349",
+   "weights_sha256": "22a20167a3497a73e4f0499477a7c781378f653b6241a3ae0d00fd4932f738ca"
+  },
+  "MP07": {
+   "model_id": "MP-1-device07-d8313ed8c0c8",
+   "weights_sha256": "d8313ed8c0c8f67d73772d37d260d72590122f4cf2d1cef26ae15cbb4f28c418"
+  },
+  "MP08": {
+   "model_id": "MP-1-device08-3ff87ef4d637",
+   "weights_sha256": "3ff87ef4d63741d3054442b5ec3534a3872bd56091e3c81df27ba864d36cb53c"
+  },
+  "MP09": {
+   "model_id": "MP-1-device09-e7d10f566d18",
+   "weights_sha256": "e7d10f566d1877cd5b19278db6efe6ace373753b4bb9bc78b1ed2573664b50cf"
+  },
+  "SU": {
+   "model_id": "A-SU-k3-seed0",
+   "weights_sha256": "ef59e3c13c8be35ab12bb0a343d35f7a2519c8d413dd3a415bcff70cacdee0dd"
+  },
+  "SW": {
+   "model_id": "A-SW-k3-seed0",
+   "weights_sha256": "43c80c826a3fa0caabd07a6cf8fba2f776a1f5f57d285ee6312648751698e4f4"
+  }
+ },
+ "pins": {
+  "observation_config_sha256": "e54e6ccdf1c381cab347e52f36cd543904267e4d42dae27edd9d6fa73cc45b8d",
+  "registry_sha256": "c08d8ccf8909c1252c6c09a74addedd9103a03a32693f636e846dc2f41ee8f5a"
+ },
+ "registry_version": 4,
+ "schema": "azta.decision.device_profile_registry",
+ "schema_version": 1,
+ "status": "ENGINEERING_FUNCTIONAL_UNAPPROVED",
+ "supersedes_sha256": "2c5ccc0d2fcb81300befd5530daa9c973628170d49419a6ca4c0a1a772b6b84e"
+}

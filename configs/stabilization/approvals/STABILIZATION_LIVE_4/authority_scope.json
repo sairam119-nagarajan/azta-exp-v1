@@ -1,0 +1,28 @@
+{
+ "approver_ref": "OWNER-20261110-FINAL-AUTHORIZATION-OVERRIDE",
+ "approver_role": "OWNER",
+ "artifacts": {
+  "authority_map_sha256": "2dfa0f4b24e0a4383e2a45560f499aa8ce5d967b69913ce60c1faabd2acb26b8",
+  "config_sha256": "4b5248501efe407cbebb717358644985c228b78427335a499154aeeeb04dbe4f",
+  "registry_sha256": "d8975623348cf02d94e906327b545dc6718525d1b3290b7ec45ed0374a7694b7",
+  "route_sha256": "1a5236dd3493a0a540add5ba3faf498fd70b2f0ad4c50d210ea102393f997844"
+ },
+ "devices": {
+  "device02": {
+   "actions": [
+    "RESTRICT",
+    "QUARANTINE",
+    "RESTORE"
+   ],
+   "automatic": true
+  }
+ },
+ "environment": "PILOT_ISOLATED",
+ "expires_utc_ns": 1794380704888763100,
+ "issued_utc_ns": 1794337503888763100,
+ "mode": "active-authorized",
+ "schema": "azta.enforcement.authority_scope",
+ "schema_version": 1,
+ "scope_id": "scope-stb-l04",
+ "session_run_id": "stb-l04"
+}

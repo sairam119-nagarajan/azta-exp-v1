@@ -1,0 +1,3004 @@
+{
+ "active": {
+  "clicks": "the owner's RESTORE after each verified containment, APPROVE ONCE for each context and identity review, RESTORE after each identity quarantine; REJECT any unplanned review",
+  "context_cut_after_s": 480,
+  "device": "device02",
+  "episode_max_s": 110
+ },
+ "amended": {
+  "addendum": "docs/final/AZTA_FORMAL_PROTOCOL_ADDENDUM_2.md",
+  "change": "jitter is not applicable to devices 05-09 (no jitter fraction in their frozen laws); those cells run no commanded episode",
+  "supersedes_sha256": "1fdf21fef57993945466f0eb2e35126ac69c992a960d950e161877300eeb9f09"
+ },
+ "anomaly_parameters": {
+  "burst": {
+   "group": 5
+  },
+  "drop": {
+   "probability": 0.8
+  },
+  "jitter": {
+   "fraction": 0.8
+  },
+  "payload": {
+   "bytes": 1024
+  },
+  "rate": {
+   "factor": 5
+  }
+ },
+ "batches": {
+  "A": [
+   "exp-a01",
+   "exp-a02",
+   "exp-a03",
+   "exp-a04",
+   "exp-a05",
+   "exp-a06",
+   "exp-a07",
+   "exp-a08",
+   "exp-a09",
+   "exp-a10",
+   "exp-a11",
+   "exp-a12",
+   "exp-a13",
+   "exp-a14"
+  ],
+  "S1": [
+   "exp-s31",
+   "exp-s32",
+   "exp-s33",
+   "exp-s34",
+   "exp-s35",
+   "exp-s01",
+   "exp-s02",
+   "exp-s03",
+   "exp-s04",
+   "exp-s05",
+   "exp-s06",
+   "exp-s07",
+   "exp-s08",
+   "exp-s09",
+   "exp-s10",
+   "exp-s36",
+   "exp-s37",
+   "exp-s38"
+  ],
+  "S2": [
+   "exp-s11",
+   "exp-s12",
+   "exp-s13",
+   "exp-s14",
+   "exp-s15",
+   "exp-s16",
+   "exp-s17",
+   "exp-s18",
+   "exp-s19",
+   "exp-s20",
+   "exp-s21",
+   "exp-s22",
+   "exp-s23",
+   "exp-s24",
+   "exp-s25",
+   "exp-s26",
+   "exp-s27",
+   "exp-s28",
+   "exp-s29",
+   "exp-s30",
+   "exp-s39",
+   "exp-s40",
+   "exp-s41",
+   "exp-s42",
+   "exp-s43",
+   "exp-s44",
+   "exp-s45"
+  ]
+ },
+ "counts": {
+  "benign_sessions": 5,
+  "context_shadow": 5,
+  "detection_episodes": 225,
+  "enforcement_behavioural": 25,
+  "enforcement_context": 5,
+  "enforcement_identity": 5,
+  "per_kind_per_device": 5,
+  "per_kind_per_device_scope": "every applicable (device, kind) cell",
+  "silence": 5
+ },
+ "declared": "before any formal data and before the reserved TEST runs are opened (supervisor's condition, 11 November 2026)",
+ "devices": [
+  "device01",
+  "device02",
+  "device03",
+  "device04",
+  "device05",
+  "device06",
+  "device07",
+  "device08",
+  "device09",
+  "device10"
+ ],
+ "duration_s_by_width": {
+  "10": 120,
+  "20": 160,
+  "90": 270,
+  "180": 360
+ },
+ "freeze_manifest": "configs/exp_v1/AZTA-EXP-v1_freeze_manifest.json",
+ "freeze_manifest_sha256": "221884e06340cc1a610791ea179c7b522ce8b6633a8442b58d123f115d3b5516",
+ "kinds": [
+  "rate",
+  "payload",
+  "burst",
+  "jitter",
+  "drop"
+ ],
+ "onset_s_by_width": {
+  "10": 150,
+  "20": 150,
+  "90": 180,
+  "180": 180
+ },
+ "release": "AZTA-EXP-v1",
+ "reserved_test_runs": [
+  "g6c-d07",
+  "g5d3a-fx-g6b09",
+  "g5d3a-fx-g6b17"
+ ],
+ "runs": {
+  "exp-a01": {
+   "component": "ENFORCEMENT",
+   "device": "device02",
+   "episodes": [
+    {
+     "kind": "rate"
+    },
+    {
+     "kind": "payload"
+    },
+    {
+     "kind": "context"
+    }
+   ],
+   "mode": "active-authorized",
+   "time_cut_after_s": 480
+  },
+  "exp-a02": {
+   "component": "ENFORCEMENT",
+   "device": "device02",
+   "episodes": [
+    {
+     "kind": "burst"
+    },
+    {
+     "kind": "jitter"
+    },
+    {
+     "kind": "context"
+    }
+   ],
+   "mode": "active-authorized",
+   "time_cut_after_s": 480
+  },
+  "exp-a03": {
+   "component": "ENFORCEMENT",
+   "device": "device02",
+   "episodes": [
+    {
+     "kind": "drop"
+    },
+    {
+     "kind": "rate"
+    },
+    {
+     "kind": "context"
+    }
+   ],
+   "mode": "active-authorized",
+   "time_cut_after_s": 480
+  },
+  "exp-a04": {
+   "component": "ENFORCEMENT",
+   "device": "device02",
+   "episodes": [
+    {
+     "kind": "payload"
+    },
+    {
+     "kind": "burst"
+    },
+    {
+     "kind": "context"
+    }
+   ],
+   "mode": "active-authorized",
+   "time_cut_after_s": 480
+  },
+  "exp-a05": {
+   "component": "ENFORCEMENT",
+   "device": "device02",
+   "episodes": [
+    {
+     "kind": "jitter"
+    },
+    {
+     "kind": "drop"
+    },
+    {
+     "kind": "context"
+    }
+   ],
+   "mode": "active-authorized",
+   "time_cut_after_s": 480
+  },
+  "exp-a06": {
+   "component": "ENFORCEMENT",
+   "device": "device02",
+   "episodes": [
+    {
+     "kind": "rate"
+    },
+    {
+     "kind": "payload"
+    },
+    {
+     "kind": "identity"
+    }
+   ],
+   "mode": "active-authorized",
+   "time_cut_after_s": null
+  },
+  "exp-a07": {
+   "component": "ENFORCEMENT",
+   "device": "device02",
+   "episodes": [
+    {
+     "kind": "burst"
+    },
+    {
+     "kind": "jitter"
+    },
+    {
+     "kind": "identity"
+    }
+   ],
+   "mode": "active-authorized",
+   "time_cut_after_s": null
+  },
+  "exp-a08": {
+   "component": "ENFORCEMENT",
+   "device": "device02",
+   "episodes": [
+    {
+     "kind": "drop"
+    },
+    {
+     "kind": "rate"
+    },
+    {
+     "kind": "identity"
+    }
+   ],
+   "mode": "active-authorized",
+   "time_cut_after_s": null
+  },
+  "exp-a09": {
+   "component": "ENFORCEMENT",
+   "device": "device02",
+   "episodes": [
+    {
+     "kind": "payload"
+    },
+    {
+     "kind": "burst"
+    },
+    {
+     "kind": "identity"
+    }
+   ],
+   "mode": "active-authorized",
+   "time_cut_after_s": null
+  },
+  "exp-a10": {
+   "component": "ENFORCEMENT",
+   "device": "device02",
+   "episodes": [
+    {
+     "kind": "jitter"
+    },
+    {
+     "kind": "drop"
+    },
+    {
+     "kind": "identity"
+    }
+   ],
+   "mode": "active-authorized",
+   "time_cut_after_s": null
+  },
+  "exp-a11": {
+   "component": "ENFORCEMENT",
+   "device": "device02",
+   "episodes": [
+    {
+     "kind": "rate"
+    },
+    {
+     "kind": "payload"
+    },
+    {
+     "kind": "burst"
+    }
+   ],
+   "mode": "active-authorized",
+   "time_cut_after_s": null
+  },
+  "exp-a12": {
+   "component": "ENFORCEMENT",
+   "device": "device02",
+   "episodes": [
+    {
+     "kind": "jitter"
+    },
+    {
+     "kind": "drop"
+    }
+   ],
+   "mode": "active-authorized",
+   "time_cut_after_s": null
+  },
+  "exp-a13": {
+   "component": "SPARE",
+   "device": "device02",
+   "episodes": null,
+   "mode": "active-authorized",
+   "replaces": "a VOID active session that has a context episode",
+   "time_cut_after_s": 480
+  },
+  "exp-a14": {
+   "component": "SPARE",
+   "device": "device02",
+   "episodes": null,
+   "mode": "active-authorized",
+   "replaces": "a VOID active session without a context episode",
+   "time_cut_after_s": null
+  },
+  "exp-s01": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "burst",
+     "onset_s": 180,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device09",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 1,
+   "rotation": 0
+  },
+  "exp-s02": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "drop",
+     "onset_s": 180,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device08",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 1,
+   "rotation": 1
+  },
+  "exp-s03": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "drop",
+     "onset_s": 180,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "rate",
+     "onset_s": 180,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device07",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 1,
+   "rotation": 2
+  },
+  "exp-s04": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "rate",
+     "onset_s": 180,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "payload",
+     "onset_s": 180,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device06",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 1,
+   "rotation": 3
+  },
+  "exp-s05": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "payload",
+     "onset_s": 180,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "burst",
+     "onset_s": 180,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device05",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 1,
+   "rotation": 4
+  },
+  "exp-s06": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "burst",
+     "onset_s": 180,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device09",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 2,
+   "rotation": 0
+  },
+  "exp-s07": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "drop",
+     "onset_s": 180,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device08",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 2,
+   "rotation": 1
+  },
+  "exp-s08": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "drop",
+     "onset_s": 180,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "rate",
+     "onset_s": 180,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device07",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 2,
+   "rotation": 2
+  },
+  "exp-s09": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "rate",
+     "onset_s": 180,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "payload",
+     "onset_s": 180,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device06",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 2,
+   "rotation": 3
+  },
+  "exp-s10": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "payload",
+     "onset_s": 180,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "burst",
+     "onset_s": 180,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device05",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 2,
+   "rotation": 4
+  },
+  "exp-s11": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "burst",
+     "onset_s": 180,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device09",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 3,
+   "rotation": 0
+  },
+  "exp-s12": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "drop",
+     "onset_s": 180,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device08",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 3,
+   "rotation": 1
+  },
+  "exp-s13": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "drop",
+     "onset_s": 180,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "rate",
+     "onset_s": 180,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device07",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 3,
+   "rotation": 2
+  },
+  "exp-s14": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "rate",
+     "onset_s": 180,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "payload",
+     "onset_s": 180,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device06",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 3,
+   "rotation": 3
+  },
+  "exp-s15": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "payload",
+     "onset_s": 180,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "burst",
+     "onset_s": 180,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device05",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 3,
+   "rotation": 4
+  },
+  "exp-s16": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "burst",
+     "onset_s": 180,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device09",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 4,
+   "rotation": 0
+  },
+  "exp-s17": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "drop",
+     "onset_s": 180,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device08",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 4,
+   "rotation": 1
+  },
+  "exp-s18": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "drop",
+     "onset_s": 180,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "rate",
+     "onset_s": 180,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device07",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 4,
+   "rotation": 2
+  },
+  "exp-s19": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "rate",
+     "onset_s": 180,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "payload",
+     "onset_s": 180,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device06",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 4,
+   "rotation": 3
+  },
+  "exp-s20": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "payload",
+     "onset_s": 180,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "burst",
+     "onset_s": 180,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device05",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 4,
+   "rotation": 4
+  },
+  "exp-s21": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "burst",
+     "onset_s": 180,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device09",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 5,
+   "rotation": 0
+  },
+  "exp-s22": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "drop",
+     "onset_s": 180,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device08",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 5,
+   "rotation": 1
+  },
+  "exp-s23": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "drop",
+     "onset_s": 180,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "rate",
+     "onset_s": 180,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device07",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 5,
+   "rotation": 2
+  },
+  "exp-s24": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device05",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "rate",
+     "onset_s": 180,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "payload",
+     "onset_s": 180,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device06",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 5,
+   "rotation": 3
+  },
+  "exp-s25": {
+   "component": "DETECTION",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 120,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device02",
+     "duration_s": 120,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device03",
+     "duration_s": 120,
+     "kind": "payload",
+     "onset_s": 150,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device04",
+     "duration_s": 120,
+     "kind": "burst",
+     "onset_s": 150,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device06",
+     "duration_s": 160,
+     "kind": "drop",
+     "onset_s": 150,
+     "params": {
+      "probability": 0.8
+     }
+    },
+    {
+     "device": "device07",
+     "duration_s": 160,
+     "kind": "rate",
+     "onset_s": 150,
+     "params": {
+      "factor": 5
+     }
+    },
+    {
+     "device": "device08",
+     "duration_s": 270,
+     "kind": "payload",
+     "onset_s": 180,
+     "params": {
+      "bytes": 1024
+     }
+    },
+    {
+     "device": "device09",
+     "duration_s": 360,
+     "kind": "burst",
+     "onset_s": 180,
+     "params": {
+      "group": 5
+     }
+    },
+    {
+     "device": "device10",
+     "duration_s": 120,
+     "kind": "jitter",
+     "onset_s": 150,
+     "params": {
+      "fraction": 0.8
+     }
+    }
+   ],
+   "mode": "shadow",
+   "not_applicable": [
+    {
+     "device": "device05",
+     "kind": "jitter",
+     "reason": "the device's frozen law has no jitter fraction; the live workload refuses the command (addendum 2)"
+    }
+   ],
+   "repetition": 5,
+   "rotation": 4
+  },
+  "exp-s26": {
+   "component": "SCI",
+   "episodes": [
+    {
+     "device": "device01",
+     "duration_s": 200,
+     "kind": "silence",
+     "onset_s": 150,
+     "params": {}
+    },
+    {
+     "device": "device02",
+     "duration_s": null,
+     "kind": "context",
+     "onset_s": 300,
+     "params": {}
+    }
+   ],
+   "mode": "shadow",
+   "repetition": 1,
+   "time_cut_after_s": 300,
+   "time_cut_device": "device02"
+  },
+  "exp-s27": {
+   "component": "SCI",
+   "episodes": [
+    {
+     "device": "device03",
+     "duration_s": 200,
+     "kind": "silence",
+     "onset_s": 150,
+     "params": {}
+    },
+    {
+     "device": "device04",
+     "duration_s": null,
+     "kind": "context",
+     "onset_s": 300,
+     "params": {}
+    }
+   ],
+   "mode": "shadow",
+   "repetition": 2,
+   "time_cut_after_s": 300,
+   "time_cut_device": "device04"
+  },
+  "exp-s28": {
+   "component": "SCI",
+   "episodes": [
+    {
+     "device": "device05",
+     "duration_s": 200,
+     "kind": "silence",
+     "onset_s": 150,
+     "params": {}
+    },
+    {
+     "device": "device06",
+     "duration_s": null,
+     "kind": "context",
+     "onset_s": 300,
+     "params": {}
+    }
+   ],
+   "mode": "shadow",
+   "repetition": 3,
+   "time_cut_after_s": 300,
+   "time_cut_device": "device06"
+  },
+  "exp-s29": {
+   "component": "SCI",
+   "episodes": [
+    {
+     "device": "device07",
+     "duration_s": 200,
+     "kind": "silence",
+     "onset_s": 150,
+     "params": {}
+    },
+    {
+     "device": "device09",
+     "duration_s": null,
+     "kind": "context",
+     "onset_s": 300,
+     "params": {}
+    }
+   ],
+   "mode": "shadow",
+   "repetition": 4,
+   "time_cut_after_s": 300,
+   "time_cut_device": "device09"
+  },
+  "exp-s30": {
+   "component": "SCI",
+   "episodes": [
+    {
+     "device": "device08",
+     "duration_s": 360,
+     "kind": "silence",
+     "onset_s": 150,
+     "params": {}
+    },
+    {
+     "device": "device10",
+     "duration_s": null,
+     "kind": "context",
+     "onset_s": 300,
+     "params": {}
+    }
+   ],
+   "mode": "shadow",
+   "repetition": 5,
+   "time_cut_after_s": 300,
+   "time_cut_device": "device10"
+  },
+  "exp-s31": {
+   "component": "BENIGN",
+   "episodes": [],
+   "mode": "shadow",
+   "repetition": 1
+  },
+  "exp-s32": {
+   "component": "BENIGN",
+   "episodes": [],
+   "mode": "shadow",
+   "repetition": 2
+  },
+  "exp-s33": {
+   "component": "BENIGN",
+   "episodes": [],
+   "mode": "shadow",
+   "repetition": 3
+  },
+  "exp-s34": {
+   "component": "BENIGN",
+   "episodes": [],
+   "mode": "shadow",
+   "repetition": 4
+  },
+  "exp-s35": {
+   "component": "BENIGN",
+   "episodes": [],
+   "mode": "shadow",
+   "repetition": 5
+  },
+  "exp-s36": {
+   "component": "SPARE",
+   "episodes": null,
+   "mode": "shadow",
+   "replaces": "the next VOID DETECTION or BENIGN run, in ledger order"
+  },
+  "exp-s37": {
+   "component": "SPARE",
+   "episodes": null,
+   "mode": "shadow",
+   "replaces": "the next VOID DETECTION or BENIGN run, in ledger order"
+  },
+  "exp-s38": {
+   "component": "SPARE",
+   "episodes": null,
+   "mode": "shadow",
+   "replaces": "the next VOID DETECTION or BENIGN run, in ledger order"
+  },
+  "exp-s39": {
+   "component": "SPARE",
+   "episodes": null,
+   "mode": "shadow",
+   "replaces": "the next VOID DETECTION or BENIGN run, in ledger order"
+  },
+  "exp-s40": {
+   "component": "SPARE",
+   "episodes": null,
+   "mode": "shadow",
+   "replaces": "the next VOID DETECTION or BENIGN run, in ledger order"
+  },
+  "exp-s41": {
+   "component": "SPARE",
+   "episodes": null,
+   "mode": "shadow",
+   "replaces": "exp-s26",
+   "time_cut_after_s": 300,
+   "time_cut_device": "device02"
+  },
+  "exp-s42": {
+   "component": "SPARE",
+   "episodes": null,
+   "mode": "shadow",
+   "replaces": "exp-s27",
+   "time_cut_after_s": 300,
+   "time_cut_device": "device04"
+  },
+  "exp-s43": {
+   "component": "SPARE",
+   "episodes": null,
+   "mode": "shadow",
+   "replaces": "exp-s28",
+   "time_cut_after_s": 300,
+   "time_cut_device": "device06"
+  },
+  "exp-s44": {
+   "component": "SPARE",
+   "episodes": null,
+   "mode": "shadow",
+   "replaces": "exp-s29",
+   "time_cut_after_s": 300,
+   "time_cut_device": "device09"
+  },
+  "exp-s45": {
+   "component": "SPARE",
+   "episodes": null,
+   "mode": "shadow",
+   "replaces": "exp-s30",
+   "time_cut_after_s": 300,
+   "time_cut_device": "device10"
+  }
+ },
+ "schema": "azta.formal.experiment_matrix",
+ "schema_version": 2,
+ "session": {
+  "baseline_policy_sha256": "3e6c25881bc1846036fa27445001f0a69f39e6dd85bc5e137048a78c03179c7b",
+  "broker": "isolated azta-pilot, volume kept, no host port",
+  "clock_session_s": 880,
+  "max_duration_s": 800
+ },
+ "stop_rule": "the campaign stops (no further run) on any broker policy that is not the baseline digest after a run, any enforcement in a shadow run, a restoration failure, a changed protected fingerprint, an unclean tree, or a second consecutive VOID for the same cause.",
+ "void_rule": "a run is VOID only for these machine-checked causes, never for its results: a failed verification or clock certificate, a launcher, workload or observer failure, a failed binding audit, an unapplied scenario command, or (active) a cancelled owner instruction. A VOID run is kept and reported, and replaced once by its spare.",
+ "widths_s": {
+  "device01": 10,
+  "device02": 10,
+  "device03": 10,
+  "device04": 10,
+  "device05": 10,
+  "device06": 20,
+  "device07": 20,
+  "device08": 90,
+  "device09": 180,
+  "device10": 10
+ }
+}

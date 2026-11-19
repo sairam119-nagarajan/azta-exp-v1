@@ -1,0 +1,55 @@
+{
+ "audit_interval_s": 95,
+ "audit_note": "periodic binding audits are capped at 99 by the orchestrator; with a 95 s interval they cover the whole of a 900-window run (pre and post audits bracket every run)",
+ "basis": "Stabilization requirement 3 (supervisor direction plan, point 4): fresh, independently initiated whole ten-device BENIGN runs on the isolated ENGINEERING broker (azta-eng), same corrected benign chain, same profiles and same observation pipeline as CAL2 (g6c-e01). Each run is one independent calibration session with its own run id, its own deterministic seeds and its own orchestrator start. Role CAL5 = benign calibration only. See docs/stabilization/CAL5_PROTOCOL.md.",
+ "benign_conditions": {
+  "N1": {
+   "description": "moderate delivery variation: Gaussian displacement SD 1 ms and rare stalls (0.2 percent, 20 to 70 ms); unchanged Gate 6C condition",
+   "hiccup_ms": [20, 70],
+   "hiccup_rate": 0.002,
+   "sigma_ms": 1.0
+  },
+  "N2": {
+   "description": "rough delivery variation: displacement SD 3 ms and stalls of 20 to 120 ms at 0.5 percent of the messages; unchanged Gate 6C condition",
+   "hiccup_ms": [20, 120],
+   "hiccup_rate": 0.005,
+   "sigma_ms": 3.0
+  },
+  "Q": {
+   "description": "quiet: the corrected publisher with no added variation",
+   "segment": null
+  }
+ },
+ "campaign": "AZTA stabilization campaign (AZTA-EXP-v1), requirement 3: weak-device calibration",
+ "declared_before_data_collection": true,
+ "declared_in_commit": "the commit that adds this file together with docs/stabilization/CAL5_PROTOCOL.md; the collect.log of the CAL5 collection records the start of every run after that commit",
+ "declared_utc": "2026-11-08T12:00:00Z",
+ "eligible_windows": 900,
+ "excluded_window_indices_rule": "window 0 (lead-in) and every post-roll window (index greater than 900) are excluded from every role",
+ "plan_id": "stb-cal5-collection-01",
+ "reused_runs": {
+  "consumed_never_rescored": ["g6c-d05", "g6c-e01", "g6c-f01", "g6c-h01", "g6c-h02"],
+  "reserved_never_opened": ["g6c-d07", "g5d3a-fx-g6b09", "g5d3a-fx-g6b17"]
+ },
+ "roles_of_new_runs": {
+  "g6c-s01": "CAL5: benign calibration session 1 of 4; used only for the AZTA-EXP-v1 calibration constants and their stability analysis; never for detection evaluation, selection or formal experiments",
+  "g6c-s02": "CAL5",
+  "g6c-s03": "CAL5",
+  "g6c-s04": "CAL5"
+ },
+ "runs": {
+  "g6c-s01": {"role": "CAL", "partition_role": "CAL5", "segments": [["N1", 1, 300], ["Q", 301, 600], ["N2", 601, 900]]},
+  "g6c-s02": {"role": "CAL", "partition_role": "CAL5", "segments": [["Q", 1, 300], ["N2", 301, 600], ["N1", 601, 900]]},
+  "g6c-s03": {"role": "CAL", "partition_role": "CAL5", "segments": [["N2", 1, 300], ["N1", 301, 600], ["Q", 601, 900]]},
+  "g6c-s04": {"role": "CAL", "partition_role": "CAL5", "segments": [["Q", 1, 300], ["N1", 301, 600], ["N2", 601, 900]]}
+ },
+ "schema": "azta.gate6c.prelive_partition_plan",
+ "schema_version": 1,
+ "status": "ENGINEERING_CALIBRATION_DECLARED",
+ "use_rules": [
+  "CAL5 (g6c-s01..s04) gives benign reconstruction-loss statistics of the EXISTING deployed models only; no model is fitted, selected or tuned on it",
+  "no detection rate, false-positive rate or trust-accuracy figure is computed on CAL5 and reported as evaluation evidence; only benign calibration stability (protocol section 4)",
+  "the reserved TEST runs and the consumed calibration runs are never opened",
+  "a run that is not CONSISTENT is renamed -VOID-<reason>, kept, listed and replaced by a substitute of the same role declared in a dated amendment, never deleted"
+ ]
+}

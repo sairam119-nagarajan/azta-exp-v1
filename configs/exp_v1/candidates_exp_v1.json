@@ -1,0 +1,5247 @@
+{
+ "arms": {
+  "B-FREQ": {
+   "calibration": {
+    "device01": {
+     "fragile": false,
+     "largest_window_share": 0.0441993230017011,
+     "mu_L": 0.04652820624560804,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.05948526849327626
+    },
+    "device02": {
+     "fragile": false,
+     "largest_window_share": 0.038486212869819764,
+     "mu_L": 0.26790739533738006,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.27419461920228716
+    },
+    "device03": {
+     "fragile": false,
+     "largest_window_share": 0.3325960438276148,
+     "mu_L": 0.01410810726081887,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.03396193321208282
+    },
+    "device04": {
+     "fragile": false,
+     "largest_window_share": 0.044547345113774915,
+     "mu_L": 0.29692660529079085,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.2733470265447073
+    },
+    "device10": {
+     "fragile": false,
+     "largest_window_share": 0.018646432675396205,
+     "mu_L": 0.05668794564773552,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.13162459565232407
+    }
+   },
+   "calibration_per_run": {
+    "device01": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.05245470300692898,
+      "mu_L": 0.048887665207769104,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.059948279157460656
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.09099612501385472,
+      "mu_L": 0.04416874728344699,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.058974170798335224
+     }
+    },
+    "device02": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.07974112856332194,
+      "mu_L": 0.25936146985853353,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.2707413317952284
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.06948329747534872,
+      "mu_L": 0.27645332081622653,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.2775674941241663
+     }
+    },
+    "device03": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.43676585074286006,
+      "mu_L": 0.013939481656804415,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03215551482362145
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.6020941179897572,
+      "mu_L": 0.014276732864833323,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03570318307129359
+     }
+    },
+    "device04": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.08915798447884997,
+      "mu_L": 0.2832536247212669,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.27168417251977617
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.08718656711087323,
+      "mu_L": 0.3105995858603148,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.27454529340945705
+     }
+    },
+    "device10": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.035267441628641774,
+      "mu_L": 0.01997535607280554,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.02504552603505929
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.018263844038649044,
+      "mu_L": 0.0934005352226655,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.17706378672174863
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.015893512656011338,
+    "mu_L": 0.13643165195646667,
+    "n_B": 6000,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.22102710918806212
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "69eb9c02f3cf9e822f231f402393ea46ff44b14be2cc1a490abc32f47e1007ec",
+     "fit_id": "A-B-FREQ-k3-seed0",
+     "weights_sha256": "508279e4adfa3581aa394b6a33f2ce0f17c55b2d81352a9c59de806b0daeacf9"
+    },
+    {
+     "bundle_sha256": "b01c096ca596e8674118ac9158df7785c6ddb55d21d97476206c17d62d5ed645",
+     "fit_id": "A-B-FREQ-k3-seed1",
+     "weights_sha256": "758c01349a9699bab19a1ce2171a76a0fa58c56ce2ab0076f6c20885cca00dfd"
+    },
+    {
+     "bundle_sha256": "29384b67980552be0c1b6e29f09244245e286df29a6f75c75325b13894eca041",
+     "fit_id": "A-B-FREQ-k3-seed2",
+     "weights_sha256": "711c90500b95108f2e542839ed1ba586046ab5c247c26315f3a9ac12321a242e"
+    }
+   ],
+   "form": "shared",
+   "group": "FREQ",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device01": {
+     "A-B-FREQ-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.03556921072681289,
+      "mu_L": 0.10565926009672381,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.1364533588243144
+     },
+     "A-B-FREQ-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.08584801558990644,
+      "mu_L": 0.017861175802194953,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03473070673167725
+     },
+     "A-B-FREQ-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.07860109269039324,
+      "mu_L": 0.016064182837905384,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.025154601431052637
+     }
+    },
+    "device02": {
+     "A-B-FREQ-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.05062429550597965,
+      "mu_L": 0.2073542843377332,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.24581341206673718
+     },
+     "A-B-FREQ-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.038698892215822935,
+      "mu_L": 0.2764954627283746,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.3009578855317075
+     },
+     "A-B-FREQ-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.04324262257629907,
+      "mu_L": 0.3198724389460324,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.3344222800606557
+     }
+    },
+    "device03": {
+     "A-B-FREQ-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.47192599961235165,
+      "mu_L": 0.027147192949188426,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.046673865378327496
+     },
+     "A-B-FREQ-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.5011032543623204,
+      "mu_L": 0.009198373354727512,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03925267600846506
+     },
+     "A-B-FREQ-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.3417027664261464,
+      "mu_L": 0.0059787554785406686,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.02601239310846706
+     }
+    },
+    "device04": {
+     "A-B-FREQ-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.034314673042119305,
+      "mu_L": 0.2786565984013045,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.27643527288660324
+     },
+     "A-B-FREQ-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.07981340563537959,
+      "mu_L": 0.2855494307535135,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.3037752442299178
+     },
+     "A-B-FREQ-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.05213874418674229,
+      "mu_L": 0.3265737867175546,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.3291340127708568
+     }
+    },
+    "device10": {
+     "A-B-FREQ-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.016913034058937914,
+      "mu_L": 0.11367176910070263,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.27429275203761944
+     },
+     "A-B-FREQ-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.02897263935516011,
+      "mu_L": 0.02652144432440758,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.08897464054464789
+     },
+     "A-B-FREQ-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.025664501550630547,
+      "mu_L": 0.029870623518096374,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06934696070157394
+     }
+    }
+   },
+   "members": [
+    "device01",
+    "device02",
+    "device03",
+    "device04",
+    "device10"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "B-FREQ",
+   "networks_bundle_sha256": "1f7de3e2efbaad70a63fa7be5e97cb8ca989a54c83f796d1908c799d64e3ba86",
+   "networks_weights_sha256": "cda57896611d0cb6de93c6814cbc0cadb2ecc59d363d24fd6b0aac34750bec63",
+   "normalizers": {
+    "device01": "98f8c0d620e3e3ff26bb4b2a1a2566a59f4984b835aa7fcc3d3ea78232f78da1",
+    "device02": "e937264d68a1cb30c020444f502994155748bf9c8c4cc66250e960aa1d65609f",
+    "device03": "c88dd0dec31247789146964923b33585160cb5e602e35db62aa025bb82e929f3",
+    "device04": "eb7e2b855cce1cb4a4cfdf4e5a6e03ad3242bfa8543ce963888077b7c655dc93",
+    "device10": "a9c574a79f48e253705fe2c7e8907c02aec4666a09a890f9dc8581bb3b0efc95"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "B-FREQ+IM": {
+   "calibration": {
+    "device01": {
+     "fragile": false,
+     "largest_window_share": 0.0441993230017011,
+     "mu_L": 0.04652820624560804,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.05948526849327626
+    },
+    "device02": {
+     "fragile": false,
+     "largest_window_share": 0.038486212869819764,
+     "mu_L": 0.26790739533738006,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.27419461920228716
+    },
+    "device03": {
+     "fragile": false,
+     "largest_window_share": 0.3325960438276148,
+     "mu_L": 0.01410810726081887,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.03396193321208282
+    },
+    "device04": {
+     "fragile": false,
+     "largest_window_share": 0.044547345113774915,
+     "mu_L": 0.29692660529079085,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.2733470265447073
+    },
+    "device10": {
+     "fragile": false,
+     "largest_window_share": 0.018646432675396205,
+     "mu_L": 0.05668794564773552,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.13162459565232407
+    }
+   },
+   "calibration_per_run": {
+    "device01": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.05245470300692898,
+      "mu_L": 0.048887665207769104,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.059948279157460656
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.09099612501385472,
+      "mu_L": 0.04416874728344699,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.058974170798335224
+     }
+    },
+    "device02": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.07974112856332194,
+      "mu_L": 0.25936146985853353,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.2707413317952284
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.06948329747534872,
+      "mu_L": 0.27645332081622653,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.2775674941241663
+     }
+    },
+    "device03": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.43676585074286006,
+      "mu_L": 0.013939481656804415,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03215551482362145
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.6020941179897572,
+      "mu_L": 0.014276732864833323,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03570318307129359
+     }
+    },
+    "device04": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.08915798447884997,
+      "mu_L": 0.2832536247212669,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.27168417251977617
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.08718656711087323,
+      "mu_L": 0.3105995858603148,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.27454529340945705
+     }
+    },
+    "device10": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.035267441628641774,
+      "mu_L": 0.01997535607280554,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.02504552603505929
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.018263844038649044,
+      "mu_L": 0.0934005352226655,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.17706378672174863
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.015893512656011338,
+    "mu_L": 0.13643165195646667,
+    "n_B": 6000,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.22102710918806212
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "69eb9c02f3cf9e822f231f402393ea46ff44b14be2cc1a490abc32f47e1007ec",
+     "fit_id": "A-B-FREQ-k3-seed0",
+     "weights_sha256": "508279e4adfa3581aa394b6a33f2ce0f17c55b2d81352a9c59de806b0daeacf9"
+    },
+    {
+     "bundle_sha256": "b01c096ca596e8674118ac9158df7785c6ddb55d21d97476206c17d62d5ed645",
+     "fit_id": "A-B-FREQ-k3-seed1",
+     "weights_sha256": "758c01349a9699bab19a1ce2171a76a0fa58c56ce2ab0076f6c20885cca00dfd"
+    },
+    {
+     "bundle_sha256": "29384b67980552be0c1b6e29f09244245e286df29a6f75c75325b13894eca041",
+     "fit_id": "A-B-FREQ-k3-seed2",
+     "weights_sha256": "711c90500b95108f2e542839ed1ba586046ab5c247c26315f3a9ac12321a242e"
+    }
+   ],
+   "form": "shared",
+   "group": "FREQ",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device01": {
+     "A-B-FREQ-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.03556921072681289,
+      "mu_L": 0.10565926009672381,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.1364533588243144
+     },
+     "A-B-FREQ-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.08584801558990644,
+      "mu_L": 0.017861175802194953,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03473070673167725
+     },
+     "A-B-FREQ-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.07860109269039324,
+      "mu_L": 0.016064182837905384,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.025154601431052637
+     }
+    },
+    "device02": {
+     "A-B-FREQ-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.05062429550597965,
+      "mu_L": 0.2073542843377332,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.24581341206673718
+     },
+     "A-B-FREQ-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.038698892215822935,
+      "mu_L": 0.2764954627283746,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.3009578855317075
+     },
+     "A-B-FREQ-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.04324262257629907,
+      "mu_L": 0.3198724389460324,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.3344222800606557
+     }
+    },
+    "device03": {
+     "A-B-FREQ-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.47192599961235165,
+      "mu_L": 0.027147192949188426,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.046673865378327496
+     },
+     "A-B-FREQ-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.5011032543623204,
+      "mu_L": 0.009198373354727512,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03925267600846506
+     },
+     "A-B-FREQ-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.3417027664261464,
+      "mu_L": 0.0059787554785406686,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.02601239310846706
+     }
+    },
+    "device04": {
+     "A-B-FREQ-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.034314673042119305,
+      "mu_L": 0.2786565984013045,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.27643527288660324
+     },
+     "A-B-FREQ-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.07981340563537959,
+      "mu_L": 0.2855494307535135,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.3037752442299178
+     },
+     "A-B-FREQ-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.05213874418674229,
+      "mu_L": 0.3265737867175546,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.3291340127708568
+     }
+    },
+    "device10": {
+     "A-B-FREQ-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.016913034058937914,
+      "mu_L": 0.11367176910070263,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.27429275203761944
+     },
+     "A-B-FREQ-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.02897263935516011,
+      "mu_L": 0.02652144432440758,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.08897464054464789
+     },
+     "A-B-FREQ-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.025664501550630547,
+      "mu_L": 0.029870623518096374,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06934696070157394
+     }
+    }
+   },
+   "members": [
+    "device01",
+    "device02",
+    "device03",
+    "device04",
+    "device10"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "B-FREQ",
+   "networks_bundle_sha256": "1f7de3e2efbaad70a63fa7be5e97cb8ca989a54c83f796d1908c799d64e3ba86",
+   "networks_weights_sha256": "cda57896611d0cb6de93c6814cbc0cadb2ecc59d363d24fd6b0aac34750bec63",
+   "normalizers": {
+    "device01": "98f8c0d620e3e3ff26bb4b2a1a2566a59f4984b835aa7fcc3d3ea78232f78da1",
+    "device02": "e937264d68a1cb30c020444f502994155748bf9c8c4cc66250e960aa1d65609f",
+    "device03": "c88dd0dec31247789146964923b33585160cb5e602e35db62aa025bb82e929f3",
+    "device04": "eb7e2b855cce1cb4a4cfdf4e5a6e03ad3242bfa8543ce963888077b7c655dc93",
+    "device10": "a9c574a79f48e253705fe2c7e8907c02aec4666a09a890f9dc8581bb3b0efc95"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "B-FREQ-x03": {
+   "calibration": {
+    "device01": {
+     "fragile": false,
+     "largest_window_share": 0.03691069147307282,
+     "mu_L": 0.05339694728331825,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.05175565895410216
+    },
+    "device02": {
+     "fragile": false,
+     "largest_window_share": 0.054063928682772454,
+     "mu_L": 0.29806903591789263,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.2932474555607634
+    },
+    "device04": {
+     "fragile": false,
+     "largest_window_share": 0.06655228378001547,
+     "mu_L": 0.3132545547963147,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.27974871057954676
+    },
+    "device10": {
+     "fragile": false,
+     "largest_window_share": 0.02514622469322658,
+     "mu_L": 0.025630656445080915,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.03831403164362253
+    }
+   },
+   "calibration_per_run": {
+    "device01": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.061582190342596224,
+      "mu_L": 0.05465819436970045,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.05354003261491424
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.07999817278237385,
+      "mu_L": 0.052135700196936044,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.049920401062253004
+     }
+    },
+    "device02": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.06111056802490076,
+      "mu_L": 0.28604616302561964,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.2842945075310751
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.10120528624339918,
+      "mu_L": 0.31009190881016563,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.3016931462824026
+     }
+    },
+    "device04": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.14440626222684566,
+      "mu_L": 0.29888266739342634,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.26655492722541785
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.1209827970058654,
+      "mu_L": 0.3276264421992031,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.2918630003109229
+     }
+    },
+    "device10": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.0552224567066466,
+      "mu_L": 0.01779043067822501,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.019583687552320067
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.028163046410615896,
+      "mu_L": 0.03347088221193682,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.049312436534171965
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.024234014895209,
+    "mu_L": 0.17258779861065165,
+    "n_B": 4800,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.24476782627835342
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "2107e70dec7f32c1ffb819cc0c81628d5896874b26505b2dd6e004c944bc4279",
+     "fit_id": "A-B-FREQ-x03-k3-seed0",
+     "weights_sha256": "65ee2baa678019a8c690810252ab4e0dba35537be0803d50f7c5b80fcf6aa6af"
+    },
+    {
+     "bundle_sha256": "c8ad5f0337b41f03e95f74d95b86f2f9f397d219242971984fedbc22ab3ecbac",
+     "fit_id": "A-B-FREQ-x03-k3-seed1",
+     "weights_sha256": "ff2a1a2a6beba4cbc2ff91dcec401f98c507ddd31ab6ce03250290dc6798e527"
+    },
+    {
+     "bundle_sha256": "eaf74e0699e4466195d044edbadf420a7aa545658d9fb9fc1e85eb5ecac851fe",
+     "fit_id": "A-B-FREQ-x03-k3-seed2",
+     "weights_sha256": "458a2c91adbebc6a00719b6b7e0455ab38fc13c0f62fc29dc5334cd459ea33a9"
+    }
+   ],
+   "form": "lodo",
+   "group": "FREQ",
+   "held_out": {
+    "device03": {
+     "calibration": {
+      "fragile": false,
+      "largest_window_share": 0.04814770493740413,
+      "mu_L": 0.04479122629944917,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.04833627825615686
+     },
+     "normalizer_from": "IND-B-device03",
+     "normalizer_sha256": "c88dd0dec31247789146964923b33585160cb5e602e35db62aa025bb82e929f3"
+    }
+   },
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device01": {
+     "A-B-FREQ-x03-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.040747466382384745,
+      "mu_L": 0.05482572348398256,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06014513734104579
+     },
+     "A-B-FREQ-x03-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.03691849887400065,
+      "mu_L": 0.05242693267994539,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.05503577484641086
+     },
+     "A-B-FREQ-x03-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.11689061412492548,
+      "mu_L": 0.052938185686026804,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06077871614697859
+     }
+    },
+    "device02": {
+     "A-B-FREQ-x03-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.048679430770023936,
+      "mu_L": 0.32862722601706323,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.32299091060249924
+     },
+     "A-B-FREQ-x03-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.09562863633227257,
+      "mu_L": 0.30453857406586626,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.32670913194998175
+     },
+     "A-B-FREQ-x03-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.04824981243715722,
+      "mu_L": 0.2610413076707484,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.29332808463183413
+     }
+    },
+    "device04": {
+     "A-B-FREQ-x03-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.04773333145637477,
+      "mu_L": 0.3472417542679662,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.3189274953665865
+     },
+     "A-B-FREQ-x03-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.14608980714241424,
+      "mu_L": 0.31309531701095644,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.31496748668896435
+     },
+     "A-B-FREQ-x03-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.10735148919452935,
+      "mu_L": 0.2794265931100215,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.2949681350232229
+     }
+    },
+    "device10": {
+     "A-B-FREQ-x03-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.05572491132986587,
+      "mu_L": 0.018176673130091085,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.030735227669439286
+     },
+     "A-B-FREQ-x03-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.012287354060804551,
+      "mu_L": 0.018899807096255692,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0141658446797559
+     },
+     "A-B-FREQ-x03-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.028836030855440724,
+      "mu_L": 0.039815489108895964,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.09860448695334569
+     }
+    }
+   },
+   "members": [
+    "device01",
+    "device02",
+    "device04",
+    "device10"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "B-FREQ-x03",
+   "networks_bundle_sha256": "d02ae7c6c2cb86fb273fa8a94b5a0db4810727533f87db9b6029a886ff12276b",
+   "networks_weights_sha256": "4d5ea35a32b742ef73d17e786d881f9e5a04d0b0a644bc3348a329d1b33077bf",
+   "normalizers": {
+    "device01": "98f8c0d620e3e3ff26bb4b2a1a2566a59f4984b835aa7fcc3d3ea78232f78da1",
+    "device02": "e937264d68a1cb30c020444f502994155748bf9c8c4cc66250e960aa1d65609f",
+    "device04": "eb7e2b855cce1cb4a4cfdf4e5a6e03ad3242bfa8543ce963888077b7c655dc93",
+    "device10": "a9c574a79f48e253705fe2c7e8907c02aec4666a09a890f9dc8581bb3b0efc95"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "B-PER-x07": {
+   "calibration": {
+    "device05": {
+     "fragile": true,
+     "largest_window_share": 0.5620461935530918,
+     "mu_L": 0.01589874510433913,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.08035803585676916
+    },
+    "device06": {
+     "fragile": true,
+     "largest_window_share": 0.6760221971751791,
+     "mu_L": 0.061508495066965686,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.16736842416290632
+    },
+    "device08": {
+     "fragile": false,
+     "largest_window_share": 0.45967670648134445,
+     "mu_L": 0.06491961668742109,
+     "n_B": 132,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.10066949855546044
+    }
+   },
+   "calibration_per_run": {
+    "device05": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.8360071681813109,
+      "mu_L": 0.016268936853744843,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.09320289906116938
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.8618970738837012,
+      "mu_L": 0.015528553354933413,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06510417223518172
+     }
+    },
+    "device06": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.8596221783238056,
+      "mu_L": 0.06205463812141841,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.21004269705532466
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.3922217635164899,
+      "mu_L": 0.06096235201251298,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.10954237508775712
+     }
+    },
+    "device08": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.2054553627910999,
+      "mu_L": 0.053153065861907024,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.04006448877268292
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.4913085694633694,
+      "mu_L": 0.07668616751293514,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.13615536043024692
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.42998976117999654,
+    "mu_L": 0.03341251582201136,
+    "n_B": 1932,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.11785693259319922
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "015f3217b66224e59b8a096af04aab3c39a26b55bff938bb8ce9819a213359b7",
+     "fit_id": "A-B-PER-x07-k3-seed0",
+     "weights_sha256": "c5a0982639327e3ad5c2625efe14b05c50bb378deeb1e55242368de86993cd34"
+    },
+    {
+     "bundle_sha256": "7c94d2458c21816f5fa4ae02fb895431a889902e3d16a2e118e8e376c5b9867b",
+     "fit_id": "A-B-PER-x07-k3-seed1",
+     "weights_sha256": "fa413bb7325463466562b2b912ef5c4789a94c324d85414ec1dffe98fd5e7193"
+    },
+    {
+     "bundle_sha256": "e0f8048644da82085d00b432f6ac618c1977cf09b84f094e8153016a6851f302",
+     "fit_id": "A-B-PER-x07-k3-seed2",
+     "weights_sha256": "124b1ba662fe85444aa58eb05495efa78589ca8a8db521a7a8160ec4c1177bd8"
+    }
+   ],
+   "form": "lodo",
+   "group": "PER",
+   "held_out": {
+    "device07": {
+     "calibration": {
+      "fragile": false,
+      "largest_window_share": 0.3239329711723176,
+      "mu_L": 0.04804859440519309,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03442512625086953
+     },
+     "normalizer_from": "IND-B-device07",
+     "normalizer_sha256": "18317738ed73e7d7a7218da5c9827f0d0bcaa80bae5aba0e0f3f0728da5863ef"
+    }
+   },
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device05": {
+     "A-B-PER-x07-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.2068865117818491,
+      "mu_L": 0.003017130052722149,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.014661913915241319
+     },
+     "A-B-PER-x07-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.09009739781081245,
+      "mu_L": 0.016600730202525008,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03191411590896361
+     },
+     "A-B-PER-x07-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.6019704224938863,
+      "mu_L": 0.028078375057770236,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.22227106810726635
+     }
+    },
+    "device06": {
+     "A-B-PER-x07-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.9088908145419733,
+      "mu_L": 0.05536536635144527,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.3108208535442856
+     },
+     "A-B-PER-x07-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.560382675708587,
+      "mu_L": 0.05931370706926654,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.1427360022208757
+     },
+     "A-B-PER-x07-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.5807116383045308,
+      "mu_L": 0.06984641178018527,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.16892883651890744
+     }
+    },
+    "device08": {
+     "A-B-PER-x07-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.24614768792487354,
+      "mu_L": 0.03582534448273203,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.05644766183546021
+     },
+     "A-B-PER-x07-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.1440344025251982,
+      "mu_L": 0.066381124400205,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.04493937707069661
+     },
+     "A-B-PER-x07-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.5042778275836475,
+      "mu_L": 0.09255238117932622,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.26800402604599605
+     }
+    }
+   },
+   "members": [
+    "device05",
+    "device06",
+    "device08"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "B-PER-x07",
+   "networks_bundle_sha256": "4b8f37fd3b1f18f3e7a2fbcbeb49e26bd5d3ed38097b9eb05879e0f586d98180",
+   "networks_weights_sha256": "d0413c2ce361e5786d9dfa371686d51624d6dc3041cec5eef56dd5fcee05feba",
+   "normalizers": {
+    "device05": "aa5ec8930e228c00e497875b78c29b8f30a30b3253fb5e166460bcbb5cc34dcc",
+    "device06": "1956c44d00f54aba6c5e036852d16a5e6423fdfc62ff45c0c7c73bfe06f37e62",
+    "device08": "90736c58cdfe4d3cfb94f96d17d42679e2c1a976cbdd20b4119210df88b2ce92"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "C-PER": {
+   "calibration": {
+    "device05": {
+     "fragile": false,
+     "largest_window_share": 0.3636035888674983,
+     "mu_L": 0.009065294201008947,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.030388248260201284
+    },
+    "device06": {
+     "fragile": false,
+     "largest_window_share": 0.09725631551168105,
+     "mu_L": 0.055483000714217356,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.06000547846291365
+    },
+    "device07": {
+     "fragile": true,
+     "largest_window_share": 0.6870356532495054,
+     "mu_L": 0.0040795822641273745,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.013758724661177894
+    },
+    "device08": {
+     "fragile": false,
+     "largest_window_share": 0.4811411947663066,
+     "mu_L": 0.01270328280471107,
+     "n_B": 132,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.04977429421273945
+    }
+   },
+   "calibration_per_run": {
+    "device05": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.5898146007089639,
+      "mu_L": 0.009271106921720656,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0337456090989016
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.6589961520359093,
+      "mu_L": 0.008859481480297238,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.02663797885483006
+     }
+    },
+    "device06": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.19513751792014528,
+      "mu_L": 0.05375178725880673,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06018603865288385
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.17212268103413453,
+      "mu_L": 0.05721421416962798,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.05987473363152107
+     }
+    },
+    "device07": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.7732363863517475,
+      "mu_L": 0.004775950570571903,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.01831068561991737
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.21432140384549708,
+      "mu_L": 0.0033832139576828444,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.006556204555135551
+     }
+    },
+    "device08": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.3162876946597502,
+      "mu_L": 0.006651364827797976,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.013625553100420386
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.49214722747272877,
+      "mu_L": 0.018755200781624168,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06879710565591142
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.08196812468823092,
+    "mu_L": 0.01907296056810404,
+    "n_B": 2532,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.043356699449813366
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "9b3d8cc5ca5eb4b1c94e0bb0981315bb99acb9b74e7c7cf47175c7d3f8032151",
+     "fit_id": "A-C-PER-k3-seed0",
+     "weights_sha256": "56f0e5e81fbaee70c75e5bc06fd733dc618eea10e7b83b3230e7a1bcca81c0b8"
+    },
+    {
+     "bundle_sha256": "d4eab49827fb28985538be091abaf6765528bb2f9700d62cb09455772c1c5776",
+     "fit_id": "A-C-PER-k3-seed1",
+     "weights_sha256": "247577b863e8868d0cf82581f3f7474f0079b5c2bd7ba283eeab3412353a242f"
+    },
+    {
+     "bundle_sha256": "7313d252722ed997953295d1ee1ea18ec5c45e8dc00e00727226f430fc9a6831",
+     "fit_id": "A-C-PER-k3-seed2",
+     "weights_sha256": "053c00c7b13325c09952345e31a1e971f07a895f44896e526a8e678689200461"
+    }
+   ],
+   "form": "shared",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device05": {
+     "A-C-PER-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.3867054729675491,
+      "mu_L": 0.00706870225669916,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.028910636866916892
+     },
+     "A-C-PER-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.4186914355499486,
+      "mu_L": 0.007550231042646652,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.02935538647123151
+     },
+     "A-C-PER-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.24210612069703066,
+      "mu_L": 0.01257694930368103,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03657986699751903
+     }
+    },
+    "device06": {
+     "A-C-PER-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.051378190673619234,
+      "mu_L": 0.06889200601212621,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.08056492670540535
+     },
+     "A-C-PER-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.6074260858848605,
+      "mu_L": 0.029175319213409535,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.07356072357202291
+     },
+     "A-C-PER-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.04646147260133306,
+      "mu_L": 0.06838167691711633,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.08205903048198246
+     }
+    },
+    "device07": {
+     "A-C-PER-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.6833404183368988,
+      "mu_L": 0.0039049570577238063,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.013730058501896758
+     },
+     "A-C-PER-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.6864974408850041,
+      "mu_L": 0.004031175262434982,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0134831827709675
+     },
+     "A-C-PER-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.6891176138061824,
+      "mu_L": 0.004302614472223331,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.01408386507616475
+     }
+    },
+    "device08": {
+     "A-C-PER-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.4804613484292848,
+      "mu_L": 0.012492458456753322,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.04951898508797339
+     },
+     "A-C-PER-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.4913215377232673,
+      "mu_L": 0.01248858496195853,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.049462994429544535
+     },
+     "A-C-PER-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.47171752947403583,
+      "mu_L": 0.01312880499542137,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.050350878333862384
+     }
+    }
+   },
+   "members": [
+    "device05",
+    "device06",
+    "device07",
+    "device08"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "C-PER",
+   "networks_bundle_sha256": "4eefd4d6bbf611b04526a0b62166a1e154fd9d88200c83978cddecbfe9f629d2",
+   "networks_weights_sha256": "d3738f1d273e37026c623cb11317d1e6d370d7a711df974042dcacb81d04cecd",
+   "normalizers": {
+    "device05": "9bb62eb9dca9949aea8e14a5a9e35e141ed85d0f7bff0f2d755c2544d94f1eb6",
+    "device06": "dc642ae1f99d071421963b0bbae693fff0a143232c97c142366e216d388095e3",
+    "device07": "9d47959cb27996502e028d61979c1b0da9b9a7e7fd50654d7ae286ee897c2f02",
+    "device08": "8991ae3528848a0c586c4d5d6fecedff22d85f0dc398f753a7aea54eed6b64f4"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "C-PER+IM": {
+   "calibration": {
+    "device05": {
+     "fragile": false,
+     "largest_window_share": 0.3636035888674983,
+     "mu_L": 0.009065294201008947,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.030388248260201284
+    },
+    "device06": {
+     "fragile": false,
+     "largest_window_share": 0.09725631551168105,
+     "mu_L": 0.055483000714217356,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.06000547846291365
+    },
+    "device07": {
+     "fragile": true,
+     "largest_window_share": 0.6870356532495054,
+     "mu_L": 0.0040795822641273745,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.013758724661177894
+    },
+    "device08": {
+     "fragile": false,
+     "largest_window_share": 0.4811411947663066,
+     "mu_L": 0.01270328280471107,
+     "n_B": 132,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.04977429421273945
+    }
+   },
+   "calibration_per_run": {
+    "device05": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.5898146007089639,
+      "mu_L": 0.009271106921720656,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0337456090989016
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.6589961520359093,
+      "mu_L": 0.008859481480297238,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.02663797885483006
+     }
+    },
+    "device06": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.19513751792014528,
+      "mu_L": 0.05375178725880673,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06018603865288385
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.17212268103413453,
+      "mu_L": 0.05721421416962798,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.05987473363152107
+     }
+    },
+    "device07": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.7732363863517475,
+      "mu_L": 0.004775950570571903,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.01831068561991737
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.21432140384549708,
+      "mu_L": 0.0033832139576828444,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.006556204555135551
+     }
+    },
+    "device08": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.3162876946597502,
+      "mu_L": 0.006651364827797976,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.013625553100420386
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.49214722747272877,
+      "mu_L": 0.018755200781624168,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06879710565591142
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.08196812468823092,
+    "mu_L": 0.01907296056810404,
+    "n_B": 2532,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.043356699449813366
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "9b3d8cc5ca5eb4b1c94e0bb0981315bb99acb9b74e7c7cf47175c7d3f8032151",
+     "fit_id": "A-C-PER-k3-seed0",
+     "weights_sha256": "56f0e5e81fbaee70c75e5bc06fd733dc618eea10e7b83b3230e7a1bcca81c0b8"
+    },
+    {
+     "bundle_sha256": "d4eab49827fb28985538be091abaf6765528bb2f9700d62cb09455772c1c5776",
+     "fit_id": "A-C-PER-k3-seed1",
+     "weights_sha256": "247577b863e8868d0cf82581f3f7474f0079b5c2bd7ba283eeab3412353a242f"
+    },
+    {
+     "bundle_sha256": "7313d252722ed997953295d1ee1ea18ec5c45e8dc00e00727226f430fc9a6831",
+     "fit_id": "A-C-PER-k3-seed2",
+     "weights_sha256": "053c00c7b13325c09952345e31a1e971f07a895f44896e526a8e678689200461"
+    }
+   ],
+   "form": "shared",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device05": {
+     "A-C-PER-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.3867054729675491,
+      "mu_L": 0.00706870225669916,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.028910636866916892
+     },
+     "A-C-PER-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.4186914355499486,
+      "mu_L": 0.007550231042646652,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.02935538647123151
+     },
+     "A-C-PER-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.24210612069703066,
+      "mu_L": 0.01257694930368103,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03657986699751903
+     }
+    },
+    "device06": {
+     "A-C-PER-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.051378190673619234,
+      "mu_L": 0.06889200601212621,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.08056492670540535
+     },
+     "A-C-PER-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.6074260858848605,
+      "mu_L": 0.029175319213409535,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.07356072357202291
+     },
+     "A-C-PER-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.04646147260133306,
+      "mu_L": 0.06838167691711633,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.08205903048198246
+     }
+    },
+    "device07": {
+     "A-C-PER-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.6833404183368988,
+      "mu_L": 0.0039049570577238063,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.013730058501896758
+     },
+     "A-C-PER-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.6864974408850041,
+      "mu_L": 0.004031175262434982,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0134831827709675
+     },
+     "A-C-PER-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.6891176138061824,
+      "mu_L": 0.004302614472223331,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.01408386507616475
+     }
+    },
+    "device08": {
+     "A-C-PER-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.4804613484292848,
+      "mu_L": 0.012492458456753322,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.04951898508797339
+     },
+     "A-C-PER-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.4913215377232673,
+      "mu_L": 0.01248858496195853,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.049462994429544535
+     },
+     "A-C-PER-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.47171752947403583,
+      "mu_L": 0.01312880499542137,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.050350878333862384
+     }
+    }
+   },
+   "members": [
+    "device05",
+    "device06",
+    "device07",
+    "device08"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "C-PER",
+   "networks_bundle_sha256": "4eefd4d6bbf611b04526a0b62166a1e154fd9d88200c83978cddecbfe9f629d2",
+   "networks_weights_sha256": "d3738f1d273e37026c623cb11317d1e6d370d7a711df974042dcacb81d04cecd",
+   "normalizers": {
+    "device05": "9bb62eb9dca9949aea8e14a5a9e35e141ed85d0f7bff0f2d755c2544d94f1eb6",
+    "device06": "dc642ae1f99d071421963b0bbae693fff0a143232c97c142366e216d388095e3",
+    "device07": "9d47959cb27996502e028d61979c1b0da9b9a7e7fd50654d7ae286ee897c2f02",
+    "device08": "8991ae3528848a0c586c4d5d6fecedff22d85f0dc398f753a7aea54eed6b64f4"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "EA-C-PER": {
+   "calibration": {
+    "device05": {
+     "fragile": false,
+     "largest_window_share": 0.3335599948991599,
+     "mu_L": 0.013455862126464962,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.030099192892418025
+    },
+    "device06": {
+     "fragile": false,
+     "largest_window_share": 0.21935732936712155,
+     "mu_L": 0.029267387283910925,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.043000604634961
+    },
+    "device07": {
+     "fragile": true,
+     "largest_window_share": 0.5140132568034106,
+     "mu_L": 0.009157989842000192,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.016760171691265653
+    },
+    "device08": {
+     "fragile": false,
+     "largest_window_share": 0.4640662838074672,
+     "mu_L": 0.01682935167435582,
+     "n_B": 132,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.04971421586166617
+    }
+   },
+   "calibration_per_run": {
+    "device05": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.5798562574491113,
+      "mu_L": 0.013034845823113848,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03232075449521503
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.7038264874549208,
+      "mu_L": 0.013876878429816074,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.027720912855962364
+     }
+    },
+    "device06": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.12251798590610308,
+      "mu_L": 0.02681522467756653,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03555282392732321
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.3313120455217877,
+      "mu_L": 0.031719549890255314,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.04927695612377897
+     }
+    },
+    "device07": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.6246502719892342,
+      "mu_L": 0.010093370445916234,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.021450699268100584
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.10256759362817863,
+      "mu_L": 0.008222609238084152,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.010042806434760595
+     }
+    },
+    "device08": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.2665352714460148,
+      "mu_L": 0.011253514221624576,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.016140043626555956
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.48213773719845887,
+      "mu_L": 0.022405189127087066,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06824508843438605
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.126929441795581,
+    "mu_L": 0.016360085011184675,
+    "n_B": 2532,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.03342132871644883
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "c553f682cc2849b1caf82d70745f5e51c830154f84a7e75543b2ad0b11db9ed7",
+     "fit_id": "A-EA-C-PER-k3-seed0",
+     "weights_sha256": "d6474842e886b0d33deccbb82539509eca231dcba3e88cd6f38dfdb4d4a508c8"
+    },
+    {
+     "bundle_sha256": "c92d1ffce22aa99e2a481a262aef46126853fa0d39ac79f4e1a5141a5a23d062",
+     "fit_id": "A-EA-C-PER-k3-seed1",
+     "weights_sha256": "6a554a557155dbaa60103690dca3628e070997538fd235a8dfbf599002520b97"
+    },
+    {
+     "bundle_sha256": "11c3601dfca9731ec721f659f3deec84abc7d0fbb2e4f692638f4a5ffcc7ed50",
+     "fit_id": "A-EA-C-PER-k3-seed2",
+     "weights_sha256": "67511af89c1ee2c1e4da6dee71b4be6c47ced89f68a079a32374f65953651ab1"
+    }
+   ],
+   "form": "shared",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device05": {
+     "A-EA-C-PER-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.29253877513465054,
+      "mu_L": 0.019338824150312503,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03045133651620437
+     },
+     "A-EA-C-PER-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.3429148619954122,
+      "mu_L": 0.012810085590217107,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03079895268308714
+     },
+     "A-EA-C-PER-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.3528412320285558,
+      "mu_L": 0.008218676638865278,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.029889914585247226
+     }
+    },
+    "device06": {
+     "A-EA-C-PER-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.17630674890881567,
+      "mu_L": 0.036231181413415754,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.04465303192989104
+     },
+     "A-EA-C-PER-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.15745770097578674,
+      "mu_L": 0.025664286680451998,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06202499028037502
+     },
+     "A-EA-C-PER-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.16280030072629117,
+      "mu_L": 0.025906693757865022,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.05393011531178337
+     }
+    },
+    "device07": {
+     "A-EA-C-PER-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.5433349989921241,
+      "mu_L": 0.009240979417912243,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.016098150677433153
+     },
+     "A-EA-C-PER-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.2377287117206075,
+      "mu_L": 0.013626631637757024,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.024048062468353868
+     },
+     "A-EA-C-PER-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.729323401725725,
+      "mu_L": 0.0046063584703313135,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.014586701159043985
+     }
+    },
+    "device08": {
+     "A-EA-C-PER-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.4561247902247545,
+      "mu_L": 0.016148268105548987,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0496265402922354
+     },
+     "A-EA-C-PER-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.4318649967594467,
+      "mu_L": 0.020986167828436326,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.05038335427317428
+     },
+     "A-EA-C-PER-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.4863625815727097,
+      "mu_L": 0.013353619089082157,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.05014810752389169
+     }
+    }
+   },
+   "members": [
+    "device05",
+    "device06",
+    "device07",
+    "device08"
+   ],
+   "models_dir": "results/engineering/gate6c/p2/models/p2-train-01",
+   "network": "EA-C-PER",
+   "networks_bundle_sha256": "b4c2cb003b88c8c0b23958a0544b4e214cefcfece16ae417cedfe38525926471",
+   "networks_weights_sha256": "810128b9abfe34092ad288f7e023d1ac54d2f2f65591bac3bfce5cb9d2606a3a",
+   "normalizers": {
+    "device05": "9bb62eb9dca9949aea8e14a5a9e35e141ed85d0f7bff0f2d755c2544d94f1eb6",
+    "device06": "5c950001100474f212817d321f368edd7a63cbe6b553732e1f033e168189c59d",
+    "device07": "35df4d15e23c0f5ec864ddba75cd2ac6997859af26d01e7887776a0f5f2055ab",
+    "device08": "0b77f167386ba2f91bdd24d58f3a2ec3a9466359ebc600b85a9a6cf76ac82ff9"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "EA-C-PER+IM": {
+   "calibration": {
+    "device05": {
+     "calibration_id": "stb-cal5-01",
+     "fragile": true,
+     "largest_window_share": 0.6568265639207226,
+     "mu_L": 0.015212905705387882,
+     "n_B": 3600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.07150383098680918
+    },
+    "device06": {
+     "fragile": false,
+     "largest_window_share": 0.21935732936712155,
+     "mu_L": 0.029267387283910925,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.043000604634961
+    },
+    "device07": {
+     "fragile": true,
+     "largest_window_share": 0.5140132568034106,
+     "mu_L": 0.009157989842000192,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.016760171691265653
+    },
+    "device08": {
+     "fragile": false,
+     "largest_window_share": 0.4640662838074672,
+     "mu_L": 0.01682935167435582,
+     "n_B": 132,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.04971421586166617
+    }
+   },
+   "calibration_per_run": {
+    "device05": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.5798562574491113,
+      "mu_L": 0.013034845823113848,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03232075449521503
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.7038264874549208,
+      "mu_L": 0.013876878429816074,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.027720912855962364
+     }
+    },
+    "device06": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.12251798590610308,
+      "mu_L": 0.02681522467756653,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03555282392732321
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.3313120455217877,
+      "mu_L": 0.031719549890255314,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.04927695612377897
+     }
+    },
+    "device07": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.6246502719892342,
+      "mu_L": 0.010093370445916234,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.021450699268100584
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.10256759362817863,
+      "mu_L": 0.008222609238084152,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.010042806434760595
+     }
+    },
+    "device08": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.2665352714460148,
+      "mu_L": 0.011253514221624576,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.016140043626555956
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.48213773719845887,
+      "mu_L": 0.022405189127087066,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06824508843438605
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.126929441795581,
+    "mu_L": 0.016360085011184675,
+    "n_B": 2532,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.03342132871644883
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "c553f682cc2849b1caf82d70745f5e51c830154f84a7e75543b2ad0b11db9ed7",
+     "fit_id": "A-EA-C-PER-k3-seed0",
+     "weights_sha256": "d6474842e886b0d33deccbb82539509eca231dcba3e88cd6f38dfdb4d4a508c8"
+    },
+    {
+     "bundle_sha256": "c92d1ffce22aa99e2a481a262aef46126853fa0d39ac79f4e1a5141a5a23d062",
+     "fit_id": "A-EA-C-PER-k3-seed1",
+     "weights_sha256": "6a554a557155dbaa60103690dca3628e070997538fd235a8dfbf599002520b97"
+    },
+    {
+     "bundle_sha256": "11c3601dfca9731ec721f659f3deec84abc7d0fbb2e4f692638f4a5ffcc7ed50",
+     "fit_id": "A-EA-C-PER-k3-seed2",
+     "weights_sha256": "67511af89c1ee2c1e4da6dee71b4be6c47ced89f68a079a32374f65953651ab1"
+    }
+   ],
+   "form": "shared",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device05": {
+     "A-EA-C-PER-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.29253877513465054,
+      "mu_L": 0.019338824150312503,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03045133651620437
+     },
+     "A-EA-C-PER-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.3429148619954122,
+      "mu_L": 0.012810085590217107,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03079895268308714
+     },
+     "A-EA-C-PER-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.3528412320285558,
+      "mu_L": 0.008218676638865278,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.029889914585247226
+     }
+    },
+    "device06": {
+     "A-EA-C-PER-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.17630674890881567,
+      "mu_L": 0.036231181413415754,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.04465303192989104
+     },
+     "A-EA-C-PER-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.15745770097578674,
+      "mu_L": 0.025664286680451998,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06202499028037502
+     },
+     "A-EA-C-PER-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.16280030072629117,
+      "mu_L": 0.025906693757865022,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.05393011531178337
+     }
+    },
+    "device07": {
+     "A-EA-C-PER-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.5433349989921241,
+      "mu_L": 0.009240979417912243,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.016098150677433153
+     },
+     "A-EA-C-PER-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.2377287117206075,
+      "mu_L": 0.013626631637757024,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.024048062468353868
+     },
+     "A-EA-C-PER-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.729323401725725,
+      "mu_L": 0.0046063584703313135,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.014586701159043985
+     }
+    },
+    "device08": {
+     "A-EA-C-PER-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.4561247902247545,
+      "mu_L": 0.016148268105548987,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0496265402922354
+     },
+     "A-EA-C-PER-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.4318649967594467,
+      "mu_L": 0.020986167828436326,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.05038335427317428
+     },
+     "A-EA-C-PER-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.4863625815727097,
+      "mu_L": 0.013353619089082157,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.05014810752389169
+     }
+    }
+   },
+   "members": [
+    "device05",
+    "device06",
+    "device07",
+    "device08"
+   ],
+   "models_dir": "results/engineering/gate6c/p2/models/p2-train-01",
+   "network": "EA-C-PER",
+   "networks_bundle_sha256": "b4c2cb003b88c8c0b23958a0544b4e214cefcfece16ae417cedfe38525926471",
+   "networks_weights_sha256": "810128b9abfe34092ad288f7e023d1ac54d2f2f65591bac3bfce5cb9d2606a3a",
+   "normalizers": {
+    "device05": "9bb62eb9dca9949aea8e14a5a9e35e141ed85d0f7bff0f2d755c2544d94f1eb6",
+    "device06": "5c950001100474f212817d321f368edd7a63cbe6b553732e1f033e168189c59d",
+    "device07": "35df4d15e23c0f5ec864ddba75cd2ac6997859af26d01e7887776a0f5f2055ab",
+    "device08": "0b77f167386ba2f91bdd24d58f3a2ec3a9466359ebc600b85a9a6cf76ac82ff9"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "EA-IND-B-device06+IM": {
+   "calibration": {
+    "device06": {
+     "fragile": true,
+     "largest_window_share": 0.6338451457620741,
+     "mu_L": 0.0405645838801163,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.16155423674632668
+    }
+   },
+   "calibration_per_run": {
+    "device06": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.680588912477304,
+      "mu_L": 0.03858107493386516,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.11882791859141192
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.8674263262669933,
+      "mu_L": 0.042548092826367435,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.19534293910473602
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": true,
+    "largest_window_share": 0.6338451457620741,
+    "mu_L": 0.0405645838801163,
+    "n_B": 600,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.16155423674632668
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "ebef3857be7bcb4370f8e66db32d842c8ac758454105b1ec85ebc77796af086f",
+     "fit_id": "A-EA-IND-B-device06-k3-seed0",
+     "weights_sha256": "f2f743cadd1ff89d305b79817225999abc6bee67ec7b9cea2aacc0c53e6d45e7"
+    },
+    {
+     "bundle_sha256": "6f09394e44061709d0e04fa7d0b0901a8e6a4820b13492bbd50ae2ac80247644",
+     "fit_id": "A-EA-IND-B-device06-k3-seed1",
+     "weights_sha256": "578c7a40abda35aac3931584890c6f4e0f5b9f0d8cd3ac561281469e1e32d233"
+    },
+    {
+     "bundle_sha256": "c49d5132ae1b6e29f8cf634afc6895ce31f9426dfe7fa82125957c33272eea57",
+     "fit_id": "A-EA-IND-B-device06-k3-seed2",
+     "weights_sha256": "5d57b314874f5e431ad8ecead3f2f12829e85ab2929b5fabff367b4071a1a8ac"
+    }
+   ],
+   "form": "ablation",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device06": {
+     "A-EA-IND-B-device06-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.7106275922846941,
+      "mu_L": 0.04229305809085452,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.1955037815151984
+     },
+     "A-EA-IND-B-device06-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.6956669348165764,
+      "mu_L": 0.037128034374619596,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.14556063454119697
+     },
+     "A-EA-IND-B-device06-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.3782471538036936,
+      "mu_L": 0.04227265917487477,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.16202259841386873
+     }
+    }
+   },
+   "members": [
+    "device06"
+   ],
+   "models_dir": "results/engineering/gate6c/p2/models/p2-train-01",
+   "network": "EA-IND-B-device06",
+   "networks_bundle_sha256": "6def45edffe66cdb31b5ad8a8ad8abeee46ce6dab2d67a885d764f1897497766",
+   "networks_weights_sha256": "39cf6a5123aec11b1f74d15c08b27527d35d4a682b02f01e8f31c534a7498995",
+   "normalizers": {
+    "device06": "4eb4e272260c0d1c89e50bb04c8a4e8a1e1a6789649d35d19c0e8a70aa80a7f3"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "EA-IND-B-device07+IM": {
+   "calibration": {
+    "device07": {
+     "fragile": false,
+     "largest_window_share": 0.3171795977704082,
+     "mu_L": 8.718149882383824e-05,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.0006568942701800826
+    }
+   },
+   "calibration_per_run": {
+    "device07": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.4289036487423517,
+      "mu_L": 0.00012101550814479904,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0007965630565363309
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.7866548581974666,
+      "mu_L": 5.3347489502877396e-05,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.00047713048675002357
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.3171795977704082,
+    "mu_L": 8.718149882383824e-05,
+    "n_B": 600,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.0006568942701800826
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "d99547058a9e00a2f01d2bfb508ac741883708148e7a1d7a6f2507f0b7838897",
+     "fit_id": "A-EA-IND-B-device07-k3-seed0",
+     "weights_sha256": "94e2524538b37fdc3979c527ccdea45c37248ea5e0e5963cf3cab651e194398f"
+    },
+    {
+     "bundle_sha256": "9d67fc814d923e92b026f08b4b96b5d26d4e9cc3900444a136cbf300ff6e979d",
+     "fit_id": "A-EA-IND-B-device07-k3-seed1",
+     "weights_sha256": "0756e04dbc7ab0c2074ed32e810f73ac67a8c7b247734f2d38c7292993a9205e"
+    },
+    {
+     "bundle_sha256": "57c59dd8aa3ed789e5e063032699a8b41a712090d0e8bf5787226029f07a18cf",
+     "fit_id": "A-EA-IND-B-device07-k3-seed2",
+     "weights_sha256": "343b79ba1ee8daebad914e6eae5ae758b2afd777443ce241110bf69a3e2e7b30"
+    }
+   ],
+   "form": "ablation",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device07": {
+     "A-EA-IND-B-device07-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.40335130984169,
+      "mu_L": 1.702140680881693e-08,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 2.886709304602222e-08
+     },
+     "A-EA-IND-B-device07-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.7245616258248188,
+      "mu_L": 1.0635029841667743e-06,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 1.7102348355202143e-05
+     },
+     "A-EA-IND-B-device07-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.3194442499375967,
+      "mu_L": 0.00026046397208053906,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0019637154535578853
+     }
+    }
+   },
+   "members": [
+    "device07"
+   ],
+   "models_dir": "results/engineering/gate6c/p2/models/p2-train-01",
+   "network": "EA-IND-B-device07",
+   "networks_bundle_sha256": "4dd984ba04e6253c281030d0c601bab0677a667fa6efe7e72d93bd74b2f54e46",
+   "networks_weights_sha256": "5cf5aaa8ee20d6e5a97944adb8b868252e23112d2c057ef992920990b547c3f5",
+   "normalizers": {
+    "device07": "f3382cef323a1c4ac955cb4f865a2de3fb76287c50a90e84a23254d073fd1296"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "EA-IND-B-device08+IM": {
+   "calibration": {
+    "device08": {
+     "fragile": true,
+     "largest_window_share": 0.9923804891482866,
+     "mu_L": 0.003700277083669403,
+     "n_B": 132,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.042099868655392184
+    }
+   },
+   "calibration_per_run": {
+    "device08": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.6209261419947876,
+      "mu_L": 8.291734707588477e-06,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 3.962560996897114e-05
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.9848056003913493,
+      "mu_L": 0.0073922624326312174,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.05953472153223462
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": true,
+    "largest_window_share": 0.9923804891482866,
+    "mu_L": 0.003700277083669403,
+    "n_B": 132,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.042099868655392184
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "3e38de31b92f29acebdaa391b22124e1bd2447fcd05de336014da44227d01835",
+     "fit_id": "A-EA-IND-B-device08-k3-seed0",
+     "weights_sha256": "50ad7f8fa95952b797f4fdd664945b5c9711004e0723a8b22191f4f1d36b047d"
+    },
+    {
+     "bundle_sha256": "4629e79a02fc2c4f3b0b0507e064980df358d86d5ec3aadadfdd764aa7ce414e",
+     "fit_id": "A-EA-IND-B-device08-k3-seed1",
+     "weights_sha256": "824fc61ad7b01b37ea233b6636643fc44a1cf81ee7e402c9c7344a170df527ac"
+    },
+    {
+     "bundle_sha256": "167a44c8cb04ed96e247289c77012b88030dfbfbac53e7d07ffda371b0c77586",
+     "fit_id": "A-EA-IND-B-device08-k3-seed2",
+     "weights_sha256": "dc58b0bb31788450710b0cc205abd31d5b0782420d4cfb5c6011ad1085f8e969"
+    }
+   ],
+   "form": "ablation",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device08": {
+     "A-EA-IND-B-device08-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.9921329025340803,
+      "mu_L": 0.003396317996269642,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03803774877288303
+     },
+     "A-EA-IND-B-device08-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.9924242319745415,
+      "mu_L": 0.007184607789126117,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.08252397214981683
+     },
+     "A-EA-IND-B-device08-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.991319082147134,
+      "mu_L": 0.0005199054656124507,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.005743884084595774
+     }
+    }
+   },
+   "members": [
+    "device08"
+   ],
+   "models_dir": "results/engineering/gate6c/p2/models/p2-train-01",
+   "network": "EA-IND-B-device08",
+   "networks_bundle_sha256": "14b22107640f635ee2bfe4a69e230cd766fbafb9e56e235fc895c67d83fb0075",
+   "networks_weights_sha256": "5974a3e6cb9a53b734a8f052d8abd3fcca682dff56a48922cd0c864851e5bed0",
+   "normalizers": {
+    "device08": "274ea2ee754c3fd8260fe603b44a5bced5e24c4813501e606c9c5113179f41bd"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "EA-IND-C-device06": {
+   "calibration": {
+    "device06": {
+     "fragile": false,
+     "largest_window_share": 0.3939014002384713,
+     "mu_L": 0.023224656112608967,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.060191226030555454
+    }
+   },
+   "calibration_per_run": {
+    "device06": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.24676164846806578,
+      "mu_L": 0.023002937910071776,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.04968879396855687
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.596699290819479,
+      "mu_L": 0.023446374315146155,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06920266968578037
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.3939014002384713,
+    "mu_L": 0.023224656112608967,
+    "n_B": 600,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.060191226030555454
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "e1075b9827a6efac0c3d06eab1456e7df4f83147ab5f8395d5c08bcd25880d6f",
+     "fit_id": "A-EA-IND-C-device06-k3-seed0",
+     "weights_sha256": "86e8e550e91175b40434bd227b7a9003f0259d15af1cce56fd384e428bb38c57"
+    },
+    {
+     "bundle_sha256": "d6b80ad2898641f9b2d6399024811a1a448166174879bd7cd6c7170ad798838c",
+     "fit_id": "A-EA-IND-C-device06-k3-seed1",
+     "weights_sha256": "958ae4a4e03566c0fc929d643d59f73fed9622d8c3074b41975c58934c4dec4f"
+    },
+    {
+     "bundle_sha256": "abf57a0bd22af740458d6daeb36b40d090dadbf6a9d1ad99b405ca9b9a26aa5e",
+     "fit_id": "A-EA-IND-C-device06-k3-seed2",
+     "weights_sha256": "b5330ec6c15c2d8d5ffa8b133b063bf312adc2926dc8990afff885820b495195"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device06": {
+     "A-EA-IND-C-device06-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.5055131172117291,
+      "mu_L": 0.021683597036570783,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06422961318887153
+     },
+     "A-EA-IND-C-device06-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.25528342549936944,
+      "mu_L": 0.027353838820510894,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.10114646556387388
+     },
+     "A-EA-IND-C-device06-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.2505971600145751,
+      "mu_L": 0.02063653248074522,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.046855342725340296
+     }
+    }
+   },
+   "members": [
+    "device06"
+   ],
+   "models_dir": "results/engineering/gate6c/p2/models/p2-train-01",
+   "network": "EA-IND-C-device06",
+   "networks_bundle_sha256": "8733407f333c083afd8f5ef8daa2c7119006e584e7904489b78b46d14b0e8991",
+   "networks_weights_sha256": "2d17c15b41ee95ad3c2caf4cdf55e5a6a910ee9046014d7d88b1a8617920686e",
+   "normalizers": {
+    "device06": "5c950001100474f212817d321f368edd7a63cbe6b553732e1f033e168189c59d"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "EA-IND-C-device06+IM": {
+   "calibration": {
+    "device06": {
+     "fragile": false,
+     "largest_window_share": 0.3939014002384713,
+     "mu_L": 0.023224656112608967,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.060191226030555454
+    }
+   },
+   "calibration_per_run": {
+    "device06": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.24676164846806578,
+      "mu_L": 0.023002937910071776,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.04968879396855687
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.596699290819479,
+      "mu_L": 0.023446374315146155,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06920266968578037
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.3939014002384713,
+    "mu_L": 0.023224656112608967,
+    "n_B": 600,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.060191226030555454
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "e1075b9827a6efac0c3d06eab1456e7df4f83147ab5f8395d5c08bcd25880d6f",
+     "fit_id": "A-EA-IND-C-device06-k3-seed0",
+     "weights_sha256": "86e8e550e91175b40434bd227b7a9003f0259d15af1cce56fd384e428bb38c57"
+    },
+    {
+     "bundle_sha256": "d6b80ad2898641f9b2d6399024811a1a448166174879bd7cd6c7170ad798838c",
+     "fit_id": "A-EA-IND-C-device06-k3-seed1",
+     "weights_sha256": "958ae4a4e03566c0fc929d643d59f73fed9622d8c3074b41975c58934c4dec4f"
+    },
+    {
+     "bundle_sha256": "abf57a0bd22af740458d6daeb36b40d090dadbf6a9d1ad99b405ca9b9a26aa5e",
+     "fit_id": "A-EA-IND-C-device06-k3-seed2",
+     "weights_sha256": "b5330ec6c15c2d8d5ffa8b133b063bf312adc2926dc8990afff885820b495195"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device06": {
+     "A-EA-IND-C-device06-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.5055131172117291,
+      "mu_L": 0.021683597036570783,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06422961318887153
+     },
+     "A-EA-IND-C-device06-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.25528342549936944,
+      "mu_L": 0.027353838820510894,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.10114646556387388
+     },
+     "A-EA-IND-C-device06-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.2505971600145751,
+      "mu_L": 0.02063653248074522,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.046855342725340296
+     }
+    }
+   },
+   "members": [
+    "device06"
+   ],
+   "models_dir": "results/engineering/gate6c/p2/models/p2-train-01",
+   "network": "EA-IND-C-device06",
+   "networks_bundle_sha256": "8733407f333c083afd8f5ef8daa2c7119006e584e7904489b78b46d14b0e8991",
+   "networks_weights_sha256": "2d17c15b41ee95ad3c2caf4cdf55e5a6a910ee9046014d7d88b1a8617920686e",
+   "normalizers": {
+    "device06": "5c950001100474f212817d321f368edd7a63cbe6b553732e1f033e168189c59d"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "EA-IND-C-device07": {
+   "calibration": {
+    "device07": {
+     "fragile": true,
+     "largest_window_share": 0.9863258523980702,
+     "mu_L": 2.890113161733487e-06,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 5.9632901835082e-05
+    }
+   },
+   "calibration_per_run": {
+    "device07": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.9966524704389482,
+      "mu_L": 5.053968076647408e-06,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 8.384038622426093e-05
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.9963569428011513,
+      "mu_L": 7.262582468195668e-07,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 9.244079117206318e-06
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": true,
+    "largest_window_share": 0.9863258523980702,
+    "mu_L": 2.890113161733487e-06,
+    "n_B": 600,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 5.9632901835082e-05
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "c5fcaa210e4caf14b472c43dc138b7f58468e4dd646196195f9af48a85f4d722",
+     "fit_id": "A-EA-IND-C-device07-k3-seed0",
+     "weights_sha256": "61570f00d270a13e66d87a15f792c7044143da423cce87a6aa91b40fed3a72df"
+    },
+    {
+     "bundle_sha256": "a08992b736ed5f826df12a5c5d6c10fa508eaeaad89bcb9b1bcf35d0ed50642a",
+     "fit_id": "A-EA-IND-C-device07-k3-seed1",
+     "weights_sha256": "0a4b37cde0ec09e3625732b3fda1a282326449694a954c23dc23a30e3431721f"
+    },
+    {
+     "bundle_sha256": "23aeda272b54159586d964da456a9944e197fe18088340b68e776d2e59e69e8e",
+     "fit_id": "A-EA-IND-C-device07-k3-seed2",
+     "weights_sha256": "53c5eff64465459549992f52e991a05e6f2761fa66de26290613b9f28f07520e"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device07": {
+     "A-EA-IND-C-device07-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.9983059874338376,
+      "mu_L": 2.206837764850472e-06,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 4.374695182152908e-05
+     },
+     "A-EA-IND-C-device07-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.387902103890344,
+      "mu_L": 2.6537971983318583e-08,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 5.3805790460011376e-08
+     },
+     "A-EA-IND-C-device07-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.9775148413254933,
+      "mu_L": 6.436963748366672e-06,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.00013545953116425545
+     }
+    }
+   },
+   "members": [
+    "device07"
+   ],
+   "models_dir": "results/engineering/gate6c/p2/models/p2-train-01",
+   "network": "EA-IND-C-device07",
+   "networks_bundle_sha256": "41c8c20bb1808f52da87682e99e469e1c49050ce30988eb5b0e5c121c7dd11f2",
+   "networks_weights_sha256": "3da7d6241a626df57b172fb1c7c88cd67c9e41ca0ed46b2f67cd9e7aced5df17",
+   "normalizers": {
+    "device07": "35df4d15e23c0f5ec864ddba75cd2ac6997859af26d01e7887776a0f5f2055ab"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "EA-IND-C-device07+IM": {
+   "calibration": {
+    "device07": {
+     "fragile": true,
+     "largest_window_share": 0.9863258523980702,
+     "mu_L": 2.890113161733487e-06,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 5.9632901835082e-05
+    }
+   },
+   "calibration_per_run": {
+    "device07": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.9966524704389482,
+      "mu_L": 5.053968076647408e-06,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 8.384038622426093e-05
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.9963569428011513,
+      "mu_L": 7.262582468195668e-07,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 9.244079117206318e-06
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": true,
+    "largest_window_share": 0.9863258523980702,
+    "mu_L": 2.890113161733487e-06,
+    "n_B": 600,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 5.9632901835082e-05
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "c5fcaa210e4caf14b472c43dc138b7f58468e4dd646196195f9af48a85f4d722",
+     "fit_id": "A-EA-IND-C-device07-k3-seed0",
+     "weights_sha256": "61570f00d270a13e66d87a15f792c7044143da423cce87a6aa91b40fed3a72df"
+    },
+    {
+     "bundle_sha256": "a08992b736ed5f826df12a5c5d6c10fa508eaeaad89bcb9b1bcf35d0ed50642a",
+     "fit_id": "A-EA-IND-C-device07-k3-seed1",
+     "weights_sha256": "0a4b37cde0ec09e3625732b3fda1a282326449694a954c23dc23a30e3431721f"
+    },
+    {
+     "bundle_sha256": "23aeda272b54159586d964da456a9944e197fe18088340b68e776d2e59e69e8e",
+     "fit_id": "A-EA-IND-C-device07-k3-seed2",
+     "weights_sha256": "53c5eff64465459549992f52e991a05e6f2761fa66de26290613b9f28f07520e"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device07": {
+     "A-EA-IND-C-device07-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.9983059874338376,
+      "mu_L": 2.206837764850472e-06,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 4.374695182152908e-05
+     },
+     "A-EA-IND-C-device07-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.387902103890344,
+      "mu_L": 2.6537971983318583e-08,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 5.3805790460011376e-08
+     },
+     "A-EA-IND-C-device07-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.9775148413254933,
+      "mu_L": 6.436963748366672e-06,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.00013545953116425545
+     }
+    }
+   },
+   "members": [
+    "device07"
+   ],
+   "models_dir": "results/engineering/gate6c/p2/models/p2-train-01",
+   "network": "EA-IND-C-device07",
+   "networks_bundle_sha256": "41c8c20bb1808f52da87682e99e469e1c49050ce30988eb5b0e5c121c7dd11f2",
+   "networks_weights_sha256": "3da7d6241a626df57b172fb1c7c88cd67c9e41ca0ed46b2f67cd9e7aced5df17",
+   "normalizers": {
+    "device07": "35df4d15e23c0f5ec864ddba75cd2ac6997859af26d01e7887776a0f5f2055ab"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "EA-IND-C-device08": {
+   "calibration": {
+    "device08": {
+     "fragile": true,
+     "largest_window_share": 0.7272770023764608,
+     "mu_L": 3.485500741672079e-05,
+     "n_B": 132,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.0002560449180446848
+    }
+   },
+   "calibration_per_run": {
+    "device08": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.5809845836738858,
+      "mu_L": 4.195002015357606e-07,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 6.773185430122855e-07
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.7205076024823751,
+      "mu_L": 6.929051463190584e-05,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0003601639165121713
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": true,
+    "largest_window_share": 0.7272770023764608,
+    "mu_L": 3.485500741672079e-05,
+    "n_B": 132,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.0002560449180446848
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "66519a4c06302b8b01e2a514c2a19cb0b208eb1cd00feba41aa8150540877f4d",
+     "fit_id": "A-EA-IND-C-device08-k3-seed0",
+     "weights_sha256": "afd4315f89ab87fa2698ea4c18d8aa75ebde03953945a2376141605e15a3119e"
+    },
+    {
+     "bundle_sha256": "bdf2551e99549f385db4c26d88c61d7214ae9db82d3dbb18e175277e4789eea8",
+     "fit_id": "A-EA-IND-C-device08-k3-seed1",
+     "weights_sha256": "31db1172462984c98c85a6edfc4da67d179721c23b07cc46e0dca2e61b876947"
+    },
+    {
+     "bundle_sha256": "9ada50077e9f68bd85e638902b7e4335f30215f1387c587f1245db1046ed1af1",
+     "fit_id": "A-EA-IND-C-device08-k3-seed2",
+     "weights_sha256": "1595ec8d44d015b7ff111032d64cdeaf3c8ece0733637f65da5bc70c1d9b2ba2"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device08": {
+     "A-EA-IND-C-device08-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.991528692799412,
+      "mu_L": 3.398367867494833e-05,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0003745683311921887
+     },
+     "A-EA-IND-C-device08-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.9388827432304354,
+      "mu_L": 5.757007808552362e-05,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0005230267556371041
+     },
+     "A-EA-IND-C-device08-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.9922572087350261,
+      "mu_L": 1.3011265489690455e-05,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.00014046168962967393
+     }
+    }
+   },
+   "members": [
+    "device08"
+   ],
+   "models_dir": "results/engineering/gate6c/p2/models/p2-train-01",
+   "network": "EA-IND-C-device08",
+   "networks_bundle_sha256": "dbed47479823bdb6c1961532d287c027663a368156158ef41bcf4e70b5c1b6eb",
+   "networks_weights_sha256": "00e1d3f9be886a23c1fc798f0d2be1af5a0eacb9a6caf52dcf4a7ec76054a77b",
+   "normalizers": {
+    "device08": "0b77f167386ba2f91bdd24d58f3a2ec3a9466359ebc600b85a9a6cf76ac82ff9"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "EA-IND-C-device08+IM": {
+   "calibration": {
+    "device08": {
+     "fragile": true,
+     "largest_window_share": 0.7272770023764608,
+     "mu_L": 3.485500741672079e-05,
+     "n_B": 132,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.0002560449180446848
+    }
+   },
+   "calibration_per_run": {
+    "device08": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.5809845836738858,
+      "mu_L": 4.195002015357606e-07,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 6.773185430122855e-07
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.7205076024823751,
+      "mu_L": 6.929051463190584e-05,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0003601639165121713
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": true,
+    "largest_window_share": 0.7272770023764608,
+    "mu_L": 3.485500741672079e-05,
+    "n_B": 132,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.0002560449180446848
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "66519a4c06302b8b01e2a514c2a19cb0b208eb1cd00feba41aa8150540877f4d",
+     "fit_id": "A-EA-IND-C-device08-k3-seed0",
+     "weights_sha256": "afd4315f89ab87fa2698ea4c18d8aa75ebde03953945a2376141605e15a3119e"
+    },
+    {
+     "bundle_sha256": "bdf2551e99549f385db4c26d88c61d7214ae9db82d3dbb18e175277e4789eea8",
+     "fit_id": "A-EA-IND-C-device08-k3-seed1",
+     "weights_sha256": "31db1172462984c98c85a6edfc4da67d179721c23b07cc46e0dca2e61b876947"
+    },
+    {
+     "bundle_sha256": "9ada50077e9f68bd85e638902b7e4335f30215f1387c587f1245db1046ed1af1",
+     "fit_id": "A-EA-IND-C-device08-k3-seed2",
+     "weights_sha256": "1595ec8d44d015b7ff111032d64cdeaf3c8ece0733637f65da5bc70c1d9b2ba2"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device08": {
+     "A-EA-IND-C-device08-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.991528692799412,
+      "mu_L": 3.398367867494833e-05,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0003745683311921887
+     },
+     "A-EA-IND-C-device08-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.9388827432304354,
+      "mu_L": 5.757007808552362e-05,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0005230267556371041
+     },
+     "A-EA-IND-C-device08-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.9922572087350261,
+      "mu_L": 1.3011265489690455e-05,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.00014046168962967393
+     }
+    }
+   },
+   "members": [
+    "device08"
+   ],
+   "models_dir": "results/engineering/gate6c/p2/models/p2-train-01",
+   "network": "EA-IND-C-device08",
+   "networks_bundle_sha256": "dbed47479823bdb6c1961532d287c027663a368156158ef41bcf4e70b5c1b6eb",
+   "networks_weights_sha256": "00e1d3f9be886a23c1fc798f0d2be1af5a0eacb9a6caf52dcf4a7ec76054a77b",
+   "normalizers": {
+    "device08": "0b77f167386ba2f91bdd24d58f3a2ec3a9466359ebc600b85a9a6cf76ac82ff9"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-B-device01": {
+   "calibration": {
+    "device01": {
+     "fragile": false,
+     "largest_window_share": 0.18654007174100676,
+     "mu_L": 0.0018544184951493352,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.007683831554715314
+    }
+   },
+   "calibration_per_run": {
+    "device01": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.2845132427003565,
+      "mu_L": 0.001934853705285043,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.008796395509425512
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.10220956590800696,
+      "mu_L": 0.0017739832850136273,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.006386827530604025
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.18654007174100676,
+    "mu_L": 0.0018544184951493352,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.007683831554715314
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "d7730478455526fc33b34f4c667fa733e75664dd1a343d8b0e4d39f937b849f6",
+     "fit_id": "A-IND-B-device01-k3-seed0",
+     "weights_sha256": "e049b24a68c1279613c10934206449119463ba00d5721a63e44f2244f31c3719"
+    },
+    {
+     "bundle_sha256": "80816faa11bc041bebda5e5c8748d3acba01f618ac6e6b1a48b31eef08afb38d",
+     "fit_id": "A-IND-B-device01-k3-seed1",
+     "weights_sha256": "659cfb9d84ad6525a04dd42c7c9424cec1379a9ab78d05c0cc9c4a19cfb6ee0b"
+    },
+    {
+     "bundle_sha256": "f2a1aac9b6f9d114083cf70ecadf29ae12183b05adcabceafacbd70ebb14dc47",
+     "fit_id": "A-IND-B-device01-k3-seed2",
+     "weights_sha256": "5bf99642f6a9bd3026f9792805283c26485c170bb92c18e27c17990465c3b83b"
+    }
+   ],
+   "form": "individual",
+   "group": "FREQ",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device01": {
+     "A-IND-B-device01-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.20334544019519157,
+      "mu_L": 0.001703243133970475,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.00746391410505269
+     },
+     "A-IND-B-device01-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.20673772521326145,
+      "mu_L": 0.0020459405701715536,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.008518806819006955
+     },
+     "A-IND-B-device01-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.12807364032422283,
+      "mu_L": 0.0018140717813059767,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.007591709805335143
+     }
+    }
+   },
+   "members": [
+    "device01"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-B-device01",
+   "networks_bundle_sha256": "5cf22b52a6ee7a952285449ccb1de5829423617236cd28f0b5a6b7b5bf430369",
+   "networks_weights_sha256": "a7bcceae8acf8e5c7dc33fb64dae7c11ca52dd106b5d3f905c15974c8c1a56f1",
+   "normalizers": {
+    "device01": "98f8c0d620e3e3ff26bb4b2a1a2566a59f4984b835aa7fcc3d3ea78232f78da1"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-B-device01+IM": {
+   "calibration": {
+    "device01": {
+     "fragile": false,
+     "largest_window_share": 0.18654007174100676,
+     "mu_L": 0.0018544184951493352,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.007683831554715314
+    }
+   },
+   "calibration_per_run": {
+    "device01": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.2845132427003565,
+      "mu_L": 0.001934853705285043,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.008796395509425512
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.10220956590800696,
+      "mu_L": 0.0017739832850136273,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.006386827530604025
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.18654007174100676,
+    "mu_L": 0.0018544184951493352,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.007683831554715314
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "d7730478455526fc33b34f4c667fa733e75664dd1a343d8b0e4d39f937b849f6",
+     "fit_id": "A-IND-B-device01-k3-seed0",
+     "weights_sha256": "e049b24a68c1279613c10934206449119463ba00d5721a63e44f2244f31c3719"
+    },
+    {
+     "bundle_sha256": "80816faa11bc041bebda5e5c8748d3acba01f618ac6e6b1a48b31eef08afb38d",
+     "fit_id": "A-IND-B-device01-k3-seed1",
+     "weights_sha256": "659cfb9d84ad6525a04dd42c7c9424cec1379a9ab78d05c0cc9c4a19cfb6ee0b"
+    },
+    {
+     "bundle_sha256": "f2a1aac9b6f9d114083cf70ecadf29ae12183b05adcabceafacbd70ebb14dc47",
+     "fit_id": "A-IND-B-device01-k3-seed2",
+     "weights_sha256": "5bf99642f6a9bd3026f9792805283c26485c170bb92c18e27c17990465c3b83b"
+    }
+   ],
+   "form": "individual",
+   "group": "FREQ",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device01": {
+     "A-IND-B-device01-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.20334544019519157,
+      "mu_L": 0.001703243133970475,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.00746391410505269
+     },
+     "A-IND-B-device01-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.20673772521326145,
+      "mu_L": 0.0020459405701715536,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.008518806819006955
+     },
+     "A-IND-B-device01-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.12807364032422283,
+      "mu_L": 0.0018140717813059767,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.007591709805335143
+     }
+    }
+   },
+   "members": [
+    "device01"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-B-device01",
+   "networks_bundle_sha256": "5cf22b52a6ee7a952285449ccb1de5829423617236cd28f0b5a6b7b5bf430369",
+   "networks_weights_sha256": "a7bcceae8acf8e5c7dc33fb64dae7c11ca52dd106b5d3f905c15974c8c1a56f1",
+   "normalizers": {
+    "device01": "98f8c0d620e3e3ff26bb4b2a1a2566a59f4984b835aa7fcc3d3ea78232f78da1"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-B-device02": {
+   "calibration": {
+    "device02": {
+     "fragile": false,
+     "largest_window_share": 0.18220834922198073,
+     "mu_L": 0.06206958604354759,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.19739807397902845
+    }
+   },
+   "calibration_per_run": {
+    "device02": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.33140569613057713,
+      "mu_L": 0.062426922597981334,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.20705706373740224
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.15133869509060416,
+      "mu_L": 0.06171224948911385,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.18741442720561463
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.18220834922198073,
+    "mu_L": 0.06206958604354759,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.19739807397902845
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "175fa0a5441dfc8c7baa5f1e1d563caaf366da166a37ce2582255d4965ed5e3a",
+     "fit_id": "A-IND-B-device02-k3-seed0",
+     "weights_sha256": "17408fbd44f99e38287e2b89b0c2d75acecbd2eb89ac3e82cc29a098fa2b2909"
+    },
+    {
+     "bundle_sha256": "e867a80d2012eb6efb9267c2bebb91fff818b96c5133f293d8e72af5b86c5298",
+     "fit_id": "A-IND-B-device02-k3-seed1",
+     "weights_sha256": "6363dc4ac24067d92307c78311bcb514231805940b6c2c5fc3a5212268710a54"
+    },
+    {
+     "bundle_sha256": "135acc1633b1ae9fbc9c2c585b235692d0aa8994be921059e76a220b97000b64",
+     "fit_id": "A-IND-B-device02-k3-seed2",
+     "weights_sha256": "92925aa16c16d52689e494e27eba1e43fc26cf32ab6cb6cf8b4a3aa58989dbef"
+    }
+   ],
+   "form": "individual",
+   "group": "FREQ",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device02": {
+     "A-IND-B-device02-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.14956798299553817,
+      "mu_L": 0.06715217058533159,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.21336105888191428
+     },
+     "A-IND-B-device02-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.1913360189288526,
+      "mu_L": 0.06318903951385013,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.19329503851528407
+     },
+     "A-IND-B-device02-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.19808056637201626,
+      "mu_L": 0.055867548031461094,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.19259521263058052
+     }
+    }
+   },
+   "members": [
+    "device02"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-B-device02",
+   "networks_bundle_sha256": "118e930e68986e7f5cbe36aceefe966fcdcf7686d3e45fa481c5a8e4348e06c9",
+   "networks_weights_sha256": "f7a507805fbe10c3fad1e31d5997b937a8d09ef3d4540d10fb1d6d75020c52b3",
+   "normalizers": {
+    "device02": "e937264d68a1cb30c020444f502994155748bf9c8c4cc66250e960aa1d65609f"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-B-device02+IM": {
+   "calibration": {
+    "device02": {
+     "fragile": false,
+     "largest_window_share": 0.18220834922198073,
+     "mu_L": 0.06206958604354759,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.19739807397902845
+    }
+   },
+   "calibration_per_run": {
+    "device02": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.33140569613057713,
+      "mu_L": 0.062426922597981334,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.20705706373740224
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.15133869509060416,
+      "mu_L": 0.06171224948911385,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.18741442720561463
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.18220834922198073,
+    "mu_L": 0.06206958604354759,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.19739807397902845
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "175fa0a5441dfc8c7baa5f1e1d563caaf366da166a37ce2582255d4965ed5e3a",
+     "fit_id": "A-IND-B-device02-k3-seed0",
+     "weights_sha256": "17408fbd44f99e38287e2b89b0c2d75acecbd2eb89ac3e82cc29a098fa2b2909"
+    },
+    {
+     "bundle_sha256": "e867a80d2012eb6efb9267c2bebb91fff818b96c5133f293d8e72af5b86c5298",
+     "fit_id": "A-IND-B-device02-k3-seed1",
+     "weights_sha256": "6363dc4ac24067d92307c78311bcb514231805940b6c2c5fc3a5212268710a54"
+    },
+    {
+     "bundle_sha256": "135acc1633b1ae9fbc9c2c585b235692d0aa8994be921059e76a220b97000b64",
+     "fit_id": "A-IND-B-device02-k3-seed2",
+     "weights_sha256": "92925aa16c16d52689e494e27eba1e43fc26cf32ab6cb6cf8b4a3aa58989dbef"
+    }
+   ],
+   "form": "individual",
+   "group": "FREQ",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device02": {
+     "A-IND-B-device02-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.14956798299553817,
+      "mu_L": 0.06715217058533159,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.21336105888191428
+     },
+     "A-IND-B-device02-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.1913360189288526,
+      "mu_L": 0.06318903951385013,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.19329503851528407
+     },
+     "A-IND-B-device02-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.19808056637201626,
+      "mu_L": 0.055867548031461094,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.19259521263058052
+     }
+    }
+   },
+   "members": [
+    "device02"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-B-device02",
+   "networks_bundle_sha256": "118e930e68986e7f5cbe36aceefe966fcdcf7686d3e45fa481c5a8e4348e06c9",
+   "networks_weights_sha256": "f7a507805fbe10c3fad1e31d5997b937a8d09ef3d4540d10fb1d6d75020c52b3",
+   "normalizers": {
+    "device02": "e937264d68a1cb30c020444f502994155748bf9c8c4cc66250e960aa1d65609f"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-B-device03": {
+   "calibration": {
+    "device03": {
+     "fragile": false,
+     "largest_window_share": 0.07154817321033606,
+     "mu_L": 0.004376447711511518,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.005519580406357775
+    }
+   },
+   "calibration_per_run": {
+    "device03": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.1673355941678717,
+      "mu_L": 0.004015789012125704,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.005142335830058737
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.07295497482895337,
+      "mu_L": 0.004737106410897334,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.005854758345356514
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.07154817321033606,
+    "mu_L": 0.004376447711511518,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.005519580406357775
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "b3c5f345bc099e63260bf73e4d62f3d57c27683e5af0c20ce1b2ad16414b0309",
+     "fit_id": "A-IND-B-device03-k3-seed0",
+     "weights_sha256": "e512d4d485babe7f09876c907a90675e88fb6b42940467672de481fb4aa69d7a"
+    },
+    {
+     "bundle_sha256": "5aef4d0b9c5f85965839da766f2ad47b844a6c29274eb2e8a599fe670ec41997",
+     "fit_id": "A-IND-B-device03-k3-seed1",
+     "weights_sha256": "abb5869ba481a6af57a0efbe9adbc3853db69221b3eb3ff80da5029b9b475517"
+    },
+    {
+     "bundle_sha256": "787269b4b30146999dd1dfa92db27731becde8fce8fc5f73549aae491869fc64",
+     "fit_id": "A-IND-B-device03-k3-seed2",
+     "weights_sha256": "9917a88a60c872f90337ba7cccd691dea8a0be725d68da45dbe8f1453f5b64bc"
+    }
+   ],
+   "form": "individual",
+   "group": "FREQ",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device03": {
+     "A-IND-B-device03-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.025666267172562564,
+      "mu_L": 0.005563840780626215,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.006710257904648877
+     },
+     "A-IND-B-device03-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.13985303678437372,
+      "mu_L": 0.001837508554095768,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0052791212772475395
+     },
+     "A-IND-B-device03-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.11022771477388839,
+      "mu_L": 0.005727993799812571,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.007347472086251491
+     }
+    }
+   },
+   "members": [
+    "device03"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-B-device03",
+   "networks_bundle_sha256": "897dea319532f9d6e0c38dfcbe21b670c059b1c6420d83fde5c6b46183df2503",
+   "networks_weights_sha256": "a2fd19d6d980b307c80d5d3298554e7bb72d52857bc04122979ba5c4ffcdc483",
+   "normalizers": {
+    "device03": "c88dd0dec31247789146964923b33585160cb5e602e35db62aa025bb82e929f3"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-B-device03+IM": {
+   "calibration": {
+    "device03": {
+     "fragile": false,
+     "largest_window_share": 0.07154817321033606,
+     "mu_L": 0.004376447711511518,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.005519580406357775
+    }
+   },
+   "calibration_per_run": {
+    "device03": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.1673355941678717,
+      "mu_L": 0.004015789012125704,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.005142335830058737
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.07295497482895337,
+      "mu_L": 0.004737106410897334,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.005854758345356514
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.07154817321033606,
+    "mu_L": 0.004376447711511518,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.005519580406357775
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "b3c5f345bc099e63260bf73e4d62f3d57c27683e5af0c20ce1b2ad16414b0309",
+     "fit_id": "A-IND-B-device03-k3-seed0",
+     "weights_sha256": "e512d4d485babe7f09876c907a90675e88fb6b42940467672de481fb4aa69d7a"
+    },
+    {
+     "bundle_sha256": "5aef4d0b9c5f85965839da766f2ad47b844a6c29274eb2e8a599fe670ec41997",
+     "fit_id": "A-IND-B-device03-k3-seed1",
+     "weights_sha256": "abb5869ba481a6af57a0efbe9adbc3853db69221b3eb3ff80da5029b9b475517"
+    },
+    {
+     "bundle_sha256": "787269b4b30146999dd1dfa92db27731becde8fce8fc5f73549aae491869fc64",
+     "fit_id": "A-IND-B-device03-k3-seed2",
+     "weights_sha256": "9917a88a60c872f90337ba7cccd691dea8a0be725d68da45dbe8f1453f5b64bc"
+    }
+   ],
+   "form": "individual",
+   "group": "FREQ",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device03": {
+     "A-IND-B-device03-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.025666267172562564,
+      "mu_L": 0.005563840780626215,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.006710257904648877
+     },
+     "A-IND-B-device03-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.13985303678437372,
+      "mu_L": 0.001837508554095768,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0052791212772475395
+     },
+     "A-IND-B-device03-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.11022771477388839,
+      "mu_L": 0.005727993799812571,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.007347472086251491
+     }
+    }
+   },
+   "members": [
+    "device03"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-B-device03",
+   "networks_bundle_sha256": "897dea319532f9d6e0c38dfcbe21b670c059b1c6420d83fde5c6b46183df2503",
+   "networks_weights_sha256": "a2fd19d6d980b307c80d5d3298554e7bb72d52857bc04122979ba5c4ffcdc483",
+   "normalizers": {
+    "device03": "c88dd0dec31247789146964923b33585160cb5e602e35db62aa025bb82e929f3"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-B-device04": {
+   "calibration": {
+    "device04": {
+     "fragile": false,
+     "largest_window_share": 0.040483377467615114,
+     "mu_L": 0.2530302060996969,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.20059670357236245
+    }
+   },
+   "calibration_per_run": {
+    "device04": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.07628582015117963,
+      "mu_L": 0.24632380700913947,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.20476942003142612
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.08383011810819226,
+      "mu_L": 0.2597366051902543,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.1962769341141954
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.040483377467615114,
+    "mu_L": 0.2530302060996969,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.20059670357236245
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "c7d303b7264312d8a53e5a108e5bf7a720f6aef8cee593ca4848406161e38121",
+     "fit_id": "A-IND-B-device04-k3-seed0",
+     "weights_sha256": "0bf82fa9f2e6cb11e9e48c0ed27fa27e9b131bf6f590f13f297ab93d2bc28ce0"
+    },
+    {
+     "bundle_sha256": "eabf85210f216b0a649d749c4cae240960215d215ee6a7fc157870289f9dd9ee",
+     "fit_id": "A-IND-B-device04-k3-seed1",
+     "weights_sha256": "74eec68c6f846e18579531d838b01f74009611333e1d32f0b74abfae1ac83421"
+    },
+    {
+     "bundle_sha256": "28638e2c7eb09b1b11733edab8ce37a7bd19eec7a36e16219eac0ce095e690d7",
+     "fit_id": "A-IND-B-device04-k3-seed2",
+     "weights_sha256": "72ce72a57c511a595f3de3e9f1d6b3dbc1e35e39ee050908724ee035dba6dc6a"
+    }
+   ],
+   "form": "individual",
+   "group": "FREQ",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device04": {
+     "A-IND-B-device04-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.04987625684824968,
+      "mu_L": 0.26101034794647,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.278187987203834
+     },
+     "A-IND-B-device04-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.07715883363929558,
+      "mu_L": 0.2725426376290517,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.2801035193391595
+     },
+     "A-IND-B-device04-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.046199806723780976,
+      "mu_L": 0.22553763272356894,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.22109482531042982
+     }
+    }
+   },
+   "members": [
+    "device04"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-B-device04",
+   "networks_bundle_sha256": "448ff302c4dedea0730504b558ae28888e213c92eed7ae130f8f950373ddfd68",
+   "networks_weights_sha256": "a7c6967beaf5b74da6ef71e4776119195d488e1ccd1504290da03c21a72b8f1d",
+   "normalizers": {
+    "device04": "eb7e2b855cce1cb4a4cfdf4e5a6e03ad3242bfa8543ce963888077b7c655dc93"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-B-device04+IM": {
+   "calibration": {
+    "device04": {
+     "fragile": false,
+     "largest_window_share": 0.040483377467615114,
+     "mu_L": 0.2530302060996969,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.20059670357236245
+    }
+   },
+   "calibration_per_run": {
+    "device04": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.07628582015117963,
+      "mu_L": 0.24632380700913947,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.20476942003142612
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.08383011810819226,
+      "mu_L": 0.2597366051902543,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.1962769341141954
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.040483377467615114,
+    "mu_L": 0.2530302060996969,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.20059670357236245
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "c7d303b7264312d8a53e5a108e5bf7a720f6aef8cee593ca4848406161e38121",
+     "fit_id": "A-IND-B-device04-k3-seed0",
+     "weights_sha256": "0bf82fa9f2e6cb11e9e48c0ed27fa27e9b131bf6f590f13f297ab93d2bc28ce0"
+    },
+    {
+     "bundle_sha256": "eabf85210f216b0a649d749c4cae240960215d215ee6a7fc157870289f9dd9ee",
+     "fit_id": "A-IND-B-device04-k3-seed1",
+     "weights_sha256": "74eec68c6f846e18579531d838b01f74009611333e1d32f0b74abfae1ac83421"
+    },
+    {
+     "bundle_sha256": "28638e2c7eb09b1b11733edab8ce37a7bd19eec7a36e16219eac0ce095e690d7",
+     "fit_id": "A-IND-B-device04-k3-seed2",
+     "weights_sha256": "72ce72a57c511a595f3de3e9f1d6b3dbc1e35e39ee050908724ee035dba6dc6a"
+    }
+   ],
+   "form": "individual",
+   "group": "FREQ",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device04": {
+     "A-IND-B-device04-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.04987625684824968,
+      "mu_L": 0.26101034794647,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.278187987203834
+     },
+     "A-IND-B-device04-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.07715883363929558,
+      "mu_L": 0.2725426376290517,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.2801035193391595
+     },
+     "A-IND-B-device04-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.046199806723780976,
+      "mu_L": 0.22553763272356894,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.22109482531042982
+     }
+    }
+   },
+   "members": [
+    "device04"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-B-device04",
+   "networks_bundle_sha256": "448ff302c4dedea0730504b558ae28888e213c92eed7ae130f8f950373ddfd68",
+   "networks_weights_sha256": "a7c6967beaf5b74da6ef71e4776119195d488e1ccd1504290da03c21a72b8f1d",
+   "normalizers": {
+    "device04": "eb7e2b855cce1cb4a4cfdf4e5a6e03ad3242bfa8543ce963888077b7c655dc93"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-B-device09": {
+   "calibration": {
+    "device09": {
+     "fragile": true,
+     "largest_window_share": 0.5086091000075281,
+     "mu_L": 0.04611649001088181,
+     "n_B": 66,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.06496370448706477
+    }
+   },
+   "calibration_per_run": {
+    "device09": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.5628401468127028,
+      "mu_L": 0.060879890670647537,
+      "n_B": 33,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.08453533370538589
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.30086356320760393,
+      "mu_L": 0.03135308935111609,
+      "n_B": 33,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03125201792379411
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": true,
+    "largest_window_share": 0.5086091000075281,
+    "mu_L": 0.04611649001088181,
+    "n_B": 66,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.06496370448706477
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "b850821b5b19503a4d0e0b6cb7a36e0e7a0347fef31d56a9523dafd275920e0f",
+     "fit_id": "A-IND-B-device09-k3-seed0",
+     "weights_sha256": "e516a4c1ba547da75119f2db3bb365d53483f6f3f21d9047940dced9d8717b02"
+    },
+    {
+     "bundle_sha256": "d45acdf8eddc33d5f81673dc0c79f40c64c2bdb6b42b40d5efbfee199ade78b0",
+     "fit_id": "A-IND-B-device09-k3-seed1",
+     "weights_sha256": "9b57093ac4f5294653e0c50c6e91ec44398bedb64e09e0241e5079f69b46a4ef"
+    },
+    {
+     "bundle_sha256": "82bbd0fc4eb3dd4d0dcad0e7e9dca80dc378598aeb370a25f0175be5bf85a341",
+     "fit_id": "A-IND-B-device09-k3-seed2",
+     "weights_sha256": "5ba1f871fffad77b11c334a158345b0ab22a299f24559dae6cdabac8c6b48851"
+    }
+   ],
+   "form": "individual",
+   "group": "EVENT",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device09": {
+     "A-IND-B-device09-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.6329677334904759,
+      "mu_L": 0.043450735225449344,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.09832867239185757
+     },
+     "A-IND-B-device09-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.43290312944693987,
+      "mu_L": 0.04441195437278048,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0786694466467736
+     },
+     "A-IND-B-device09-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.3905551780235621,
+      "mu_L": 0.050486780434415596,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.07677951429414057
+     }
+    }
+   },
+   "members": [
+    "device09"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-B-device09",
+   "networks_bundle_sha256": "31cd604fd67c34e542517a2814a50fd30b80df9cacb101e28a45bbf275c30704",
+   "networks_weights_sha256": "770e23bca83355b1a42349283acdf08992826c219255376d8db753d6bed7b1dc",
+   "normalizers": {
+    "device09": "9d28b7207ebc34516b89314ec7d8198d79389a821d609efa7fbd1fab42f570df"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-B-device09+IM": {
+   "calibration": {
+    "device09": {
+     "fragile": true,
+     "largest_window_share": 0.5086091000075281,
+     "mu_L": 0.04611649001088181,
+     "n_B": 66,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.06496370448706477
+    }
+   },
+   "calibration_per_run": {
+    "device09": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.5628401468127028,
+      "mu_L": 0.060879890670647537,
+      "n_B": 33,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.08453533370538589
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.30086356320760393,
+      "mu_L": 0.03135308935111609,
+      "n_B": 33,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.03125201792379411
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": true,
+    "largest_window_share": 0.5086091000075281,
+    "mu_L": 0.04611649001088181,
+    "n_B": 66,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.06496370448706477
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "b850821b5b19503a4d0e0b6cb7a36e0e7a0347fef31d56a9523dafd275920e0f",
+     "fit_id": "A-IND-B-device09-k3-seed0",
+     "weights_sha256": "e516a4c1ba547da75119f2db3bb365d53483f6f3f21d9047940dced9d8717b02"
+    },
+    {
+     "bundle_sha256": "d45acdf8eddc33d5f81673dc0c79f40c64c2bdb6b42b40d5efbfee199ade78b0",
+     "fit_id": "A-IND-B-device09-k3-seed1",
+     "weights_sha256": "9b57093ac4f5294653e0c50c6e91ec44398bedb64e09e0241e5079f69b46a4ef"
+    },
+    {
+     "bundle_sha256": "82bbd0fc4eb3dd4d0dcad0e7e9dca80dc378598aeb370a25f0175be5bf85a341",
+     "fit_id": "A-IND-B-device09-k3-seed2",
+     "weights_sha256": "5ba1f871fffad77b11c334a158345b0ab22a299f24559dae6cdabac8c6b48851"
+    }
+   ],
+   "form": "individual",
+   "group": "EVENT",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device09": {
+     "A-IND-B-device09-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.6329677334904759,
+      "mu_L": 0.043450735225449344,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.09832867239185757
+     },
+     "A-IND-B-device09-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.43290312944693987,
+      "mu_L": 0.04441195437278048,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0786694466467736
+     },
+     "A-IND-B-device09-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.3905551780235621,
+      "mu_L": 0.050486780434415596,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.07677951429414057
+     }
+    }
+   },
+   "members": [
+    "device09"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-B-device09",
+   "networks_bundle_sha256": "31cd604fd67c34e542517a2814a50fd30b80df9cacb101e28a45bbf275c30704",
+   "networks_weights_sha256": "770e23bca83355b1a42349283acdf08992826c219255376d8db753d6bed7b1dc",
+   "normalizers": {
+    "device09": "9d28b7207ebc34516b89314ec7d8198d79389a821d609efa7fbd1fab42f570df"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-B-device10": {
+   "calibration": {
+    "device10": {
+     "fragile": false,
+     "largest_window_share": 0.03468832573803147,
+     "mu_L": 0.003163680810765767,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.00665592231445136
+    }
+   },
+   "calibration_per_run": {
+    "device10": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.029641630987164994,
+      "mu_L": 0.002426958170062091,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.004414898962944301
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.04363363939228531,
+      "mu_L": 0.003900403451469443,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.008252144988236215
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.03468832573803147,
+    "mu_L": 0.003163680810765767,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.00665592231445136
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "10becea910b198df6722da2fcff7d299338e32e4c54edd6f11d1b13bbb71b7da",
+     "fit_id": "A-IND-B-device10-k3-seed0",
+     "weights_sha256": "e9b472272de3638bc2e4db325b76bd12f50fc015639e60b44a77d38083d50769"
+    },
+    {
+     "bundle_sha256": "017603e0f844036c6cfb1c712b0a119c3a89aad1f7494ebcc54f1b8d0f6240c5",
+     "fit_id": "A-IND-B-device10-k3-seed1",
+     "weights_sha256": "51e003f8996494dbb8fbeb4fd5230ddf9f7ff4a1716ea38a978ef21e8bac2818"
+    },
+    {
+     "bundle_sha256": "d3dcbafeb12fc2cc2dad4c3761834283b44e222cb65b97ace02748a24e495392",
+     "fit_id": "A-IND-B-device10-k3-seed2",
+     "weights_sha256": "359fbf63ad6aa25d3d3908cc9878d803472ef20d76d81cf53ef24b1a64db9e97"
+    }
+   ],
+   "form": "individual",
+   "group": "FREQ",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device10": {
+     "A-IND-B-device10-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.05279265730441403,
+      "mu_L": 0.005568828905770668,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.014911781738077752
+     },
+     "A-IND-B-device10-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.06564283138401764,
+      "mu_L": 0.0018748479236608859,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.006068621224838567
+     },
+     "A-IND-B-device10-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.03672663052897535,
+      "mu_L": 0.0020473656028657462,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.006741682406021877
+     }
+    }
+   },
+   "members": [
+    "device10"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-B-device10",
+   "networks_bundle_sha256": "55b1fcdecd4ce7ae764de7d1d007a3207fdcb20967ba14bf266124b121f01f74",
+   "networks_weights_sha256": "8aec143c0c1d4a78f0184c8ddf7c4ae42b0e6b234e0081fe2e201aafb38cb2fb",
+   "normalizers": {
+    "device10": "a9c574a79f48e253705fe2c7e8907c02aec4666a09a890f9dc8581bb3b0efc95"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-B-device10+IM": {
+   "calibration": {
+    "device10": {
+     "fragile": false,
+     "largest_window_share": 0.03468832573803147,
+     "mu_L": 0.003163680810765767,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.00665592231445136
+    }
+   },
+   "calibration_per_run": {
+    "device10": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.029641630987164994,
+      "mu_L": 0.002426958170062091,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.004414898962944301
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.04363363939228531,
+      "mu_L": 0.003900403451469443,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.008252144988236215
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.03468832573803147,
+    "mu_L": 0.003163680810765767,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.00665592231445136
+   },
+   "contract": "FC-6.1N",
+   "fits": [
+    {
+     "bundle_sha256": "10becea910b198df6722da2fcff7d299338e32e4c54edd6f11d1b13bbb71b7da",
+     "fit_id": "A-IND-B-device10-k3-seed0",
+     "weights_sha256": "e9b472272de3638bc2e4db325b76bd12f50fc015639e60b44a77d38083d50769"
+    },
+    {
+     "bundle_sha256": "017603e0f844036c6cfb1c712b0a119c3a89aad1f7494ebcc54f1b8d0f6240c5",
+     "fit_id": "A-IND-B-device10-k3-seed1",
+     "weights_sha256": "51e003f8996494dbb8fbeb4fd5230ddf9f7ff4a1716ea38a978ef21e8bac2818"
+    },
+    {
+     "bundle_sha256": "d3dcbafeb12fc2cc2dad4c3761834283b44e222cb65b97ace02748a24e495392",
+     "fit_id": "A-IND-B-device10-k3-seed2",
+     "weights_sha256": "359fbf63ad6aa25d3d3908cc9878d803472ef20d76d81cf53ef24b1a64db9e97"
+    }
+   ],
+   "form": "individual",
+   "group": "FREQ",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device10": {
+     "A-IND-B-device10-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.05279265730441403,
+      "mu_L": 0.005568828905770668,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.014911781738077752
+     },
+     "A-IND-B-device10-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.06564283138401764,
+      "mu_L": 0.0018748479236608859,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.006068621224838567
+     },
+     "A-IND-B-device10-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.03672663052897535,
+      "mu_L": 0.0020473656028657462,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.006741682406021877
+     }
+    }
+   },
+   "members": [
+    "device10"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-B-device10",
+   "networks_bundle_sha256": "55b1fcdecd4ce7ae764de7d1d007a3207fdcb20967ba14bf266124b121f01f74",
+   "networks_weights_sha256": "8aec143c0c1d4a78f0184c8ddf7c4ae42b0e6b234e0081fe2e201aafb38cb2fb",
+   "normalizers": {
+    "device10": "a9c574a79f48e253705fe2c7e8907c02aec4666a09a890f9dc8581bb3b0efc95"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-C-device05": {
+   "calibration": {
+    "device05": {
+     "fragile": false,
+     "largest_window_share": 0.008044579217854411,
+     "mu_L": 0.00016443136795713987,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.0002464110004564294
+    }
+   },
+   "calibration_per_run": {
+    "device05": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.014522478248321603,
+      "mu_L": 0.00011820921351910513,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.00016911788194667193
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.00973619158075853,
+      "mu_L": 0.0002106535223951746,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.00029775352543206005
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.008044579217854411,
+    "mu_L": 0.00016443136795713987,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.0002464110004564294
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "09e21fe2b3ef1d5747d580de573c7105d6d65e2d248c01c87a71b6380f54c92e",
+     "fit_id": "A-IND-C-device05-k3-seed0",
+     "weights_sha256": "e6983e45b4d6b637b4450b98914e7a62ba6437f88019c21b81b4069493d71327"
+    },
+    {
+     "bundle_sha256": "f26feb5c4551e6f07dba27fbe1ae015ca79424e489b154c0baf09e119cf111d3",
+     "fit_id": "A-IND-C-device05-k3-seed1",
+     "weights_sha256": "d657af5ffb2d5e8b785e64e20a279721ca6dc0b9f8acbfec1707db3f2211d024"
+    },
+    {
+     "bundle_sha256": "692dd52ffd08a4164a69e2a8f827142dd765e2fd2e22378166511f64d08b81a9",
+     "fit_id": "A-IND-C-device05-k3-seed2",
+     "weights_sha256": "7278c47d49aeebba3761c66d6acc74dd6ab2696c226c5d3bba7be6a8b5e73a92"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device05": {
+     "A-IND-C-device05-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.003921704334829886,
+      "mu_L": 0.0004890153809577385,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0007356410012383447
+     },
+     "A-IND-C-device05-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.12220484323038652,
+      "mu_L": 9.305035978440845e-09,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 9.730776797601515e-09
+     },
+     "A-IND-C-device05-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.820081372420998,
+      "mu_L": 4.269417877702644e-06,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 8.873406858363341e-05
+     }
+    }
+   },
+   "members": [
+    "device05"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-C-device05",
+   "networks_bundle_sha256": "db1011f388e6ab98db40d6c37b5ddb6a610d559d34f40c33209b0a23fc419abb",
+   "networks_weights_sha256": "bf075f3adfd94cabc7a3c69127c35898606c092055d2a9815c780df50ffff7c0",
+   "normalizers": {
+    "device05": "9bb62eb9dca9949aea8e14a5a9e35e141ed85d0f7bff0f2d755c2544d94f1eb6"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-C-device05+IM": {
+   "calibration": {
+    "device05": {
+     "fragile": false,
+     "largest_window_share": 0.008044579217854411,
+     "mu_L": 0.00016443136795713987,
+     "n_B": 1200,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.0002464110004564294
+    }
+   },
+   "calibration_per_run": {
+    "device05": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.014522478248321603,
+      "mu_L": 0.00011820921351910513,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.00016911788194667193
+     },
+     "g6c-h02": {
+      "fragile": false,
+      "largest_window_share": 0.00973619158075853,
+      "mu_L": 0.0002106535223951746,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.00029775352543206005
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.008044579217854411,
+    "mu_L": 0.00016443136795713987,
+    "n_B": 1200,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.0002464110004564294
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "09e21fe2b3ef1d5747d580de573c7105d6d65e2d248c01c87a71b6380f54c92e",
+     "fit_id": "A-IND-C-device05-k3-seed0",
+     "weights_sha256": "e6983e45b4d6b637b4450b98914e7a62ba6437f88019c21b81b4069493d71327"
+    },
+    {
+     "bundle_sha256": "f26feb5c4551e6f07dba27fbe1ae015ca79424e489b154c0baf09e119cf111d3",
+     "fit_id": "A-IND-C-device05-k3-seed1",
+     "weights_sha256": "d657af5ffb2d5e8b785e64e20a279721ca6dc0b9f8acbfec1707db3f2211d024"
+    },
+    {
+     "bundle_sha256": "692dd52ffd08a4164a69e2a8f827142dd765e2fd2e22378166511f64d08b81a9",
+     "fit_id": "A-IND-C-device05-k3-seed2",
+     "weights_sha256": "7278c47d49aeebba3761c66d6acc74dd6ab2696c226c5d3bba7be6a8b5e73a92"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device05": {
+     "A-IND-C-device05-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.003921704334829886,
+      "mu_L": 0.0004890153809577385,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0007356410012383447
+     },
+     "A-IND-C-device05-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.12220484323038652,
+      "mu_L": 9.305035978440845e-09,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 9.730776797601515e-09
+     },
+     "A-IND-C-device05-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.820081372420998,
+      "mu_L": 4.269417877702644e-06,
+      "n_B": 1200,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 8.873406858363341e-05
+     }
+    }
+   },
+   "members": [
+    "device05"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-C-device05",
+   "networks_bundle_sha256": "db1011f388e6ab98db40d6c37b5ddb6a610d559d34f40c33209b0a23fc419abb",
+   "networks_weights_sha256": "bf075f3adfd94cabc7a3c69127c35898606c092055d2a9815c780df50ffff7c0",
+   "normalizers": {
+    "device05": "9bb62eb9dca9949aea8e14a5a9e35e141ed85d0f7bff0f2d755c2544d94f1eb6"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-C-device06": {
+   "calibration": {
+    "device06": {
+     "fragile": false,
+     "largest_window_share": 0.22864022829028333,
+     "mu_L": 0.02387921107656902,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.08173748920735514
+    }
+   },
+   "calibration_per_run": {
+    "device06": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.3229510672395201,
+      "mu_L": 0.02777218734656194,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0969473588371066
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.6997638264853765,
+      "mu_L": 0.0199862348065761,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06289019427389361
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.22864022829028333,
+    "mu_L": 0.02387921107656902,
+    "n_B": 600,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.08173748920735514
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "690f0f40a176d4ac6728485e326e0a15af22d2414e826aea00f35af8f29bb992",
+     "fit_id": "A-IND-C-device06-k3-seed0",
+     "weights_sha256": "86822efcd8dbd0b0ae2bd734059b73471fb3fc1f879341529bb8b63ce5c2baa3"
+    },
+    {
+     "bundle_sha256": "a13301d14a669b49be68c1d217f879a2be63e1362ac5cd3ee9faf79db8567890",
+     "fit_id": "A-IND-C-device06-k3-seed1",
+     "weights_sha256": "0c754d7771046e7723c772204e0d12fdafdc4aad647e1889d94542862ea6c2ee"
+    },
+    {
+     "bundle_sha256": "c26fe68ba7d1938aff09714ebb610fbdcc440202be4fe22706e70c069fb8e624",
+     "fit_id": "A-IND-C-device06-k3-seed2",
+     "weights_sha256": "27f1db1df3697b5e8600ce61df29d8a4d74f2fc32e1fb4e11af92de27a528954"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device06": {
+     "A-IND-C-device06-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.32277917804576806,
+      "mu_L": 0.018314105080911965,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06300537725929482
+     },
+     "A-IND-C-device06-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.2531216372006902,
+      "mu_L": 0.026681133201598494,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.09819536926959817
+     },
+     "A-IND-C-device06-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.2612827526529553,
+      "mu_L": 0.026642394947196592,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.09897725624789203
+     }
+    }
+   },
+   "members": [
+    "device06"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-C-device06",
+   "networks_bundle_sha256": "cf2467953017638dedc01e2ae2995e9bda8d50b93635b2fdce1dabf5cd5148ab",
+   "networks_weights_sha256": "0014bfcffbea539c296338c0e9710ba40f9776ebb66a92cda023d946e08a1aa6",
+   "normalizers": {
+    "device06": "dc642ae1f99d071421963b0bbae693fff0a143232c97c142366e216d388095e3"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-C-device06+IM": {
+   "calibration": {
+    "device06": {
+     "fragile": false,
+     "largest_window_share": 0.22864022829028333,
+     "mu_L": 0.02387921107656902,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.08173748920735514
+    }
+   },
+   "calibration_per_run": {
+    "device06": {
+     "g6c-h01": {
+      "fragile": false,
+      "largest_window_share": 0.3229510672395201,
+      "mu_L": 0.02777218734656194,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0969473588371066
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.6997638264853765,
+      "mu_L": 0.0199862348065761,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06289019427389361
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": false,
+    "largest_window_share": 0.22864022829028333,
+    "mu_L": 0.02387921107656902,
+    "n_B": 600,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.08173748920735514
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "690f0f40a176d4ac6728485e326e0a15af22d2414e826aea00f35af8f29bb992",
+     "fit_id": "A-IND-C-device06-k3-seed0",
+     "weights_sha256": "86822efcd8dbd0b0ae2bd734059b73471fb3fc1f879341529bb8b63ce5c2baa3"
+    },
+    {
+     "bundle_sha256": "a13301d14a669b49be68c1d217f879a2be63e1362ac5cd3ee9faf79db8567890",
+     "fit_id": "A-IND-C-device06-k3-seed1",
+     "weights_sha256": "0c754d7771046e7723c772204e0d12fdafdc4aad647e1889d94542862ea6c2ee"
+    },
+    {
+     "bundle_sha256": "c26fe68ba7d1938aff09714ebb610fbdcc440202be4fe22706e70c069fb8e624",
+     "fit_id": "A-IND-C-device06-k3-seed2",
+     "weights_sha256": "27f1db1df3697b5e8600ce61df29d8a4d74f2fc32e1fb4e11af92de27a528954"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device06": {
+     "A-IND-C-device06-k3-seed0": {
+      "fragile": false,
+      "largest_window_share": 0.32277917804576806,
+      "mu_L": 0.018314105080911965,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.06300537725929482
+     },
+     "A-IND-C-device06-k3-seed1": {
+      "fragile": false,
+      "largest_window_share": 0.2531216372006902,
+      "mu_L": 0.026681133201598494,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.09819536926959817
+     },
+     "A-IND-C-device06-k3-seed2": {
+      "fragile": false,
+      "largest_window_share": 0.2612827526529553,
+      "mu_L": 0.026642394947196592,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.09897725624789203
+     }
+    }
+   },
+   "members": [
+    "device06"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-C-device06",
+   "networks_bundle_sha256": "cf2467953017638dedc01e2ae2995e9bda8d50b93635b2fdce1dabf5cd5148ab",
+   "networks_weights_sha256": "0014bfcffbea539c296338c0e9710ba40f9776ebb66a92cda023d946e08a1aa6",
+   "normalizers": {
+    "device06": "dc642ae1f99d071421963b0bbae693fff0a143232c97c142366e216d388095e3"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-C-device07": {
+   "calibration": {
+    "device07": {
+     "fragile": true,
+     "largest_window_share": 0.9709575143252165,
+     "mu_L": 3.879935658476102e-07,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 8.003072563300872e-06
+    }
+   },
+   "calibration_per_run": {
+    "device07": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.9966616480678231,
+      "mu_L": 2.1923527460701448e-08,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 3.6961114752108166e-07
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.970344526753473,
+      "mu_L": 7.540636042345189e-07,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 1.130959897004478e-05
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": true,
+    "largest_window_share": 0.9709575143252165,
+    "mu_L": 3.879935658476102e-07,
+    "n_B": 600,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 8.003072563300872e-06
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "4a1eef911e6ed11699d55ec079089ff23181a73c0509f34d2bda43b235bf3908",
+     "fit_id": "A-IND-C-device07-k3-seed0",
+     "weights_sha256": "fcda20e99081857c233aa077789f9199e0d9abc95cdb96803e28ea2d83b7a4fa"
+    },
+    {
+     "bundle_sha256": "62c0e6364727e9958ca473b8a211f80f1cce42e10dd4de0afc7be389ab3e9bf3",
+     "fit_id": "A-IND-C-device07-k3-seed1",
+     "weights_sha256": "89b5e9fe445802da2f47a05012affce54fc6841e36d1b5177b25e27c8d5b9e31"
+    },
+    {
+     "bundle_sha256": "6497c0b3d852452fe42b5f8b16e342f45084896e0b164e36bb31f030a238358d",
+     "fit_id": "A-IND-C-device07-k3-seed2",
+     "weights_sha256": "415a872c47f07d183cdaeadc55c80d6d10d4187f5b37640cc6b75c093d045560"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device07": {
+     "A-IND-C-device07-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.9983333321773779,
+      "mu_L": 8.992109183100805e-07,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 2.200917050430678e-05
+     },
+     "A-IND-C-device07-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.8417922106804162,
+      "mu_L": 2.3242705180370845e-07,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 4.241619785025294e-06
+     },
+     "A-IND-C-device07-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.9983325405350938,
+      "mu_L": 3.234272742904155e-08,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 7.832878761235871e-07
+     }
+    }
+   },
+   "members": [
+    "device07"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-C-device07",
+   "networks_bundle_sha256": "70a857c6e84a21d4fc639c5c3c446a6656e19fba4fcdf19573e53c3712cdb8e5",
+   "networks_weights_sha256": "26942a8aab8ae4f620b3485fe4004e37a59e1a68bfcba2f0bb95d5401768b64e",
+   "normalizers": {
+    "device07": "9d47959cb27996502e028d61979c1b0da9b9a7e7fd50654d7ae286ee897c2f02"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-C-device07+IM": {
+   "calibration": {
+    "device07": {
+     "fragile": true,
+     "largest_window_share": 0.9709575143252165,
+     "mu_L": 3.879935658476102e-07,
+     "n_B": 600,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 8.003072563300872e-06
+    }
+   },
+   "calibration_per_run": {
+    "device07": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.9966616480678231,
+      "mu_L": 2.1923527460701448e-08,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 3.6961114752108166e-07
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.970344526753473,
+      "mu_L": 7.540636042345189e-07,
+      "n_B": 300,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 1.130959897004478e-05
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": true,
+    "largest_window_share": 0.9709575143252165,
+    "mu_L": 3.879935658476102e-07,
+    "n_B": 600,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 8.003072563300872e-06
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "4a1eef911e6ed11699d55ec079089ff23181a73c0509f34d2bda43b235bf3908",
+     "fit_id": "A-IND-C-device07-k3-seed0",
+     "weights_sha256": "fcda20e99081857c233aa077789f9199e0d9abc95cdb96803e28ea2d83b7a4fa"
+    },
+    {
+     "bundle_sha256": "62c0e6364727e9958ca473b8a211f80f1cce42e10dd4de0afc7be389ab3e9bf3",
+     "fit_id": "A-IND-C-device07-k3-seed1",
+     "weights_sha256": "89b5e9fe445802da2f47a05012affce54fc6841e36d1b5177b25e27c8d5b9e31"
+    },
+    {
+     "bundle_sha256": "6497c0b3d852452fe42b5f8b16e342f45084896e0b164e36bb31f030a238358d",
+     "fit_id": "A-IND-C-device07-k3-seed2",
+     "weights_sha256": "415a872c47f07d183cdaeadc55c80d6d10d4187f5b37640cc6b75c093d045560"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device07": {
+     "A-IND-C-device07-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.9983333321773779,
+      "mu_L": 8.992109183100805e-07,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 2.200917050430678e-05
+     },
+     "A-IND-C-device07-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.8417922106804162,
+      "mu_L": 2.3242705180370845e-07,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 4.241619785025294e-06
+     },
+     "A-IND-C-device07-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.9983325405350938,
+      "mu_L": 3.234272742904155e-08,
+      "n_B": 600,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 7.832878761235871e-07
+     }
+    }
+   },
+   "members": [
+    "device07"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-C-device07",
+   "networks_bundle_sha256": "70a857c6e84a21d4fc639c5c3c446a6656e19fba4fcdf19573e53c3712cdb8e5",
+   "networks_weights_sha256": "26942a8aab8ae4f620b3485fe4004e37a59e1a68bfcba2f0bb95d5401768b64e",
+   "normalizers": {
+    "device07": "9d47959cb27996502e028d61979c1b0da9b9a7e7fd50654d7ae286ee897c2f02"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-C-device08": {
+   "calibration": {
+    "device08": {
+     "fragile": true,
+     "largest_window_share": 0.9102100751430082,
+     "mu_L": 0.00024635630803141676,
+     "n_B": 132,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.0020656169075779817
+    }
+   },
+   "calibration_per_run": {
+    "device08": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.9652767318427005,
+      "mu_L": 1.1568861067714758e-06,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 7.964720465871746e-06
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.9033611617280062,
+      "mu_L": 0.000491555729956062,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.002911533994603165
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": true,
+    "largest_window_share": 0.9102100751430082,
+    "mu_L": 0.00024635630803141676,
+    "n_B": 132,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.0020656169075779817
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "3edc581623f9fcc1ed1a98b7e6f2ab3a43a18178d9b002e158efddbb83beeb7e",
+     "fit_id": "A-IND-C-device08-k3-seed0",
+     "weights_sha256": "5212f92f6c4c743673aa08e0888d33c613583ba757cd85772abb73d31d2e34dc"
+    },
+    {
+     "bundle_sha256": "186b0d00a82bda5e532a7765e77c190dbff0707d27a44878f7560b9978c56b1a",
+     "fit_id": "A-IND-C-device08-k3-seed1",
+     "weights_sha256": "ef932111e8aee9ceaeca7c6e5445550e9a4b7730c26f8ca94e69f34f0ae554ec"
+    },
+    {
+     "bundle_sha256": "da50101c32d845f30e7b7ab4d26cf9a845d0ab55f8da6c1d9a9347096b82439f",
+     "fit_id": "A-IND-C-device08-k3-seed2",
+     "weights_sha256": "a08c80d227ba77713d3f4802dcdf1b312e5639cd3ed5dc6638bdc591b3d5cd32"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": false,
+   "masked_features": [],
+   "member_calibration": {
+    "device08": {
+     "A-IND-C-device08-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.9389123688875101,
+      "mu_L": 5.353884507714536e-05,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0004989913666652113
+     },
+     "A-IND-C-device08-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.9901131456598625,
+      "mu_L": 0.0005611913162018224,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0059463455725815165
+     },
+     "A-IND-C-device08-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.8941383316383766,
+      "mu_L": 0.00012433876281528272,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0010824081097649968
+     }
+    }
+   },
+   "members": [
+    "device08"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-C-device08",
+   "networks_bundle_sha256": "dd4aeafc417f9e7e195e54a60bab0fb35b95badda53c634c1b5b94c43370511a",
+   "networks_weights_sha256": "60d8cb670e26abb51717fae5e8187c60b9f89f745a42a6ea6933684b9da06742",
+   "normalizers": {
+    "device08": "8991ae3528848a0c586c4d5d6fecedff22d85f0dc398f753a7aea54eed6b64f4"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  },
+  "IND-C-device08+IM": {
+   "calibration": {
+    "device08": {
+     "fragile": true,
+     "largest_window_share": 0.9102100751430082,
+     "mu_L": 0.00024635630803141676,
+     "n_B": 132,
+     "sd_convention": "sample (n - 1)",
+     "sigma_L": 0.0020656169075779817
+    }
+   },
+   "calibration_per_run": {
+    "device08": {
+     "g6c-h01": {
+      "fragile": true,
+      "largest_window_share": 0.9652767318427005,
+      "mu_L": 1.1568861067714758e-06,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 7.964720465871746e-06
+     },
+     "g6c-h02": {
+      "fragile": true,
+      "largest_window_share": 0.9033611617280062,
+      "mu_L": 0.000491555729956062,
+      "n_B": 66,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.002911533994603165
+     }
+    }
+   },
+   "calibration_pooled": {
+    "fragile": true,
+    "largest_window_share": 0.9102100751430082,
+    "mu_L": 0.00024635630803141676,
+    "n_B": 132,
+    "sd_convention": "sample (n - 1)",
+    "sigma_L": 0.0020656169075779817
+   },
+   "contract": "FC-6.2R",
+   "fits": [
+    {
+     "bundle_sha256": "3edc581623f9fcc1ed1a98b7e6f2ab3a43a18178d9b002e158efddbb83beeb7e",
+     "fit_id": "A-IND-C-device08-k3-seed0",
+     "weights_sha256": "5212f92f6c4c743673aa08e0888d33c613583ba757cd85772abb73d31d2e34dc"
+    },
+    {
+     "bundle_sha256": "186b0d00a82bda5e532a7765e77c190dbff0707d27a44878f7560b9978c56b1a",
+     "fit_id": "A-IND-C-device08-k3-seed1",
+     "weights_sha256": "ef932111e8aee9ceaeca7c6e5445550e9a4b7730c26f8ca94e69f34f0ae554ec"
+    },
+    {
+     "bundle_sha256": "da50101c32d845f30e7b7ab4d26cf9a845d0ab55f8da6c1d9a9347096b82439f",
+     "fit_id": "A-IND-C-device08-k3-seed2",
+     "weights_sha256": "a08c80d227ba77713d3f4802dcdf1b312e5639cd3ed5dc6638bdc591b3d5cd32"
+    }
+   ],
+   "form": "individual",
+   "group": "PER",
+   "held_out": {},
+   "input_mask": true,
+   "masked_features": [],
+   "member_calibration": {
+    "device08": {
+     "A-IND-C-device08-k3-seed0": {
+      "fragile": true,
+      "largest_window_share": 0.9389123688875101,
+      "mu_L": 5.353884507714536e-05,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0004989913666652113
+     },
+     "A-IND-C-device08-k3-seed1": {
+      "fragile": true,
+      "largest_window_share": 0.9901131456598625,
+      "mu_L": 0.0005611913162018224,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0059463455725815165
+     },
+     "A-IND-C-device08-k3-seed2": {
+      "fragile": true,
+      "largest_window_share": 0.8941383316383766,
+      "mu_L": 0.00012433876281528272,
+      "n_B": 132,
+      "sd_convention": "sample (n - 1)",
+      "sigma_L": 0.0010824081097649968
+     }
+    }
+   },
+   "members": [
+    "device08"
+   ],
+   "models_dir": "results/engineering/gate6c/p1/models/p1-train-01",
+   "network": "IND-C-device08",
+   "networks_bundle_sha256": "dd4aeafc417f9e7e195e54a60bab0fb35b95badda53c634c1b5b94c43370511a",
+   "networks_weights_sha256": "60d8cb670e26abb51717fae5e8187c60b9f89f745a42a6ea6933684b9da06742",
+   "normalizers": {
+    "device08": "8991ae3528848a0c586c4d5d6fecedff22d85f0dc398f753a7aea54eed6b64f4"
+   },
+   "parameters": 507,
+   "selected_k": 3
+  }
+ },
+ "calibration_id": "p2-cal-01+stb-cal5-01",
+ "calibration_runs": {
+  "marker": "results/engineering/gate6c/p2/cal_marker_p2-cal-01.json",
+  "runs": [
+   "g6c-h01",
+   "g6c-h02"
+  ],
+  "score_ready_share": {
+   "device01": 1.0,
+   "device02": 1.0,
+   "device03": 1.0,
+   "device04": 1.0,
+   "device05": 1.0,
+   "device06": 1.0,
+   "device07": 1.0,
+   "device08": 1.0,
+   "device09": 1.0,
+   "device10": 1.0
+  },
+  "utc": "2026-11-03T01:14:35Z",
+  "windows": {
+   "device01": 1200,
+   "device02": 1200,
+   "device03": 1200,
+   "device04": 1200,
+   "device05": 1200,
+   "device06": 600,
+   "device07": 600,
+   "device08": 132,
+   "device09": 66,
+   "device10": 1200
+  }
+ },
+ "exp_v1_lineage": {
+  "cal5_record": "configs/stabilization/cal5_calibration_record.json",
+  "cal5_record_sha256": "418aad40c8b324e7550df067304995a5d876512154f8220c33b80b842257661c",
+  "derived_from": "configs/gate6c/p2_candidates_cal4.json",
+  "derived_from_sha256": "35f61fc26b44559c48804df3606b9d66098dbbb6b04699ea8445fc65eccff089",
+  "note": "device05 of arm EA-C-PER+IM takes the pooled CAL5 constants; every other arm and device is copied unchanged"
+ },
+ "independent_check": {
+  "candidates_checked": [
+   "B-FREQ+IM",
+   "EA-C-PER+IM",
+   "EA-IND-C-device06+IM",
+   "IND-B-device09+IM",
+   "C-PER"
+  ],
+  "max_relative_difference": 2.812728258882889e-13
+ },
+ "models_run": "p1-train-01 + p2-train-01",
+ "protocol": "docs/gate6c/AE_RECOVERY_PHASE2_PROTOCOL.md",
+ "schema": "azta.gate6c.p2_candidates",
+ "schema_version": 1,
+ "status": "EXP_V1_CANDIDATE"
+}

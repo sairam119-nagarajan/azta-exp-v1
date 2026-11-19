@@ -1,0 +1,26 @@
+:root { --bg: #f7f7f5; --panel: #ffffff; --text: #1d1f21; --muted: #5c6166; --line: #d9dbde; --bad: #a3271f; --warn: #8a5a00; --good: #1d6b3a; --accent: #1f4e8c; }
+@media (prefers-color-scheme: dark) { :root { --bg: #16181a; --panel: #1f2225; --text: #e7e8e9; --muted: #a2a7ac; --line: #383c40; --bad: #ff8a80; --warn: #e6b450; --good: #7fd19b; --accent: #8ab4f8; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 system-ui, "Segoe UI", sans-serif; }
+header { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px 16px; background: var(--panel); border-bottom: 1px solid var(--line); position: sticky; top: 0; }
+h1 { font-size: 16px; margin: 0 8px 0 0; } h2 { font-size: 15px; margin: 0 0 6px; } h3 { font-size: 13px; margin: 12px 0 6px; }
+main, #login-panel { padding: 12px 16px; max-width: 1500px; margin: 0 auto; }
+section { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 12px; margin-bottom: 12px; }
+.label, .badge { font-size: 12px; padding: 2px 8px; border-radius: 10px; border: 1px solid var(--line); }
+.bad { color: var(--bad); } .warn { color: var(--warn); } .good { color: var(--good); }
+.badge.bad { border-color: var(--bad); } .badge.warn { border-color: var(--warn); } .badge.good { border-color: var(--good); }
+.hint { color: var(--muted); margin: 4px 0 8px; } .error { color: var(--bad); }
+.scroll { overflow-x: auto; } .short { max-height: 280px; overflow-y: auto; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { color: var(--muted); font-weight: 600; font-size: 12px; }
+tbody tr[data-device] { cursor: pointer; } tbody tr[data-device]:hover { background: rgba(127, 127, 127, 0.1); }
+.review { border: 1px solid var(--line); border-radius: 6px; padding: 10px; margin-bottom: 8px; }
+.review dl { display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; margin: 6px 0; } .review dt { color: var(--muted); } .review dd { margin: 0; overflow-wrap: anywhere; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 12px; }
+button { font: inherit; padding: 4px 10px; border-radius: 4px; border: 1px solid var(--line); background: var(--panel); color: var(--text); cursor: pointer; } button:hover { border-color: var(--accent); }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+input, select { font: inherit; padding: 3px 6px; background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: 4px; }
+pre { overflow-x: auto; font-size: 12px; margin: 0 0 8px; }
+.stale td { opacity: 0.55; }
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } main, #login-panel { padding: 8px; } }

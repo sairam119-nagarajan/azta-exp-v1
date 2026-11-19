@@ -1,0 +1,16 @@
+{
+ "devices": ["device01", "device02", "device03", "device04", "device05", "device06", "device07", "device08", "device09", "device10"],
+ "registry": "configs/core_final/registry_ae_primary_v1.json",
+ "compat_record": "configs/gate6b/registry_v2_compat_record.json",
+ "trust_config": "configs/pilot/trust_config_cand-1ac5637401a5-ctx2.json",
+ "start_delay_s": 5,
+ "max_duration_s": 900,
+ "cal_v2": "configs/dshadow/g5f-cal-v2-01-accepted-1.json",
+ "plan": "configs/collection_plans/zz-core-final-dress-rehearsal.json",
+ "run_id": "g5d3a-fx-g6b06",
+ "models_record": "configs/gate6c/core_fleet_models_provisional.json",
+ "synthetic_audit_every_s": 30,
+ "source": "results/engineering/runs/g5d3a-fx-g6b06",
+ "out": "results/engineering/core_final/dress_01",
+ "core_final": {"mode": "shadow", "route": "configs/core_final/route_ae_primary_v1.json", "authority_map": "configs/core_final/authority_map_v1.json"}
+}

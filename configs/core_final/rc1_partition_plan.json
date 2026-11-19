@@ -1,0 +1,91 @@
+{
+ "audit_interval_s": 30,
+ "benign_conditions": {
+  "N1": {
+   "description": "moderate delivery variation: Gaussian displacement SD 1 ms and rare stalls (0.2 percent, 20 to 70 ms); unchanged Gate 6C condition",
+   "hiccup_ms": [
+    20,
+    70
+   ],
+   "hiccup_rate": 0.002,
+   "sigma_ms": 1.0
+  },
+  "N2": {
+   "description": "rough delivery variation: displacement SD 3 ms and stalls of 20 to 120 ms at 0.5 percent of the messages; unchanged Gate 6C condition",
+   "hiccup_ms": [
+    20,
+    120
+   ],
+   "hiccup_rate": 0.005,
+   "sigma_ms": 3.0
+  },
+  "N3": {
+   "description": "STRESS beyond the training and calibration range: displacement SD 6 ms and stalls of 50 to 200 ms at 1 percent of the messages; reported separately, never pooled with the realistic segments; unchanged Gate 6C condition",
+   "hiccup_ms": [
+    50,
+    200
+   ],
+   "hiccup_rate": 0.01,
+   "sigma_ms": 6.0
+  },
+  "Q": {
+   "description": "quiet: the corrected publisher with no added variation",
+   "segment": null
+  }
+ },
+ "campaign": "core completion, RC-1 live verification (read-only)",
+ "eligible_windows": 66,
+ "plan_id": "core-final-rc1-verification",
+ "runs": {
+  "core-r01": {
+   "reconnections": {
+    "count": 2,
+    "device_stagger_windows": 1,
+    "first_window": 8,
+    "gap_ms": [
+     3000,
+     8000
+    ],
+    "jitter_windows": 0,
+    "last_window": 60,
+    "min_spacing_windows": 30
+   },
+   "role": "RC1_VERIFICATION",
+   "segments": [
+    [
+     "N1",
+     1,
+     66
+    ]
+   ]
+  },
+  "core-r02": {
+   "reconnections": {
+    "count": 2,
+    "device_stagger_windows": 1,
+    "first_window": 8,
+    "gap_ms": [
+     3000,
+     8000
+    ],
+    "jitter_windows": 0,
+    "last_window": 60,
+    "min_spacing_windows": 30
+   },
+   "role": "RC1_VERIFICATION",
+   "segments": [
+    [
+     "N1",
+     1,
+     66
+    ]
+   ]
+  }
+ },
+ "schema": "azta.gate6c.prelive_partition_plan",
+ "schema_version": 1,
+ "status": "ENGINEERING_DEVELOPMENT_UNAPPROVED",
+ "use_rules": [
+  "engineering verification of the RC-1 session lifecycle only; no selection, no calibration and no detection claim"
+ ]
+}

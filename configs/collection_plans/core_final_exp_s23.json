@@ -1,0 +1,365 @@
+{
+ "approval_ref": null,
+ "approval_status": "UNAPPROVED_CANDIDATE",
+ "design_basis": "Gate 6B fleet functional plan: engineering evidence only; joins no scientific partition",
+ "device_profiles": {
+  "device01": "FAM-B-FREQ+IM-device01",
+  "device02": "FAM-B-FREQ+IM-device02",
+  "device03": "FX",
+  "device04": "SU",
+  "device05": "MP05",
+  "device06": "MP06",
+  "device07": "MP07",
+  "device08": "MP08",
+  "device09": "MP09",
+  "device10": "SW"
+ },
+ "eligible_windows": 66,
+ "generator_version": "gate6b-fleet-workload-1",
+ "kind": "FUNCTIONAL_TEST",
+ "lead_in_windows": 1,
+ "observation_config_sha256": "e54e6ccdf1c381cab347e52f36cd543904267e4d42dae27edd9d6fa73cc45b8d",
+ "plan_id": "core-final-exp-s23",
+ "planned_window_count": 72,
+ "planning_base_commit": "66bfa4412d9359bfc985e680a574590a703c8582",
+ "post_roll_windows": 5,
+ "registry_sha256": "c08d8ccf8909c1252c6c09a74addedd9103a03a32693f636e846dc2f41ee8f5a",
+ "runs": {
+  "exp-s23": {
+   "devices": {
+    "device01": {
+     "client_id": "azta-device-01",
+     "device_seed": 1060692201,
+     "jitter_seed": 8946743771717963991,
+     "law": {
+      "jitter_fraction": 0.1,
+      "nominal_gap_ns": 1000000000,
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      },
+      "shape": "steady_jitter",
+      "slot": 1
+     },
+     "profile": "FAM-B-FREQ+IM-device01",
+     "profile_definition": {
+      "jitter_fraction": 0.1,
+      "nominal_gap_ns": 1000000000,
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      }
+     },
+     "size_seed": null,
+     "slot": 1,
+     "telemetry_topic": "azta/devices/device01/telemetry",
+     "username": "azta-device-01"
+    },
+    "device02": {
+     "client_id": "azta-device-02",
+     "device_seed": 3371645436,
+     "jitter_seed": 12598737126089522754,
+     "law": {
+      "jitter_fraction": 0.1,
+      "nominal_gap_ns": 200000000,
+      "payload": {
+       "high": 256,
+       "kind": "uniform_int",
+       "low": 128
+      },
+      "shape": "steady_jitter",
+      "slot": 2
+     },
+     "profile": "FAM-B-FREQ+IM-device02",
+     "profile_definition": {
+      "jitter_fraction": 0.1,
+      "nominal_gap_ns": 200000000,
+      "payload": {
+       "high": 256,
+       "kind": "uniform_int",
+       "low": 128
+      }
+     },
+     "size_seed": 3032512348465088160,
+     "slot": 2,
+     "telemetry_topic": "azta/devices/device02/telemetry",
+     "username": "azta-device-02"
+    },
+    "device03": {
+     "client_id": "azta-device-03",
+     "device_seed": 4163483821,
+     "jitter_seed": 2744765360017181667,
+     "law": {
+      "jitter_fraction": 0.1,
+      "nominal_gap_ns": 200000000,
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      },
+      "shape": "steady_jitter",
+      "slot": 3
+     },
+     "profile": "FX",
+     "profile_definition": {
+      "jitter_fraction": 0.1,
+      "nominal_gap_ns": 200000000,
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      }
+     },
+     "size_seed": null,
+     "slot": 3,
+     "telemetry_topic": "azta/devices/device03/telemetry",
+     "username": "azta-device-03"
+    },
+    "device04": {
+     "client_id": "azta-device-04",
+     "device_seed": 4023027766,
+     "jitter_seed": 13047988597153171265,
+     "law": {
+      "jitter_fraction": 0.1,
+      "nominal_gap_ns": 1000000000,
+      "payload": {
+       "high": 256,
+       "kind": "uniform_int",
+       "low": 128
+      },
+      "shape": "steady_jitter",
+      "slot": 4
+     },
+     "profile": "SU",
+     "profile_definition": {
+      "jitter_fraction": 0.1,
+      "nominal_gap_ns": 1000000000,
+      "payload": {
+       "high": 256,
+       "kind": "uniform_int",
+       "low": 128
+      }
+     },
+     "size_seed": 15191686885127926333,
+     "slot": 4,
+     "telemetry_topic": "azta/devices/device04/telemetry",
+     "username": "azta-device-04"
+    },
+    "device05": {
+     "client_id": "azta-device-05",
+     "device_seed": 4218902996,
+     "jitter_seed": 15970911959280518875,
+     "law": {
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      },
+      "period_ns": 3000000000,
+      "shape": "periodic",
+      "slot": 5
+     },
+     "profile": "MP05",
+     "profile_definition": {
+      "jitter_fraction": 0.0,
+      "nominal_gap_ns": 3000000000,
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      }
+     },
+     "size_seed": null,
+     "slot": 5,
+     "telemetry_topic": "azta/devices/device05/telemetry",
+     "username": "azta-device-05"
+    },
+    "device06": {
+     "client_id": "azta-device-06",
+     "device_seed": 948173016,
+     "jitter_seed": 6328520947587624436,
+     "law": {
+      "payload": {
+       "high": 256,
+       "kind": "uniform_int",
+       "low": 128
+      },
+      "period_ns": 4000000000,
+      "shape": "periodic",
+      "slot": 6
+     },
+     "profile": "MP06",
+     "profile_definition": {
+      "jitter_fraction": 0.0,
+      "nominal_gap_ns": 4000000000,
+      "payload": {
+       "high": 256,
+       "kind": "uniform_int",
+       "low": 128
+      }
+     },
+     "size_seed": 9644397933164033723,
+     "slot": 6,
+     "telemetry_topic": "azta/devices/device06/telemetry",
+     "username": "azta-device-06"
+    },
+    "device07": {
+     "client_id": "azta-device-07",
+     "device_seed": 1778728288,
+     "jitter_seed": 9363235631782609666,
+     "law": {
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      },
+      "period_ns": 5000000000,
+      "shape": "periodic",
+      "slot": 7
+     },
+     "profile": "MP07",
+     "profile_definition": {
+      "jitter_fraction": 0.0,
+      "nominal_gap_ns": 5000000000,
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      }
+     },
+     "size_seed": null,
+     "slot": 7,
+     "telemetry_topic": "azta/devices/device07/telemetry",
+     "username": "azta-device-07"
+    },
+    "device08": {
+     "client_id": "azta-device-08",
+     "device_seed": 3245390924,
+     "jitter_seed": 4399187164643153862,
+     "law": {
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      },
+      "period_ns": 30000000000,
+      "shape": "periodic",
+      "slot": 8
+     },
+     "profile": "MP08",
+     "profile_definition": {
+      "jitter_fraction": 0.0,
+      "nominal_gap_ns": 30000000000,
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      }
+     },
+     "size_seed": null,
+     "slot": 8,
+     "telemetry_topic": "azta/devices/device08/telemetry",
+     "username": "azta-device-08"
+    },
+    "device09": {
+     "client_id": "azta-device-09",
+     "device_seed": 3039813240,
+     "jitter_seed": 17138042167857144859,
+     "law": {
+      "gap_high_s": 60,
+      "gap_low_s": 20,
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      },
+      "shape": "event_gap",
+      "slot": 9
+     },
+     "profile": "MP09",
+     "profile_definition": {
+      "jitter_fraction": 0.0,
+      "nominal_gap_ns": 20000000000,
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      }
+     },
+     "size_seed": null,
+     "slot": 9,
+     "telemetry_topic": "azta/devices/device09/telemetry",
+     "username": "azta-device-09"
+    },
+    "device10": {
+     "client_id": "azta-device-10",
+     "device_seed": 3499086481,
+     "jitter_seed": 15416684852446335602,
+     "law": {
+      "block_ns": 60000000000,
+      "fast_gap_ns": 200000000,
+      "jitter_fraction": 0.1,
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      },
+      "shape": "switching",
+      "slot": 10,
+      "slow_gap_ns": 1000000000
+     },
+     "profile": "SW",
+     "profile_definition": {
+      "jitter_fraction": 0.1,
+      "nominal_gap_ns": 1000000000,
+      "payload": {
+       "bytes": 128,
+       "kind": "fixed"
+      }
+     },
+     "size_seed": null,
+     "slot": 10,
+     "telemetry_topic": "azta/devices/device10/telemetry",
+     "username": "azta-device-10"
+    }
+   },
+   "eligible_window_indices": [
+    1,
+    66
+   ],
+   "eligible_windows": 66,
+   "fleet_workload_version": "gate6b-fleet-workload-1",
+   "generator_version": "gate5c-workload-2-candidate",
+   "kind": "FUNCTIONAL_TEST",
+   "lead_in_windows": 1,
+   "plan": "FLEET",
+   "planned_window_count": 72,
+   "post_roll_windows": 5,
+   "qos": 1,
+   "registry_sha256": "c08d8ccf8909c1252c6c09a74addedd9103a03a32693f636e846dc2f41ee8f5a",
+   "retain": false,
+   "run_id": "exp-s23",
+   "schedule_rule": {
+    "interactive": "anomalies replace ONE device's schedule from the command instant (fleet.laws)",
+    "law": "the committed ten-slot law of experiments/gate5d3_workload.py for each device",
+    "windows": "lead-in + eligible + post-roll; the generator end rule applies only at the end of the excluded post-roll"
+   },
+   "schema": "azta.collection.run_config_candidate",
+   "schema_version": 1,
+   "seed_rule": {
+    "device_seed": "int(sha256(\"g5c-v2c|<run_id>|<device>\").hexdigest()[:8], 16)",
+    "generator": "Python random.Random(stream_seed): uniform() for jitter, randint() for payload size",
+    "stream_seed": "int(sha256(\"<device_seed>|<stream>\").hexdigest()[:16], 16), streams \"jitter\" and \"size\""
+   },
+   "window_duration_ms": 10000,
+   "window_roles": {
+    "eligible": [
+     1,
+     66
+    ],
+    "lead_in": [
+     0,
+     0
+    ],
+    "post_roll": [
+     67,
+     71
+    ]
+   }
+  }
+ },
+ "schema": "azta.gate6b.fleet_plan",
+ "schema_fingerprint": "2dede5d8bd97c8ee1ffe0fda5afd78b020f455aad9208f6b4a75bdbca028767c",
+ "schema_version": 1,
+ "subscription_qos": 1,
+ "window_duration_ms": 10000
+}

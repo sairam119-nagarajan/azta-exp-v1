@@ -1,0 +1,206 @@
+{
+ "arm": "B-F02",
+ "cap": 1000,
+ "contract": "FC-6.1N",
+ "fits": {
+  "A-B-F02-k2-seed0": {
+   "best_epoch": 268,
+   "best_val_loss": 0.14455937935004037,
+   "epochs_run": 288,
+   "failure": null,
+   "k": 2,
+   "parameters": 152,
+   "per_device_val": {
+    "device02": {
+     "mean": 0.2296366032571472,
+     "n": 600,
+     "sd_sample": 0.32127356595199397
+    },
+    "device03": {
+     "mean": 0.05948215544293364,
+     "n": 600,
+     "sd_sample": 0.25186686660871876
+    }
+   },
+   "seed_index": 0,
+   "status": "COMPLETED",
+   "stop_reason": "early_stopping",
+   "weights_sha256": "dde081bec1c732fc17a0a01518e64fb511121ad35e1d805cb10a8c6306a7bbe8"
+  },
+  "A-B-F02-k2-seed1": {
+   "best_epoch": 400,
+   "best_val_loss": 0.1536268281344811,
+   "epochs_run": 420,
+   "failure": null,
+   "k": 2,
+   "parameters": 152,
+   "per_device_val": {
+    "device02": {
+     "mean": 0.23118148406613195,
+     "n": 600,
+     "sd_sample": 0.3311550478891722
+    },
+    "device03": {
+     "mean": 0.07607217220283029,
+     "n": 600,
+     "sd_sample": 0.3032414712335521
+    }
+   },
+   "seed_index": 1,
+   "status": "COMPLETED",
+   "stop_reason": "early_stopping",
+   "weights_sha256": "53d2f1d96acb09e45ca49e94e435b46cbebe81b076340a4186b4a43f4780c30a"
+  },
+  "A-B-F02-k2-seed2": {
+   "best_epoch": 208,
+   "best_val_loss": 0.14838649337419105,
+   "epochs_run": 228,
+   "failure": null,
+   "k": 2,
+   "parameters": 152,
+   "per_device_val": {
+    "device02": {
+     "mean": 0.23015769268811595,
+     "n": 600,
+     "sd_sample": 0.3603341794804409
+    },
+    "device03": {
+     "mean": 0.06661529406026617,
+     "n": 600,
+     "sd_sample": 0.2510657032811244
+    }
+   },
+   "seed_index": 2,
+   "status": "COMPLETED",
+   "stop_reason": "early_stopping",
+   "weights_sha256": "79601aee310a4bea87c79cb1b545cbcf0da900a4bb7b5b1cc608fe945504b90f"
+  },
+  "A-B-F02-k3-seed0": {
+   "best_epoch": 178,
+   "best_val_loss": 0.13338330568774778,
+   "epochs_run": 198,
+   "failure": null,
+   "k": 3,
+   "parameters": 169,
+   "per_device_val": {
+    "device02": {
+     "mean": 0.21669556365537881,
+     "n": 600,
+     "sd_sample": 0.3174930190535381
+    },
+    "device03": {
+     "mean": 0.050071047720116744,
+     "n": 600,
+     "sd_sample": 0.22945455840954976
+    }
+   },
+   "seed_index": 0,
+   "status": "COMPLETED",
+   "stop_reason": "early_stopping",
+   "weights_sha256": "351c300f534d8e1cff83a47bb92a7179965950dcf97bc697967b9402998fa25e"
+  },
+  "A-B-F02-k3-seed1": {
+   "best_epoch": 133,
+   "best_val_loss": 0.07863914250979012,
+   "epochs_run": 153,
+   "failure": null,
+   "k": 3,
+   "parameters": 169,
+   "per_device_val": {
+    "device02": {
+     "mean": 0.09928772306357153,
+     "n": 600,
+     "sd_sample": 0.24432815415333542
+    },
+    "device03": {
+     "mean": 0.05799056195600871,
+     "n": 600,
+     "sd_sample": 0.2290086956078875
+    }
+   },
+   "seed_index": 1,
+   "status": "COMPLETED",
+   "stop_reason": "early_stopping",
+   "weights_sha256": "a83ab6f2a981d9229b09d4e72cbf46dfef8237d94089c0d6e5ef0e60f964b57b"
+  },
+  "A-B-F02-k3-seed2": {
+   "best_epoch": 292,
+   "best_val_loss": 0.08356273555802926,
+   "epochs_run": 312,
+   "failure": null,
+   "k": 3,
+   "parameters": 169,
+   "per_device_val": {
+    "device02": {
+     "mean": 0.11005538957513113,
+     "n": 600,
+     "sd_sample": 0.25649519236448204
+    },
+    "device03": {
+     "mean": 0.05707008154092738,
+     "n": 600,
+     "sd_sample": 0.2313908780641022
+    }
+   },
+   "seed_index": 2,
+   "status": "COMPLETED",
+   "stop_reason": "early_stopping",
+   "weights_sha256": "feabfcc23d55d49d8b23f04be111e863603d108e287bd56c63801811f12fcf90"
+  }
+ },
+ "masked_features": [],
+ "members": [
+  "device02",
+  "device03"
+ ],
+ "n_train": {
+  "device02": 1800,
+  "device03": 1800
+ },
+ "n_val": {
+  "device02": 600,
+  "device03": 600
+ },
+ "normalizer_digests": {
+  "device02": "e937264d68a1cb30c020444f502994155748bf9c8c4cc66250e960aa1d65609f",
+  "device03": "c88dd0dec31247789146964923b33585160cb5e602e35db62aa025bb82e929f3"
+ },
+ "selection": {
+  "candidates": {
+   "k2": {
+    "eligible": true,
+    "metric": 0.1488575669529042,
+    "seed_best_val_losses": {
+     "A-B-F02-k2-seed0": 0.14455937935004037,
+     "A-B-F02-k2-seed1": 0.1536268281344811,
+     "A-B-F02-k2-seed2": 0.14838649337419105
+    },
+    "statuses": {
+     "A-B-F02-k2-seed0": "COMPLETED",
+     "A-B-F02-k2-seed1": "COMPLETED",
+     "A-B-F02-k2-seed2": "COMPLETED"
+    }
+   },
+   "k3": {
+    "eligible": true,
+    "metric": 0.09852839458518907,
+    "seed_best_val_losses": {
+     "A-B-F02-k3-seed0": 0.13338330568774778,
+     "A-B-F02-k3-seed1": 0.07863914250979012,
+     "A-B-F02-k3-seed2": 0.08356273555802926
+    },
+    "statuses": {
+     "A-B-F02-k3-seed0": "COMPLETED",
+     "A-B-F02-k3-seed1": "COMPLETED",
+     "A-B-F02-k3-seed2": "COMPLETED"
+    }
+   }
+  },
+  "outcome": "SELECTED",
+  "primary_fit_id": "A-B-F02-k3-seed0",
+  "rule": "mean over the three seeds of best-epoch own-profile B_val mean per-window loss; lowest wins; exact tie goes to k=2; primary artifact is seed0 of the selected k",
+  "selected_k": 3,
+  "tie": false
+ },
+ "wall_seconds": 34.44007520005107
+}

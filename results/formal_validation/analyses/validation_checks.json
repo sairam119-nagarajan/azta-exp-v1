@@ -1,0 +1,77 @@
+{
+ "generated_utc": "2026-11-14T23:18:51Z",
+ "reference": {
+  "alpha": 0.2,
+  "beta": 0.5,
+  "gamma": 0.3,
+  "lam": 0.1,
+  "tau_q": 65.0,
+  "tau_r": 75.0,
+  "n": 2,
+  "epsilon": 1e-06,
+  "config_id": "azta-exp-v1-tq65"
+ },
+ "checks": [
+  {
+   "check": "Replayed per-window state equals the recorded proposed_state at the frozen point (shadow runs)",
+   "result": "PASS",
+   "detail": "0 mismatches of 16852"
+  },
+  {
+   "check": "Replayed T equals the recorded T",
+   "result": "PASS",
+   "detail": "max |difference| = 1.42e-14"
+  },
+  {
+   "check": "Every behavioural window has S_ID = 100 and S_C = 100",
+   "result": "PASS",
+   "detail": "16051 behavioural windows, 0 exceptions"
+  },
+  {
+   "check": "Frozen Metric 1 reproduced (behavioural windows, agreement, context windows)",
+   "result": "PASS",
+   "detail": "windows 16051/16051, agree 15870/15870, context 135 = {'FULL_ACCESS': 3, 'RESTRICT': 125, 'QUARANTINE': 7}"
+  },
+  {
+   "check": "Replayed N = 2 confirmation equals the recorded confirmation state of every shadow decision",
+   "result": "PASS",
+   "detail": "0 mismatches of 23100; 1269 requests"
+  },
+  {
+   "check": "Vectorised N = 2 replay equals the frozen enforcement.policy.DecisionFilter (4 configurations)",
+   "result": "PASS",
+   "detail": "0 mismatches"
+  },
+  {
+   "check": "Recorded S_B = 100 exp(-0.1 A) for every scored decision of all 47 VALID runs (lambda recomputable)",
+   "result": "PASS",
+   "detail": "0 exceptions; reserved TEST runs not read"
+  },
+  {
+   "check": "Frozen Metric 5 reconstructed from the live timing records",
+   "result": "PASS",
+   "detail": "max difference 0 ns over 22346 decisions"
+  },
+  {
+   "check": "Regenerated per-episode detection equals the consolidated counts",
+   "result": "PASS",
+   "detail": "{\"burst\": {\"regenerated\": 46, \"consolidated\": 46, \"episodes\": 50}, \"drop\": {\"regenerated\": 26, \"consolidated\": 26, \"episodes\": 50}, \"jitter\": {\"regenerated\": 25, \"consolidated\": 25, \"episodes\": 25}, \"payload\": {\"regenerated\": 50, \"consolidated\": 50, \"episodes\": 50}, \"rate\": {\"regenerated\": 50, \"consolidated\": 50, \"episodes\": 50}}"
+  },
+  {
+   "check": "RQ3 reference row reproduces the frozen episode detection (197 of 225)",
+   "result": "PASS",
+   "detail": "197 of 225"
+  },
+  {
+   "check": "Context windows of the frozen Metric 1: 135 = 125 RESTRICT + 7 QUARANTINE + 3 other",
+   "result": "PASS",
+   "detail": "{\"FULL_ACCESS\": 3, \"RESTRICT\": 125, \"QUARANTINE\": 7}"
+  },
+  {
+   "check": "Every model bundle of the deployed routes is pinned in the freeze manifest; recorded bundle digests match",
+   "result": "PASS",
+   "detail": "{\"checked\": 21, \"matching\": 21}"
+  }
+ ],
+ "all_pass": true
+}

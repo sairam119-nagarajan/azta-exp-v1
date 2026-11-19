@@ -1,0 +1,6 @@
+bucket,benign_windows,false_positive_windows,fpr_in_bucket,false_positives_by_device
+1-2 AE windows after an executed segment ended,231,58,0.251082,"{""device03"": 2, ""device06"": 20, ""device07"": 24, ""device08"": 12}"
+2-3 AE windows after,189,1,0.00529101,"{""device03"": 1}"
+3-5 AE windows after,378,0,0,{}
+5 or more AE windows after,5498,9,0.00163696,"{""device02"": 2, ""device03"": 3, ""device10"": 4}"
+no executed segment earlier on this device in this run,7439,30,0.0040328,"{""device01"": 1, ""device02"": 1, ""device03"": 9, ""device04"": 1, ""device06"": 1, ""device07"": 6, ""device10"": 11}"
